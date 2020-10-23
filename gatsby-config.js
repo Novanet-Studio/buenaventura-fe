@@ -37,5 +37,16 @@ module.exports = {
         useResolveUrlLoader: true
       }
     },
+    {
+      resolve: 'gatsby-plugin-intl-graphql',
+      options: {
+        url: 'http://localhost:1337',
+        path: `${__dirname}/src/lang`,
+        languages:  ['en', 'es'],
+        defaultLanguage: 'es',
+        redirect: true,
+        query,
+      }
+    },
   ],
 };
