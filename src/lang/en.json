@@ -1,0 +1,70 @@
+{
+  "static": {
+    "lang": "en"
+  },
+  "contacto": {
+    "content": {
+      "principal": {
+        "titulo": "Contact",
+        "descripcion": "You are one step ahead of forgetting about fines and sanctions. \nSend us a message and we will get in contact with you for more details."
+      }
+    }
+  },
+  "principal": {
+    "content": {
+      "principal": {
+        "titulo": "All your taxes and tax compliance up to date!",
+        "descripcion": "We are a professional team dedicated to calculating taxes and tax compliance. Keep all of your taxes updated without worrying about any procedures, we will take care of it."
+      },
+      "cta_titulo": "Learn more",
+      "cta_vinculo": "Link"
+    }
+  },
+  "nosotro": {
+    "content": {
+      "principal": {
+        "titulo": "It's our desire to become your allies",
+        "descripcion": "Our aim is supporting you with everything related to taxes and accounting to the level of being considered as another department of your organization."
+      },
+      "atributos_lista": [
+        {
+          "titulo": "Compromise ",
+          "descripcion": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
+          }
+        },
+        {
+          "titulo": "Trust ",
+          "descripcion": "We want to transmit the tranquility that your taxes and accounting are in good hands.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
+          }
+        },
+        {
+          "titulo": "Quality ",
+          "descripcion": "We comprehend the importance and sensibility of tax and accounting procedures.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
+          }
+        },
+        {
+          "titulo": "Responsibility ",
+          "descripcion": " We work as fast as we can to comply with our agreements.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
+          }
+        },
+        {
+          "titulo": "Vocation of service",
+          "descripcion": "We like what we do. Good delivered service redounds in advantages for both of us.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
+          }
+        }
+      ],
+      "atributos_titulo": "What guide or characterize us?",
+      "atributos_descripcion": "Mainly, we want to highlight:"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "static": {
+    "lang": "es"
+  },
+  "contacto": {
+    "content": {
+      "principal": {
+        "titulo": "Contacto",
+        "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
+      }
+    }
+  },
+  "principal": {
+    "content": {
+      "principal": {
+        "titulo": "Tenga sus impuestos y obligaciones tributarias al día",
+        "descripcion": "Somos un equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales. Ten al día  tus tributos sin preocuparte de los trámites que de eso nos encargamos nosotros"
+      },
+      "cta_titulo": "Conócenos",
+      "cta_vinculo": "Vínculo"
+    }
+  },
+  "nosotro": {
+    "content": {
+      "principal": {
+        "titulo": "Queremos convertirnos en tus aliados",
+        "descripcion": "Nuestro objetivo es apoyarte en todo lo relacionado con impuestos y contabilidad al punto de ser considerados como un departamento más dentro de tu organización empresarial.\n"
+      },
+      "atributos_lista": [
+        {
+          "titulo": "Compromiso",
+          "descripcion": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
+          }
+        },
+        {
+          "titulo": "Confianza",
+          "descripcion": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
+          }
+        },
+        {
+          "titulo": "Calidad",
+          "descripcion": " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
+          }
+        },
+        {
+          "titulo": "Responsabilidad ",
+          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
+          }
+        },
+        {
+          "titulo": "Vocación de servicio",
+          "descripcion": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos.",
+          "icono": {
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
+          }
+        }
+      ],
+      "atributos_titulo": "¿Qué nos guía o nos caracteriza?",
+      "atributos_descripcion": "Principalmente, queremos destacar:"
+    }
+  }
+}
