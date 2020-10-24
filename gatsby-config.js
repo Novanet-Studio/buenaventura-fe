@@ -1,3 +1,5 @@
+const query = require("./queries")
+
 module.exports = {
   siteMetadata: {
     title: `VenturaTax`,
@@ -34,19 +36,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        useResolveUrlLoader: true
-      }
+        useResolveUrlLoader: true,
+      },
     },
     {
-      resolve: 'gatsby-plugin-intl-graphql',
+      resolve: "gatsby-plugin-intl-graphql",
       options: {
-        url: 'http://localhost:1337',
+        url: "http://localhost:1337",
         path: `${__dirname}/src/lang`,
-        languages:  ['en', 'es'],
-        defaultLanguage: 'es',
+        languages: ["en", "es"],
+        defaultLanguage: "es",
         redirect: true,
         query,
-      }
+      },
     },
   ],
-};
+}
