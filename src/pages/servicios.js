@@ -1,47 +1,32 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
+import { useIntl } from "../../plugins/gatsby-plugin-intl-graphql"
 
-const Servicios = () => (
-  <section className="servicios">
-    <h2 className="servicios__titulo">Lorem, ipsum dolor</h2>
-    <p className="servicios__descripcion">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eos.
-    </p>
-    <ul className="servicios__lista">
-      <li className="servicios__contenido">
-        <img src="" alt="icono servicio" className="servicios__icono" />
-        <h3 className="servicios__contenido-titulo">
-          <ul className="servicios__item-lista">
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </h3>
-      </li>
-      <li className="servicios__contenido">
-        <img src="" alt="icono servicio" className="servicios__icono" />
-        <h3 className="servicios__contenido-titulo">
-          <ul className="servicios__item-lista">
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </h3>
-      </li>
-      <li className="servicios__contenido">
-        <img src="" alt="icono servicio" className="servicios__icono" />
-        <h3 className="servicios__contenido-titulo">
-          <ul className="servicios__item-lista">
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-            <li className="servicios__item">Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </h3>
-      </li>
-    </ul>
-  </section>
-)
+const Servicios = () => {
+  const { messages: intl } = useIntl()
+  
+  return (
+    <section className="servicios">
+      <h2 className="servicios__titulo">
+        {intl.serviciosAdicionale.content.principal.titulo}
+      </h2>
+      <p className="servicios__descripcion">
+        {intl.serviciosAdicionale.content.principal.descripcion}
+      </p>
+      <ul className="servicios__lista">
+        {intl.serviciosAdicionale.content.servicios.map(servicio => (
+          <li className="servicios__contenido" key={servicio.id}>
+            <img src="" alt="icono servicio" className="servicios__icono" />
+            <h3 className="servicios__contenido-titulo">{servicio.nombre}</h3>
+            <ReactMarkdown 
+              source={servicio.items}
+              escapeHtml={false}
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
 
 export default Servicios
