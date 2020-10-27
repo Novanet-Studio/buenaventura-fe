@@ -35,9 +35,6 @@ const query = `
       atributos_titulo
       atributos_descripcion
     }
-  }
-  
-  nosotro {
     content_en {
       principal {
         titulo
@@ -52,6 +49,56 @@ const query = `
       }
       atributos_titulo
       atributos_descripcion
+    }
+  }
+  
+  servicio {
+    content_es {
+      principal {
+        titulo
+        descripcion
+      }
+      especialidades {
+        id
+        nombre
+      }
+      lista {
+        id
+        tipo
+        titulo
+        item
+      }
+    }
+    content_en {
+      principal {
+        titulo
+        descripcion
+      }
+      especialidades {
+        id
+        nombre
+      }
+      lista {
+        id
+        tipo
+        titulo
+        item
+      }
+    }
+  }
+
+  serviciosAdicionale {
+    content_es {
+      principal {
+        titulo
+        descripcion
+      }
+    }
+    content_en {
+      principal {
+        titulo
+        descripcion
+      }
     }
   }
 
