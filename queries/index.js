@@ -66,7 +66,7 @@ const query = `
         id
         tipo
         titulo
-        item
+        items
       }
     }
     content_en {
@@ -82,7 +82,7 @@ const query = `
         id
         tipo
         titulo
-        item
+        items
       }
     }
   }
@@ -93,11 +93,21 @@ const query = `
         titulo
         descripcion
       }
+      servicios {
+        id
+        nombre
+        items
+      }
     }
     content_en {
       principal {
         titulo
         descripcion
+      }
+      servicios {
+        id
+        nombre
+        items
       }
     }
   }
