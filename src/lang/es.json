@@ -2,14 +2,6 @@
   "static": {
     "lang": "es"
   },
-  "contacto": {
-    "content": {
-      "principal": {
-        "titulo": "Contacto",
-        "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
-      }
-    }
-  },
   "principal": {
     "content": {
       "principal": {
@@ -28,39 +20,29 @@
       },
       "atributos_lista": [
         {
+          "id": "5f918682c4ddc8001781492c",
           "titulo": "Compromiso",
-          "descripcion": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
-          }
+          "descripcion": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo."
         },
         {
+          "id": "5f918682c4ddc8001781492d",
           "titulo": "Confianza",
-          "descripcion": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
-          }
+          "descripcion": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos."
         },
         {
+          "id": "5f918682c4ddc8001781492e",
           "titulo": "Calidad",
-          "descripcion": " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
-          }
+          "descripcion": " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables."
         },
         {
+          "id": "5f918682c4ddc8001781492f",
           "titulo": "Responsabilidad ",
-          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
-          }
+          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos."
         },
         {
+          "id": "5f918682c4ddc80017814930",
           "titulo": "Vocación de servicio",
-          "descripcion": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
-          }
+          "descripcion": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos."
         }
       ],
       "atributos_titulo": "¿Qué nos guía o nos caracteriza?",
@@ -86,25 +68,25 @@
       "lista": [
         {
           "id": "5f982a15a7042637a34732db",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios mensuales",
           "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
         },
         {
           "id": "5f982a15a7042637a34732dc",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios trimestrales",
           "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
         },
         {
           "id": "5f982a15a7042637a34732dd",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios anuales",
           "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
         },
         {
           "id": "5f982a15a7042637a34732de",
-          "tipo": "recursos-humanos",
+          "especialidad": "rrhh",
           "titulo": "Servicios anuales",
           "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
         }
@@ -134,6 +116,14 @@
           "items": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial."
         }
       ]
+    }
+  },
+  "contacto": {
+    "content": {
+      "principal": {
+        "titulo": "Contacto",
+        "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
+      }
     }
   }
 }

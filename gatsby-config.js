@@ -42,12 +42,26 @@ module.exports = {
     {
       resolve: "gatsby-plugin-intl-graphql",
       options: {
-        url: "http://localhost:1337",
+        url: process.env.API_URL || "http://localhost:1337",
         path: `${__dirname}/src/lang`,
         languages: ["en", "es"],
         defaultLanguage: "es",
         redirect: true,
         query,
+      },
+    },
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: process.env.API_URL || "http://localhost:1337",
+        singleTypes: [
+          "contacto",
+          "nosotros",
+          "principal",
+          "servicios",
+          "servicios-adicionales",
+        ],
+        queryLimit: 1000,
       },
     },
   ],

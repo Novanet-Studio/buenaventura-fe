@@ -26,11 +26,9 @@ const query = `
         descripcion
       }
       atributos_lista {
+        id
         titulo
         descripcion
-        icono {
-          url
-        }
       }
       atributos_titulo
       atributos_descripcion
@@ -41,11 +39,9 @@ const query = `
         descripcion
       }
       atributos_lista {
+        id
         titulo
         descripcion
-        icono {
-          url
-        }
       }
       atributos_titulo
       atributos_descripcion
@@ -64,7 +60,7 @@ const query = `
       }
       lista {
         id
-        tipo
+        especialidad
         titulo
         items
       }
@@ -80,7 +76,7 @@ const query = `
       }
       lista {
         id
-        tipo
+        especialidad
         titulo
         items
       }

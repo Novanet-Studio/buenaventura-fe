@@ -10,13 +10,13 @@ const Header = () => (
           <Link to="/nosotros">Nosotros</Link>
         </li>
         <li className="header__item">
-          <Link to="/nosotros">Especialidades</Link>
+          <Link to="/especialidades">Especialidades</Link>
         </li>
         <li className="header__item">
-          <Link to="/nosotros">Servicios adicionales</Link>
+          <Link to="/servicios">Servicios adicionales</Link>
         </li>
         <li className="header__item">
-          <Link to="/nosotros">Contacto</Link>
+          <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
     </nav>

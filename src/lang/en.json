@@ -2,14 +2,6 @@
   "static": {
     "lang": "en"
   },
-  "contacto": {
-    "content": {
-      "principal": {
-        "titulo": "Contact",
-        "descripcion": "You are one step ahead of forgetting about fines and sanctions. \nSend us a message and we will get in contact with you for more details."
-      }
-    }
-  },
   "principal": {
     "content": {
       "principal": {
@@ -28,39 +20,29 @@
       },
       "atributos_lista": [
         {
+          "id": "5f918961c4ddc80017814961",
           "titulo": "Compromise ",
-          "descripcion": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
-          }
+          "descripcion": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely."
         },
         {
+          "id": "5f918961c4ddc80017814962",
           "titulo": "Trust ",
-          "descripcion": "We want to transmit the tranquility that your taxes and accounting are in good hands.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
-          }
+          "descripcion": "We want to transmit the tranquility that your taxes and accounting are in good hands."
         },
         {
+          "id": "5f918961c4ddc80017814963",
           "titulo": "Quality ",
-          "descripcion": "We comprehend the importance and sensibility of tax and accounting procedures.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
-          }
+          "descripcion": "We comprehend the importance and sensibility of tax and accounting procedures."
         },
         {
+          "id": "5f918961c4ddc80017814964",
           "titulo": "Responsibility ",
-          "descripcion": " We work as fast as we can to comply with our agreements.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
-          }
+          "descripcion": " We work as fast as we can to comply with our agreements."
         },
         {
+          "id": "5f918961c4ddc80017814965",
           "titulo": "Vocation of service",
-          "descripcion": "We like what we do. Good delivered service redounds in advantages for both of us.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
-          }
+          "descripcion": "We like what we do. Good delivered service redounds in advantages for both of us."
         }
       ],
       "atributos_titulo": "What guide or characterize us?",
@@ -86,25 +68,25 @@
       "lista": [
         {
           "id": "5f982a18a7042637a34732e7",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Monthly services",
           "items": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
         },
         {
           "id": "5f982a18a7042637a34732e8",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Quarterly Services",
           "items": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
         },
         {
           "id": "5f982a18a7042637a34732e9",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Annual Services",
           "items": "- Payroll Year End Reports and compliance.\n- W-2’s for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
         },
         {
           "id": "5f982a18a7042637a34732ea",
-          "tipo": "recursos-humanos",
+          "especialidad": "rrhh",
           "titulo": "Annual Services",
           "items": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
         }
@@ -134,6 +116,14 @@
           "items": "- New License / Permit Applications / Renewals.\n- Incorporations.\n- Projections for Commercial Real Estate.\n- Trademark."
         }
       ]
+    }
+  },
+  "contacto": {
+    "content": {
+      "principal": {
+        "titulo": "Contact",
+        "descripcion": "You are one step ahead of forgetting about fines and sanctions. \nSend us a message and we will get in contact with you for more details."
+      }
     }
   }
 }
