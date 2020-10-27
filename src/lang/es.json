@@ -85,94 +85,28 @@
       ],
       "lista": [
         {
-          "id": "5f918c08c4ddc80017814974",
+          "id": "5f982a15a7042637a34732db",
           "tipo": "contabilidad",
           "titulo": "Servicios mensuales",
-          "item": "Impuestos a las ventas y licores."
+          "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
         },
         {
-          "id": "5f918c08c4ddc80017814975",
+          "id": "5f982a15a7042637a34732dc",
           "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Contabilidad mensual."
+          "titulo": "Servicios trimestrales",
+          "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
         },
         {
-          "id": "5f918c08c4ddc80017814976",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Nómina e impuestos asociados."
-        },
-        {
-          "id": "5f918c08c4ddc80017814977",
-          "tipo": "contabilidad",
-          "titulo": "Servicios trimestrales ",
-          "item": "Declaraciones trimestrales de impuestos."
-        },
-        {
-          "id": "5f918c08c4ddc80017814978",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Informes de ganancias y pérdidas."
-        },
-        {
-          "id": "5f918c08c4ddc80017814979",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Impuestos estimados."
-        },
-        {
-          "id": "5f918c08c4ddc8001781497a",
+          "id": "5f982a15a7042637a34732dd",
           "tipo": "contabilidad",
           "titulo": "Servicios anuales",
-          "item": "Informes anuales de nómina y deberes formales."
+          "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
         },
         {
-          "id": "5f918c08c4ddc8001781497b",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Formulario W-2 para empleados."
-        },
-        {
-          "id": "5f918c08c4ddc8001781497c",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Estados financieros."
-        },
-        {
-          "id": "5f918c08c4ddc8001781497d",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Impuestos a la propiedad."
-        },
-        {
-          "id": "5f918c08c4ddc8001781497e",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Renovación de licencia corporativa."
-        },
-        {
-          "id": "5f918c08c4ddc8001781497f",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Auditorías sobre la compensación para trabajadores y responsabilidad general."
-        },
-        {
-          "id": "5f918c08c4ddc80017814980",
+          "id": "5f982a15a7042637a34732de",
           "tipo": "recursos-humanos",
           "titulo": "Servicios anuales",
-          "item": "Revisión del manual para empleados."
-        },
-        {
-          "id": "5f918c08c4ddc80017814981",
-          "tipo": "recursos-humanos",
-          "titulo": "",
-          "item": "Cumplimiento de disposiciones salariales según el Departamento de Trabajo."
-        },
-        {
-          "id": "5f918c08c4ddc80017814982",
-          "tipo": "recursos-humanos",
-          "titulo": "",
-          "item": "Políticas de no agresión."
+          "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
         }
       ]
     }
@@ -182,7 +116,24 @@
       "principal": {
         "titulo": "Servicios adicionales",
         "descripcion": "Además de los servicios recurrentes que ofrecemos, podemos asistirte en los siguientes servicios:"
-      }
+      },
+      "servicios": [
+        {
+          "id": "5f9830b9a7042637a34732f1",
+          "nombre": "Resoluciones fiscales",
+          "items": "- Declaración de impuestos corporativos.\n- IRS o auditorías estatales.\n- Resoluciones fiscales en general."
+        },
+        {
+          "id": "5f9830b9a7042637a34732f2",
+          "nombre": "Cumplimiento",
+          "items": "- Departamento laboral y EEOC.\n- Reuniones con abogados.\n- Apoyo con investigaciones, mediaciones y disputas en auditorías."
+        },
+        {
+          "id": "5f9830b9a7042637a34732f3",
+          "nombre": "Licencias",
+          "items": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial."
+        }
+      ]
     }
   }
 }

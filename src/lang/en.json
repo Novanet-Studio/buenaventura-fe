@@ -85,94 +85,28 @@
       ],
       "lista": [
         {
-          "id": "5f918e9dc4ddc800178149ad",
+          "id": "5f982a18a7042637a34732e7",
           "tipo": "contabilidad",
           "titulo": "Monthly services",
-          "item": "Sales Taxes & Liquor Taxes."
+          "items": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
         },
         {
-          "id": "5f918e9dc4ddc800178149ae",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Monthly Accounting."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149af",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Payroll & Payroll Taxes."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b0",
+          "id": "5f982a18a7042637a34732e8",
           "tipo": "contabilidad",
           "titulo": "Quarterly Services",
-          "item": "Quarterly Tax Returns."
+          "items": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
         },
         {
-          "id": "5f918e9dc4ddc800178149b1",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Profit and Loss Reports."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b2",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Estimated Taxes."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b3",
+          "id": "5f982a18a7042637a34732e9",
           "tipo": "contabilidad",
           "titulo": "Annual Services",
-          "item": "Payroll Year End Reports and compliance."
+          "items": "- Payroll Year End Reports and compliance.\n- W-2’s for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
         },
         {
-          "id": "5f918e9dc4ddc800178149b4",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "W-2’s for Employees."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b5",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Financial Statements (P&L/Balance Sheet)."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b6",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Property Tax."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b7",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Corporate License Renewal."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b8",
-          "tipo": "contabilidad",
-          "titulo": "",
-          "item": "Audits for Workers Compensation and General Liability."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149b9",
+          "id": "5f982a18a7042637a34732ea",
           "tipo": "recursos-humanos",
           "titulo": "Annual Services",
-          "item": "Employee Manuals Review."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149ba",
-          "tipo": "recursos-humanos",
-          "titulo": "",
-          "item": "Wage Compliance in Accordance with the Department of Labor."
-        },
-        {
-          "id": "5f918e9dc4ddc800178149bb",
-          "tipo": "recursos-humanos",
-          "titulo": "",
-          "item": "No Aggression Policy."
+          "items": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
         }
       ]
     }
@@ -182,7 +116,24 @@
       "principal": {
         "titulo": "Invoiced Services",
         "descripcion": "Besides the recurrent services we offer, we can help you with the following services:"
-      }
+      },
+      "servicios": [
+        {
+          "id": "5f9830bba7042637a34732f9",
+          "nombre": "Tax Resolutions",
+          "items": "- Corporate Tax Returns.\n- Tax Resolutions.\n- IRS or State Audits."
+        },
+        {
+          "id": "5f9830bba7042637a34732fa",
+          "nombre": "Compliance",
+          "items": "- Labor Department and EEOC.\n- Meetings with Lawyers.\n- Support with Investigations, Mediations and Dispute Audits."
+        },
+        {
+          "id": "5f9830bba7042637a34732fb",
+          "nombre": "Licensing",
+          "items": "- New License / Permit Applications / Renewals.\n- Incorporations.\n- Projections for Commercial Real Estate.\n- Trademark."
+        }
+      ]
     }
   }
 }
