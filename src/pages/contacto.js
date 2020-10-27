@@ -1,5 +1,5 @@
 import React from "react"
-import { useIntl } from "../../plugins/gatsby-plugin-intl-graphql"
+import { useIntl } from "gatsby-plugin-intl-graphql"
 
 const Contacto = () => {
 

@@ -1,6 +1,6 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
-import { useIntl } from "../../plugins/gatsby-plugin-intl-graphql"
+import { useIntl } from "gatsby-plugin-intl-graphql"
 
 const Servicios = () => {
   const { messages: intl } = useIntl()
