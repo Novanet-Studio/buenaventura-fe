@@ -3,16 +3,15 @@ import { useIntl } from "../../plugins/gatsby-plugin-intl-graphql"
 import Layout from "../components/layout"
 
 const IndexPage = () => {
-
   const { messages: intl } = useIntl()
-
-  console.log(intl)
 
   return (
     <Layout>
       <section className="inicio">
         <article className="contenedor contenedor--izq">
-          <h1 className="inicio__titulo">{intl.principal.content.principal.titulo}</h1>
+          <h1 className="inicio__titulo">
+            {intl.principal.content.principal.titulo}
+          </h1>
           <p className="inicio__descripcion">
             {intl.principal.content.principal.descripcion}
           </p>
