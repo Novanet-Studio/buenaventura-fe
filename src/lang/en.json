@@ -66,5 +66,123 @@
       "atributos_titulo": "What guide or characterize us?",
       "atributos_descripcion": "Mainly, we want to highlight:"
     }
+  },
+  "servicio": {
+    "content": {
+      "principal": {
+        "titulo": "Our Services",
+        "descripcion": "We're dedicated to accounting which includes taxes and payroll, and some other services related with human resources.\n"
+      },
+      "especialidades": [
+        {
+          "id": "5f918e9dc4ddc800178149a9",
+          "nombre": "Accounting and taxes"
+        },
+        {
+          "id": "5f918e9dc4ddc800178149aa",
+          "nombre": "Human resources"
+        }
+      ],
+      "lista": [
+        {
+          "id": "5f918e9dc4ddc800178149ad",
+          "tipo": "contabilidad",
+          "titulo": "Monthly services",
+          "item": "Sales Taxes & Liquor Taxes."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149ae",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Monthly Accounting."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149af",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Payroll & Payroll Taxes."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b0",
+          "tipo": "contabilidad",
+          "titulo": "Quarterly Services",
+          "item": "Quarterly Tax Returns."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b1",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Profit and Loss Reports."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b2",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Estimated Taxes."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b3",
+          "tipo": "contabilidad",
+          "titulo": "Annual Services",
+          "item": "Payroll Year End Reports and compliance."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b4",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "W-2’s for Employees."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b5",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Financial Statements (P&L/Balance Sheet)."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b6",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Property Tax."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b7",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Corporate License Renewal."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b8",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Audits for Workers Compensation and General Liability."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149b9",
+          "tipo": "recursos-humanos",
+          "titulo": "Annual Services",
+          "item": "Employee Manuals Review."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149ba",
+          "tipo": "recursos-humanos",
+          "titulo": "",
+          "item": "Wage Compliance in Accordance with the Department of Labor."
+        },
+        {
+          "id": "5f918e9dc4ddc800178149bb",
+          "tipo": "recursos-humanos",
+          "titulo": "",
+          "item": "No Aggression Policy."
+        }
+      ]
+    }
+  },
+  "serviciosAdicionale": {
+    "content": {
+      "principal": {
+        "titulo": "Invoiced Services",
+        "descripcion": "Besides the recurrent services we offer, we can help you with the following services:"
+      }
+    }
   }
 }

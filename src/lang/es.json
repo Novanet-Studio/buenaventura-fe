@@ -66,5 +66,123 @@
       "atributos_titulo": "¿Qué nos guía o nos caracteriza?",
       "atributos_descripcion": "Principalmente, queremos destacar:"
     }
+  },
+  "servicio": {
+    "content": {
+      "principal": {
+        "titulo": "Nuestros servicios",
+        "descripcion": "Nos dedicamos a la contabilidad, incluidos los impuestos y la nómina, y algunos servicios relacionados con recursos humanos."
+      },
+      "especialidades": [
+        {
+          "id": "5f918c08c4ddc80017814970",
+          "nombre": "Contabilidad e impuestos"
+        },
+        {
+          "id": "5f918c08c4ddc80017814971",
+          "nombre": "Recursos humanos"
+        }
+      ],
+      "lista": [
+        {
+          "id": "5f918c08c4ddc80017814974",
+          "tipo": "contabilidad",
+          "titulo": "Servicios mensuales",
+          "item": "Impuestos a las ventas y licores."
+        },
+        {
+          "id": "5f918c08c4ddc80017814975",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Contabilidad mensual."
+        },
+        {
+          "id": "5f918c08c4ddc80017814976",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Nómina e impuestos asociados."
+        },
+        {
+          "id": "5f918c08c4ddc80017814977",
+          "tipo": "contabilidad",
+          "titulo": "Servicios trimestrales ",
+          "item": "Declaraciones trimestrales de impuestos."
+        },
+        {
+          "id": "5f918c08c4ddc80017814978",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Informes de ganancias y pérdidas."
+        },
+        {
+          "id": "5f918c08c4ddc80017814979",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Impuestos estimados."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497a",
+          "tipo": "contabilidad",
+          "titulo": "Servicios anuales",
+          "item": "Informes anuales de nómina y deberes formales."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497b",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Formulario W-2 para empleados."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497c",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Estados financieros."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497d",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Impuestos a la propiedad."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497e",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Renovación de licencia corporativa."
+        },
+        {
+          "id": "5f918c08c4ddc8001781497f",
+          "tipo": "contabilidad",
+          "titulo": "",
+          "item": "Auditorías sobre la compensación para trabajadores y responsabilidad general."
+        },
+        {
+          "id": "5f918c08c4ddc80017814980",
+          "tipo": "recursos-humanos",
+          "titulo": "Servicios anuales",
+          "item": "Revisión del manual para empleados."
+        },
+        {
+          "id": "5f918c08c4ddc80017814981",
+          "tipo": "recursos-humanos",
+          "titulo": "",
+          "item": "Cumplimiento de disposiciones salariales según el Departamento de Trabajo."
+        },
+        {
+          "id": "5f918c08c4ddc80017814982",
+          "tipo": "recursos-humanos",
+          "titulo": "",
+          "item": "Políticas de no agresión."
+        }
+      ]
+    }
+  },
+  "serviciosAdicionale": {
+    "content": {
+      "principal": {
+        "titulo": "Servicios adicionales",
+        "descripcion": "Además de los servicios recurrentes que ofrecemos, podemos asistirte en los siguientes servicios:"
+      }
+    }
   }
 }
