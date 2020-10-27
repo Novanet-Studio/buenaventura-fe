@@ -1,17 +1,18 @@
 import React from "react"
 import { useIntl } from "gatsby-plugin-intl-graphql"
+import { graphql } from "gatsby"
 
-const Nosotros = () => {
-  const { messages: intl } = useIntl()
+const Nosotros = ({data:{ strapiNosotros }}) => {
+  const {messages:{ nosotro: nosotros }} = useIntl()
 
   return (
     <section className="nosotros">
       <article className="contenedor contenedor--izq">
         <h2 className="nosotros__titulo">
-          {intl.nosotro.content.principal.titulo}
+          {nosotros.content.principal.titulo}
         </h2>
         <p className="nosotros__descripcion-corta">
-          {intl.nosotro.content.principal.descripcion}
+          {nosotros.content.principal.descripcion}
         </p>
         <h3 className="nosotros__subtitulo">Lorem, ipsum dolor</h3>
         <p className="nosotros__subdescripcion">
@@ -22,16 +23,21 @@ const Nosotros = () => {
       </article>
       <article className="contenedor contenedor--der">
         <div className="guia">
-          <h3 className="guia__titulo">
-            {intl.nosotro.content.atributos_titulo}
-          </h3>
+          <h3 className="guia__titulo">{nosotros.content.atributos_titulo}</h3>
           <p className="guia__descripcion">
-            {intl.nosotro.content.atributos_descripcion}
+            {nosotros.content.atributos_descripcion}
           </p>
           <ul className="guia__lista">
-            {intl.nosotro.content.atributos_lista.map(item => (
-              <li className="guia__item">
-                <img width="500" height="500" src={item.icono.url} alt="icono like" className="guia__icono" />
+            {nosotros.content.atributos_lista.map((item, index) => (
+              <li className="guia__item" key={item.id}>
+                <img
+                  style={{ background: "red" }}
+                  width="500"
+                  height="500"
+                  src={strapiNosotros.iconos[index].url}
+                  alt="icono like"
+                  className="guia__icono"
+                />
                 <h4 className="guia__subtitulo">{item.titulo}</h4>
               </li>
             ))}
@@ -46,3 +52,13 @@ const Nosotros = () => {
 }
 
 export default Nosotros
+
+export const query = graphql`
+  query NosotrosQuery {
+    strapiNosotros {
+      iconos {
+        url
+      }
+    }
+  }
+`

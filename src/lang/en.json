@@ -28,39 +28,29 @@
       },
       "atributos_lista": [
         {
+          "id": "5f918961c4ddc80017814961",
           "titulo": "Compromise ",
-          "descripcion": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
-          }
+          "descripcion": "We're compromised with you and your tax and accounting procedures. Our goal is reducing charges and avoiding them completely."
         },
         {
+          "id": "5f918961c4ddc80017814962",
           "titulo": "Trust ",
-          "descripcion": "We want to transmit the tranquility that your taxes and accounting are in good hands.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
-          }
+          "descripcion": "We want to transmit the tranquility that your taxes and accounting are in good hands."
         },
         {
+          "id": "5f918961c4ddc80017814963",
           "titulo": "Quality ",
-          "descripcion": "We comprehend the importance and sensibility of tax and accounting procedures.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
-          }
+          "descripcion": "We comprehend the importance and sensibility of tax and accounting procedures."
         },
         {
+          "id": "5f918961c4ddc80017814964",
           "titulo": "Responsibility ",
-          "descripcion": " We work as fast as we can to comply with our agreements.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
-          }
+          "descripcion": " We work as fast as we can to comply with our agreements."
         },
         {
+          "id": "5f918961c4ddc80017814965",
           "titulo": "Vocation of service",
-          "descripcion": "We like what we do. Good delivered service redounds in advantages for both of us.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
-          }
+          "descripcion": "We like what we do. Good delivered service redounds in advantages for both of us."
         }
       ],
       "atributos_titulo": "What guide or characterize us?",

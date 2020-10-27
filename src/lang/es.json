@@ -28,39 +28,29 @@
       },
       "atributos_lista": [
         {
+          "id": "5f918682c4ddc8001781492c",
           "titulo": "Compromiso",
-          "descripcion": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_compromiso_icono_79d78d4e56.svg"
-          }
+          "descripcion": "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo."
         },
         {
+          "id": "5f918682c4ddc8001781492d",
           "titulo": "Confianza",
-          "descripcion": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_confianza_icono_0b97ea3c76.svg"
-          }
+          "descripcion": "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos."
         },
         {
+          "id": "5f918682c4ddc8001781492e",
           "titulo": "Calidad",
-          "descripcion": " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385429/buenaventura/uploads/buenaventura_tax_nosotros_calidad_icono_2eee20913b.svg"
-          }
+          "descripcion": " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables."
         },
         {
+          "id": "5f918682c4ddc8001781492f",
           "titulo": "Responsabilidad ",
-          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_responsabilidad_icono_ff8717567c.svg"
-          }
+          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos."
         },
         {
+          "id": "5f918682c4ddc80017814930",
           "titulo": "Vocación de servicio",
-          "descripcion": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos.",
-          "icono": {
-            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1603385556/buenaventura/uploads/buenaventura_tax_nosotros_vocacion_icono_35c6dd481a.svg"
-          }
+          "descripcion": "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos."
         }
       ],
       "atributos_titulo": "¿Qué nos guía o nos caracteriza?",
