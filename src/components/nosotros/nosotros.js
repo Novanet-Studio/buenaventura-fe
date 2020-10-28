@@ -1,9 +1,23 @@
 import React from "react"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import "./nosotros.scss"
 
-const Nosotros = ({data:{ strapiNosotros }}) => {
-  const {messages:{ nosotro: nosotros }} = useIntl()
+const Nosotros = () => {
+  const {
+    messages: { nosotro: nosotros },
+  } = useIntl()
+  const { strapiNosotros } = useStaticQuery(
+    graphql`
+      query NosotrosQuery {
+        strapiNosotros {
+          iconos {
+            url
+          }
+        }
+      }
+    `
+  )
 
   return (
     <section className="nosotros">
@@ -52,13 +66,3 @@ const Nosotros = ({data:{ strapiNosotros }}) => {
 }
 
 export default Nosotros
-
-export const query = graphql`
-  query NosotrosQuery {
-    strapiNosotros {
-      iconos {
-        url
-      }
-    }
-  }
-`

@@ -1,8 +1,9 @@
 import React from "react"
-import ReactMarkdown from "react-markdown"
 import Img from "gatsby-image"
+import ReactMarkdown from "react-markdown"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
+import "./especialidades.scss"
 
 const Especialidades = () => {
   const {

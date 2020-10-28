@@ -2,9 +2,12 @@ import React from "react"
 import Img from "gatsby-image"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
+import "./contacto.scss"
 
 const Contacto = () => {
-  const {messages:{ contacto }} = useIntl()
+  const {
+    messages: { contacto },
+  } = useIntl()
   const { strapiContacto } = useStaticQuery(
     graphql`
       query {
@@ -25,9 +28,11 @@ const Contacto = () => {
   return (
     <section className="contacto">
       <h2 className="contact__titulo">{contacto.content.principal.titulo}</h2>
-      <p className="contacto__descripcion">{contacto.content.principal.descripcion}</p>
+      <p className="contacto__descripcion">
+        {contacto.content.principal.descripcion}
+      </p>
       <div className="contacto__fila">
-        <Img 
+        <Img
           className="imagen"
           fluid={strapiContacto.imagen.localFile.childImageSharp.fluid}
           alt="lapicero rojo"
