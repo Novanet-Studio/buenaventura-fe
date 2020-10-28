@@ -2,13 +2,29 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import Img from "gatsby-image"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-const Especialidades = ({ data: { strapiServicios } }) => {
+const Especialidades = () => {
   const {
     messages: { servicio: servicios },
   } = useIntl()
-
+  const { strapiServicios } = useStaticQuery(
+    graphql`
+      query {
+        strapiServicios {
+          imagenes {
+            localFile {
+              childImageSharp {
+                fluid(maxWidth: 490) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <section className="especialidades">
       <h2 className="especialidades__titulo">
@@ -22,12 +38,18 @@ const Especialidades = ({ data: { strapiServicios } }) => {
           className={`contenedor contenedor--${index > 0 ? "der" : "izq"}`}
           key={especialidad.id}
         >
-          <Img className="imagen" fluid={strapiServicios.content_es.especialidades[index].imagen.childImageSharp.fluid} />
+          <Img
+            className="imagen"
+            fluid={
+              strapiServicios.imagenes[index].localFile.childImageSharp.fluid
+            }
+          />
           <img src="" alt="calculadora en mesa" className="imagen" />
           <div className="especialidades__contenido">
             <h3 className="especialidades__subtitulo">{especialidad.nombre}</h3>
             {/* Testing showing the data into list */}
             <ul>
+              site
               {/* Aún no sé como representaran esta parte en la página */}
               {(index === 0 &&
                 servicios.content.lista
@@ -58,21 +80,3 @@ const Especialidades = ({ data: { strapiServicios } }) => {
 }
 
 export default Especialidades
-
-export const query = graphql`
-  query EspecialidadesQuery {
-    strapiServicios {
-      content_es {
-        especialidades {
-          imagen {
-            childImageSharp {
-              fluid(maxWidth: 490) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
