@@ -60,7 +60,7 @@ const query = `
       }
       lista {
         id
-        tipo
+        especialidad
         titulo
         items
       }
@@ -76,7 +76,7 @@ const query = `
       }
       lista {
         id
-        tipo
+        especialidad
         titulo
         items
       }

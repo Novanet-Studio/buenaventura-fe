@@ -2,14 +2,6 @@
   "static": {
     "lang": "es"
   },
-  "contacto": {
-    "content": {
-      "principal": {
-        "titulo": "Contacto",
-        "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
-      }
-    }
-  },
   "principal": {
     "content": {
       "principal": {
@@ -76,25 +68,25 @@
       "lista": [
         {
           "id": "5f982a15a7042637a34732db",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios mensuales",
           "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
         },
         {
           "id": "5f982a15a7042637a34732dc",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios trimestrales",
           "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
         },
         {
           "id": "5f982a15a7042637a34732dd",
-          "tipo": "contabilidad",
+          "especialidad": "contabilidad",
           "titulo": "Servicios anuales",
           "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
         },
         {
           "id": "5f982a15a7042637a34732de",
-          "tipo": "recursos-humanos",
+          "especialidad": "rrhh",
           "titulo": "Servicios anuales",
           "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
         }
@@ -124,6 +116,14 @@
           "items": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial."
         }
       ]
+    }
+  },
+  "contacto": {
+    "content": {
+      "principal": {
+        "titulo": "Contacto",
+        "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
+      }
     }
   }
 }

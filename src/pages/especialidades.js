@@ -31,7 +31,7 @@ const Especialidades = ({ data: { strapiServicios } }) => {
               {/* Aún no sé como representaran esta parte en la página */}
               {(index === 0 &&
                 servicios.content.lista
-                  .filter(item => item.tipo === "contabilidad")
+                  .filter(item => item.especialidad === "contabilidad")
                   .map((item, id) => (
                     <li key={item.id}>
                       <h4>{item.titulo}</h4>
@@ -39,7 +39,7 @@ const Especialidades = ({ data: { strapiServicios } }) => {
                     </li>
                   ))) ||
                 servicios.content.lista
-                  .filter(item => item.tipo === "recursos-humanos")
+                  .filter(item => item.especialidad === "rrhh")
                   .map(item => (
                     <li key={item.id}>
                       <h4>{item.titulo}</h4>
