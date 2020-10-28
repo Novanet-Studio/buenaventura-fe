@@ -1,14 +1,31 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-
 
 import Layout from "../components/layout"
 
-const IndexPage = ({data:{ strapiPrincipal }}) => {
-  const {messages:{ principal }} = useIntl()
-
+const IndexPage = () => {
+  const {
+    messages: { principal },
+  } = useIntl()
+  const { strapiPrincipal } = useStaticQuery(
+    graphql`
+      query {
+        strapiPrincipal {
+          imagen {
+            localFile {
+              childImageSharp {
+                fluid(maxWidth: 490) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <Layout>
       <section className="inicio">
@@ -24,9 +41,9 @@ const IndexPage = ({data:{ strapiPrincipal }}) => {
           </button>
         </article>
         <article className="contenedor contenedor--der">
-          <Img 
+          <Img
             className="imagen"
-            fluid={strapiPrincipal.imagen.childImageSharp.fluid}
+            fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
             alt="dos personas sentadas conversando"
           />
         </article>
@@ -36,17 +53,3 @@ const IndexPage = ({data:{ strapiPrincipal }}) => {
 }
 
 export default IndexPage
-
-export const query = graphql`
-  query IndexQuery {
-    strapiPrincipal {
-      imagen {
-        childImageSharp {
-          fluid(maxWidth: 490) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`

@@ -1,11 +1,27 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-const Contacto = ({data:{ strapiContacto } }) => {
+const Contacto = () => {
   const {messages:{ contacto }} = useIntl()
-
+  const { strapiContacto } = useStaticQuery(
+    graphql`
+      query {
+        strapiContacto {
+          imagen {
+            localFile {
+              childImageSharp {
+                fluid(maxWidth: 490) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <section className="contacto">
       <h2 className="contact__titulo">{contacto.content.principal.titulo}</h2>
@@ -13,7 +29,7 @@ const Contacto = ({data:{ strapiContacto } }) => {
       <div className="contacto__fila">
         <Img 
           className="imagen"
-          fluid={strapiContacto.imagen.childImageSharp.fluid}
+          fluid={strapiContacto.imagen.localFile.childImageSharp.fluid}
           alt="lapicero rojo"
         />
         <form className="contact__formulario">
@@ -52,17 +68,3 @@ const Contacto = ({data:{ strapiContacto } }) => {
 }
 
 export default Contacto
-
-export const query = graphql`
-  query ContactoQuery {
-    strapiContacto {
-      imagen {
-        childImageSharp {
-          fluid(maxWidth: 490) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`

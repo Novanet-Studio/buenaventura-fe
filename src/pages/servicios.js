@@ -18,6 +18,7 @@ const Servicios = ({data:{ strapiServiciosAdicionales }}) => {
         {adicionales.content.servicios.map((servicio, index) => (
           <li className="servicios__contenido" key={servicio.id}>
             <img
+            style={{width: "200px", height: "200px"}}
               className="servicios__icono"
               src={strapiServiciosAdicionales.iconos[index].url}
               alt="icono servicio"
