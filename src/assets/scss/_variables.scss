@@ -1,0 +1,14 @@
+/* Componentes */
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin center {
+  justify-content: center;
+  align-content: center;
+}
+
+$verde-a: #0e2d1d;
+$verde-b: #2c4738;

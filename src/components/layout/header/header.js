@@ -1,10 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./header.scss"
+import Logo from "../../../assets/images/buenaventura-tax-logo.svg"
 
 const Header = () => (
   <header className="header">
-    <img src="" alt="ave verde con dorado" className="header__logo"/>
+    <div className="header__logo">
+      <div className="header__logo-contenedor">
+        <img className="header__logo" src={Logo} alt="Buenaventura tax logo" />
+      </div>
+    </div>
     <nav className="header__menu">
       <ul className="header__menu-lista">
         <li className="header__item">

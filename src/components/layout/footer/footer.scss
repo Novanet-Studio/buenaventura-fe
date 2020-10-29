@@ -1,0 +1,42 @@
+@import "../../../assets/scss/styles.scss";
+
+.footer {
+  @include flex;
+  margin-bottom: 5vh;
+  & > div,
+  & > p {
+   @include flex;
+  }
+  &__rsss {
+    flex: 1 0 0;
+    justify-content: flex-start;
+  }
+  &__item {
+   @include flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex: 1 1 0;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url(../../../assets/images/rrss-bg.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 0.8rem;
+    svg {
+      color: $verde-a;
+      margin-left: 0.5vh;
+    }
+  }
+  &__logo-novanet {
+    width: 5vw;
+    @include flex;
+    align-content: center;
+    margin-left: 0.5vh;
+  }
+  &__copy {
+    align-content: center;
+    flex: 5 0 0;
+    font-size: 0.9rem;
+  }
+}
