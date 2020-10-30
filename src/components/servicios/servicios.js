@@ -22,17 +22,16 @@ const Servicios = () => {
 
   return (
     <section className="servicios">
-      <h2 className="servicios__titulo">
+      <h2 className="titulo">
         {adicionales.content.principal.titulo}
       </h2>
-      <p className="servicios__descripcion">
+      <p className="descripcion">
         {adicionales.content.principal.descripcion}
       </p>
       <ul className="servicios__lista">
         {adicionales.content.servicios.map((servicio, index) => (
           <li className="servicios__contenido" key={servicio.id}>
             <img
-              style={{ width: "200px", height: "200px" }}
               className="servicios__icono"
               src={strapiServiciosAdicionales.iconos[index].url}
               alt="icono servicio"

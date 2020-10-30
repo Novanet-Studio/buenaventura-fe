@@ -1,0 +1,16 @@
+@import "../../assets/scss/styles.scss";
+
+.especialidades {
+  & > div {
+    @include flex;
+    @include col-igual;
+  }
+  .gatsby-image-wrapper,
+  &__contenido {
+    @include col-igual;
+  }
+  &__contenido {
+     @include flex-column-center;
+    padding-left: 2vh;
+  }
+}

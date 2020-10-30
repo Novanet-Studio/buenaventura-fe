@@ -18,36 +18,22 @@ const Nosotros = () => {
       }
     `
   )
-
   return (
     <section className="nosotros">
-      <article className="contenedor contenedor--izq">
-        <h2 className="nosotros__titulo">
-          {nosotros.content.principal.titulo}
-        </h2>
-        <p className="nosotros__descripcion-corta">
-          {nosotros.content.principal.descripcion}
-        </p>
-        <h3 className="nosotros__subtitulo">Lorem, ipsum dolor</h3>
-        <p className="nosotros__subdescripcion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ipsum.
-          Accusamus dolores delectus laboriosam beatae eveniet. Consequatur
-          numquam deserunt illo.
-        </p>
-      </article>
-      <article className="contenedor contenedor--der">
+      <div className="contenedor--izq">
+        <h2 className="titulo">{nosotros.content.principal.titulo}</h2>
+        <p className="descripcion">{nosotros.content.principal.descripcion}</p>
+      </div>
+      <div className="contenedor--der">
         <div className="guia">
           <h3 className="guia__titulo">{nosotros.content.atributos_titulo}</h3>
-          <p className="guia__descripcion">
+          <p className="descripcion">
             {nosotros.content.atributos_descripcion}
           </p>
           <ul className="guia__lista">
             {nosotros.content.atributos_lista.map((item, index) => (
               <li className="guia__item" key={item.id}>
-                <img
-                  style={{ background: "red" }}
-                  width="500"
-                  height="500"
+                <img                  
                   src={strapiNosotros.iconos[index].url}
                   alt="icono like"
                   className="guia__icono"
@@ -56,11 +42,8 @@ const Nosotros = () => {
               </li>
             ))}
           </ul>
-          <p className="guia__texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed.
-          </p>
         </div>
-      </article>
+      </div>
     </section>
   )
 }

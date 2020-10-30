@@ -27,16 +27,16 @@ const Contacto = () => {
   )
   return (
     <section className="contacto">
-      <h2 className="contact__titulo">{contacto.content.principal.titulo}</h2>
-      <p className="contacto__descripcion">
-        {contacto.content.principal.descripcion}
-      </p>
-      <div className="contacto__fila">
+      <h2 className="titulo">{contacto.content.principal.titulo}</h2>
+      <p className="descripcion">{contacto.content.principal.descripcion}</p>
+      <div className="contenedor--izq">
         <Img
           className="imagen"
           fluid={strapiContacto.imagen.localFile.childImageSharp.fluid}
           alt="lapicero rojo"
         />
+      </div>
+      <div className="contenedor--der">
         <form className="contact__formulario">
           <div className="contacto__formulario-grupo">
             <input
@@ -62,9 +62,9 @@ const Contacto = () => {
               className="contacto__input"
             />
           </div>
-          <input type="textarea" className="contacto__textarea" />
-          <button className="boton">
-            <p className="boton__texto">Enviar información</p>
+          <input type="textarea" placeholder="Mensaje" className="contacto__textarea" />
+          <button className="button">
+            <p className="button__texto">Enviar información</p>
           </button>
         </form>
       </div>

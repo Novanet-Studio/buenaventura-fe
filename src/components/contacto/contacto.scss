@@ -1,0 +1,29 @@
+@import "../../assets/scss/styles.scss";
+
+.contacto {
+  & > div {
+    @include flex-column-center;
+  }
+  .gatsby-image-wrapper {
+    width: 100%;
+  }
+  .contenedor--izq {
+    @include col-1-4;
+  }
+  .contenedor--der {
+    @include col-3-4;
+  }
+  &__formulario-grupo {
+    @include flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+  }
+  input[type="text"],
+  input[type="email"] {
+    @include col-1-2;
+  }
+  input[type="textarea"] {
+    width: 100%;
+  }
+}

@@ -2,9 +2,10 @@
 
 .header {
   height: 25vh;
+  padding: 4vh;
   & > div,
   & > nav {
-   @include flex;
+    @include flex;
   }
   &__logo-contenedor {
     width: 11vw;

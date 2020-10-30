@@ -1,0 +1,16 @@
+@import "../../assets/scss/styles.scss";
+
+.inicio {
+  & > div {
+    @include flex-column-center;    
+  }
+  .contenedor--izq {
+    @include col-3-5; 
+  }
+  .contenedor--der {
+    @include col-2-5; 
+  }
+  .gatsby-image-wrapper {
+    width: 100%;
+  } 
+}

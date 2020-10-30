@@ -27,24 +27,19 @@ const Inicio = () => {
   )
   return (
     <section className="inicio">
-      <article className="contenedor contenedor--izq">
-        <h1 className="inicio__titulo">
-          {principal.content.principal.titulo}
-        </h1>
-        <p className="inicio__descripcion">
-          {principal.content.principal.descripcion}
-        </p>
+      <div className="contenedor--izq">
+        <h1 className="titulo">{principal.content.principal.titulo}</h1>
+        <p className="descripcion">{principal.content.principal.descripcion}</p>
         <button className="button">
           <p className="button__texto">{principal.content.cta_titulo}</p>
         </button>
-      </article>
-      <article className="contenedor contenedor--der">
+      </div>
+      <div className="contenedor--der">
         <Img
-          className="imagen"
           fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
           alt="dos personas sentadas conversando"
         />
-      </article>
+      </div>
     </section>
   )
 }

@@ -1,0 +1,52 @@
+@import "../../assets/scss/styles.scss";
+
+.servicios {
+  & > div {
+    @include flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  h3 {
+    width: fit-content;
+    padding-bottom: 1vh;
+  }
+  &__lista {
+    width: 100%;
+    @include flex;
+    list-style: none;
+    margin-top: 4vh;
+    justify-content: space-between;
+  }
+  &__icono {
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 0.5vh;
+  }
+  &__contenido {
+    @include col-3-3;
+    ul {
+      list-style-type: none;  
+      margin-top: 2vh;
+      & > li {
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 2vh;
+        &:nth-child(odd) {
+          @include servicios-lista-fondo(white);
+        }
+        &:nth-child(even) {
+          @include servicios-lista-fondo($gris-b);
+        }
+      }      
+    }
+    &:nth-child(1) {
+      @include servicios-color($verde-b);
+    }
+    &:nth-child(2) {
+      @include servicios-color($verde-c);
+    }
+    &:nth-child(3) {
+      @include servicios-color($verde-d);
+    }
+  }
+}

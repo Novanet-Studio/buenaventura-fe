@@ -1,0 +1,64 @@
+@import "../../assets/scss/styles.scss";
+
+.nosotros {
+  & > div {
+    @include flex;
+  }
+  .contenedor--izq {
+    @include col-igual;
+    @include flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contenedor--der {
+    @include col-igual;
+  }
+  .guia {
+    &__lista {
+      @include flex-column-center;
+      margin-top: 2vh;
+    }
+    &__item {
+      @include flex;
+      flex-wrap: wrap;
+      width: fit-content;
+      margin-bottom: 2vh;
+      &:nth-child(1),
+      &:nth-child(4) {
+        @include nosotros-icono-color($verde-b);
+      }
+      &:nth-child(2),
+      &:nth-child(5) {
+        @include nosotros-icono-color($verde-c);
+      }
+      &:nth-child(3) {
+        @include nosotros-icono-color($verde-d);
+      }
+    }
+    &__subtitulo {
+      @include flex-column-center;
+      padding-left: 1vh;
+    }
+    &__icono {
+      width: 2vw;
+      height: 2vw;
+      padding: 0.5vh;
+      background-color: $verde-d;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+  .nosotros {
+    .guia {
+      &__lista {
+        @include flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      &__item {
+        flex: 0 0 49%;
+      }
+    }
+  }
+}

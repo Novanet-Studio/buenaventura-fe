@@ -28,30 +28,25 @@ const Especialidades = () => {
   )
   return (
     <section className="especialidades">
-      <h2 className="especialidades__titulo">
+      <h2 className="titulo">
         {servicios.content.principal.titulo}
       </h2>
-      <p className="especialidades__descripcion">
+      <p className="descripcion">
         {servicios.content.principal.descripcion}
       </p>
       {servicios.content.especialidades.map((especialidad, index) => (
-        <article
+        <div
           className={`contenedor contenedor--${index > 0 ? "der" : "izq"}`}
           key={especialidad.id}
         >
           <Img
-            className="imagen"
             fluid={
               strapiServicios.imagenes[index].localFile.childImageSharp.fluid
             }
           />
-          <img src="" alt="calculadora en mesa" className="imagen" />
           <div className="especialidades__contenido">
             <h3 className="especialidades__subtitulo">{especialidad.nombre}</h3>
-            {/* Testing showing the data into list */}
-            <ul>
-              site
-              {/* Aún no sé como representaran esta parte en la página */}
+            {/* <ul>
               {(index === 0 &&
                 servicios.content.lista
                   .filter(item => item.especialidad === "contabilidad")
@@ -69,12 +64,12 @@ const Especialidades = () => {
                       <ReactMarkdown source={item.items} escapeHtml={false} />
                     </li>
                   ))}
-            </ul>
-            <button className="boton">
-              <p className="boton__texto">Leer más</p>
+            </ul> */}
+            <button className="button">
+              <p className="button__texto">Leer más</p>
             </button>
           </div>
-        </article>
+        </div>
       ))}
     </section>
   )
