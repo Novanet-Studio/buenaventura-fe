@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
+import Modal from "../modal"
 import "./especialidades.scss"
 
 const Especialidades = () => {
+  const [target, setTarget] = useState("")
   const {
     messages: { servicio: servicios },
   } = useIntl()
@@ -65,12 +67,17 @@ const Especialidades = () => {
                     </li>
                   ))}
             </ul> */}
-            <button className="button">
+            <button className="button" onClick={() => setTarget(especialidad.id)}>
               <p className="button__texto">Leer más</p>
             </button>
           </div>
         </div>
       ))}
+      <Modal
+        id={target}
+        data={servicios.content.especialidades}
+        onClose={() => setTarget("")}
+      />
     </section>
   )
 }
