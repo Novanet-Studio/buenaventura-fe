@@ -2,7 +2,7 @@ import React from "react"
 // import ReactMarkdown from "react-markdown"
 import "./modal.scss"
 
-const Modal = ({ data, id, onClose }) =>
+const Modal = ({ data, index,  id, onClose }) =>
   data.map(
     item =>
       item.id === id && (
@@ -10,12 +10,26 @@ const Modal = ({ data, id, onClose }) =>
           <div className="modal__content">
             <button onClick={onClose}>&times;</button>
             <div className="modal__body">
-              <h2 className="modal__title">{item.nombre}</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-                eos incidunt tempora necessitatibus explicabo non illo atque
-                libero tenetur minima.
-              </p>
+              {/* <ul>
+                {(index === 0 &&
+                  servicios.content.lista
+                    .filter(item => item.especialidad === "contabilidad")
+                    .map((item, id) => (
+                      <li key={item.id}>
+                        <h4>{item.titulo}</h4>
+                        <ReactMarkdown source={item.items} escapeHtml={false} />
+                      </li>
+                    ))) ||
+                  servicios.content.lista
+                    .filter(item => item.especialidad === "rrhh")
+                    .map(item => (
+                      <li key={item.id}>
+                        <h4>{item.titulo}</h4>
+                        <ReactMarkdown source={item.items} escapeHtml={false} />
+                      </li>
+                    ))}
+              </ul> */}
+              {console.log(data, index, id)}
             </div>
           </div>
         </div>

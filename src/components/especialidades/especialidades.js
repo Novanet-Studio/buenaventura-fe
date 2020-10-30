@@ -30,12 +30,8 @@ const Especialidades = () => {
   )
   return (
     <section className="especialidades">
-      <h2 className="titulo">
-        {servicios.content.principal.titulo}
-      </h2>
-      <p className="descripcion">
-        {servicios.content.principal.descripcion}
-      </p>
+      <h2 className="titulo">{servicios.content.principal.titulo}</h2>
+      <p className="descripcion">{servicios.content.principal.descripcion}</p>
       {servicios.content.especialidades.map((especialidad, index) => (
         <div
           className={`contenedor contenedor--${index > 0 ? "der" : "izq"}`}
@@ -67,17 +63,21 @@ const Especialidades = () => {
                     </li>
                   ))}
             </ul> */}
-            <button className="button" onClick={() => setTarget(especialidad.id)}>
+            <button
+              className="button"
+              onClick={() => setTarget(especialidad.id)}
+            >
               <p className="button__texto">Leer más</p>
             </button>
           </div>
+          <Modal
+            id={target}
+            data={servicios.content.especialidades}
+            index={index}
+            onClose={() => setTarget("")}
+          />
         </div>
       ))}
-      <Modal
-        id={target}
-        data={servicios.content.especialidades}
-        onClose={() => setTarget("")}
-      />
     </section>
   )
 }
