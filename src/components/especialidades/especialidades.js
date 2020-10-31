@@ -44,25 +44,6 @@ const Especialidades = () => {
           />
           <div className="especialidades__contenido">
             <h3 className="especialidades__subtitulo">{especialidad.nombre}</h3>
-            {/* <ul>
-              {(index === 0 &&
-                servicios.content.lista
-                  .filter(item => item.especialidad === "contabilidad")
-                  .map((item, id) => (
-                    <li key={item.id}>
-                      <h4>{item.titulo}</h4>
-                      <ReactMarkdown source={item.items} escapeHtml={false} />
-                    </li>
-                  ))) ||
-                servicios.content.lista
-                  .filter(item => item.especialidad === "rrhh")
-                  .map(item => (
-                    <li key={item.id}>
-                      <h4>{item.titulo}</h4>
-                      <ReactMarkdown source={item.items} escapeHtml={false} />
-                    </li>
-                  ))}
-            </ul> */}
             <button
               className="button"
               onClick={() => setTarget(especialidad.id)}
@@ -73,7 +54,7 @@ const Especialidades = () => {
           <Modal
             id={target}
             data={servicios.content.especialidades}
-            index={index}
+            list={servicios.content.lista}
             onClose={() => setTarget("")}
           />
         </div>
