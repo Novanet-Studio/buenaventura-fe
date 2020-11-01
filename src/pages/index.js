@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-
 import Inicio from "../components/inicio"
 import Nosotros from "../components/nosotros"
 import Especialidades from "../components/especialidades"

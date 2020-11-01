@@ -5,6 +5,9 @@
 /* Contenedores principales
      ========================================================================== */
 
+html {
+}
+
 body {
   font-family: "Montserrat";
   font-weight: 300;
@@ -12,13 +15,11 @@ body {
 }
 
 #___gatsby {
-  background-image: url(../images/bg-desk.jpg);
+   background-image: url(../images/bg-desk.jpg);
   background-position: center center;
 }
 
 .contenedor-principal {
-  width: 100vw;
-  height: 100vh;
   position: relative;
   & > header,
   & > footer {
@@ -32,16 +33,14 @@ body {
     @include flex;
     .contenedor--izq,
     .contenedor--der {
-      padding: 2vh;
+      @include flex;
+      padding: 2vh 2vh 2vh 0;
     }
   }
 }
 
-main {
-  margin-bottom: 14vh;
-}
-
 .titulo {
+  height: fit-content;
   padding-bottom: 1vh;
   border-bottom: 3px solid $verde-c;
 }
@@ -77,7 +76,7 @@ button {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.35); /* Black w/ opacity */
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -87,6 +86,7 @@ button {
 
 @media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
   .contenedor-principal {
+    @include flex;
     max-width: 1280px;
     margin: 0 auto;
     /* padding: 0 1.5vw; */
@@ -94,13 +94,17 @@ button {
       padding-left: 20%;
     }
   }
-  .contenedor-layout {
+  .contenedor-layout {   
+    height: 55vh;
+    overflow-y: hidden;    
     & > section {
-      margin-top: 8vh;
-      margin-bottom: 8vh;
+      height: 55vh;
       padding-left: 20%;
+      
+
     }
   }
+
   /* Tipografía
     ========================================================================== */
 

@@ -26,7 +26,7 @@ const Inicio = () => {
     `
   )
   return (
-    <section className="inicio">
+    <section id="Inicio" className="inicio">
       <div className="contenedor--izq">
         <h1 className="titulo">{principal.content.principal.titulo}</h1>
         <p className="descripcion">{principal.content.principal.descripcion}</p>

@@ -20,6 +20,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.14",
     "gatsby-plugin-sharp": "^2.6.32",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-source-filesystem": "^2.3.28",
     "gatsby-source-strapi": "git+https://github.com/denisgoryaynov/gatsby-source-strapi.git#build",

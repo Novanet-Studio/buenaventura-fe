@@ -1,17 +1,23 @@
 @import "../../../assets/scss/styles.scss";
 
 .header {
-  height: 25vh;
   padding: 4vh;
-  & > div,
-  & > nav {
-    @include flex;
+  width: 100%;
+  .contenedor-principal {
+    & > div,
+    & > nav {
+      @include flex;
+    }
   }
+
   &__logo-contenedor {
     width: 11vw;
     height: 11vw;
     padding: 4vh 3vh;
     background-color: $verde-a;
+    a {
+      cursor: pointer;
+    }
   }
   &__logo {
     justify-content: flex-start;
@@ -31,13 +37,23 @@
         flex: 1 1 1;
         padding: 1.5vh 4vh;
         background-color: $verde-b;
-        a {
+        button {
           text-decoration: none;
           color: white;
           font-size: 0.9rem;
           font-weight: 400;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+          background-color: transparent;
         }
       }
     }
+  }
+}
+
+@media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    height: 30vh;
   }
 }

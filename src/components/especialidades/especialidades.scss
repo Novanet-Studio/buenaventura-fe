@@ -5,6 +5,11 @@
     @include flex;
     @include col-igual;
   }
+  .gatsby-image-wrapper {
+    img {
+      height: auto !important;
+    }
+  }
   .gatsby-image-wrapper,
   &__contenido {
     @include col-igual;

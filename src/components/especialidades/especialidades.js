@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
-import ReactMarkdown from "react-markdown"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
 import Modal from "../modal"
@@ -29,7 +28,7 @@ const Especialidades = () => {
     `
   )
   return (
-    <section className="especialidades">
+    <section id="Especialidades" className="especialidades">
       <h2 className="titulo">{servicios.content.principal.titulo}</h2>
       <p className="descripcion">{servicios.content.principal.descripcion}</p>
       {servicios.content.especialidades.map((especialidad, index) => (

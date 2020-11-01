@@ -21,13 +21,9 @@ const Servicios = () => {
   )
 
   return (
-    <section className="servicios">
-      <h2 className="titulo">
-        {adicionales.content.principal.titulo}
-      </h2>
-      <p className="descripcion">
-        {adicionales.content.principal.descripcion}
-      </p>
+    <section id="Servicios" className="servicios">
+      <h2 className="titulo">{adicionales.content.principal.titulo}</h2>
+      <p className="descripcion">{adicionales.content.principal.descripcion}</p>
       <ul className="servicios__lista">
         {adicionales.content.servicios.map((servicio, index) => (
           <li className="servicios__contenido" key={servicio.id}>

@@ -5,11 +5,13 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Layout = ({ children }) => (
-  <div className="contenedor-principal">
+  <>
     <Header />
-    <main className="contenedor-layout">{children}</main>
+    <div className="contenedor-principal">
+      <main className="contenedor-layout">{children}</main>      
+    </div>
     <Footer />
-  </div>
+  </>
 )
 
 Layout.propTypes = {

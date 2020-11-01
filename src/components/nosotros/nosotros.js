@@ -19,7 +19,7 @@ const Nosotros = () => {
     `
   )
   return (
-    <section className="nosotros">
+    <section id="Nosotros" className="nosotros">
       <div className="contenedor--izq">
         <h2 className="titulo">{nosotros.content.principal.titulo}</h2>
         <p className="descripcion">{nosotros.content.principal.descripcion}</p>
@@ -33,7 +33,7 @@ const Nosotros = () => {
           <ul className="guia__lista">
             {nosotros.content.atributos_lista.map((item, index) => (
               <li className="guia__item" key={item.id}>
-                <img                  
+                <img
                   src={strapiNosotros.iconos[index].url}
                   alt="icono like"
                   className="guia__icono"

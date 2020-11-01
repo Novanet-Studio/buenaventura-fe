@@ -26,7 +26,7 @@ const Contacto = () => {
     `
   )
   return (
-    <section className="contacto">
+    <section id="Contacto" className="contacto">
       <h2 className="titulo">{contacto.content.principal.titulo}</h2>
       <p className="descripcion">{contacto.content.principal.descripcion}</p>
       <div className="contenedor--izq">
@@ -62,7 +62,11 @@ const Contacto = () => {
               className="contacto__input"
             />
           </div>
-          <input type="textarea" placeholder="Mensaje" className="contacto__textarea" />
+          <input
+            type="textarea"
+            placeholder="Mensaje"
+            className="contacto__textarea"
+          />
           <button className="button">
             <p className="button__texto">Enviar información</p>
           </button>

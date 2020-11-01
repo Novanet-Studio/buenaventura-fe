@@ -10,42 +10,43 @@ library.add(fab)
 
 const Footer = () => (
   <footer className="footer">
-    <div className="footer__rsss">
-      <div className="footer__item">
-        <FontAwesomeIcon
-          className="footer__link"
-          icon={["fab", "linkedin-in"]}
-          fixedWidth
-          size="1x"
-        />
+    <div className="contenedor-principal">
+      <div className="footer__rsss">
+        <div className="footer__item">
+          <FontAwesomeIcon
+            className="footer__link"
+            icon={["fab", "linkedin-in"]}
+            fixedWidth
+            size="1x"
+          />
+        </div>
+        <div className="footer__item">
+          <FontAwesomeIcon
+            className="footer__link"
+            icon={["fab", "instagram"]}
+            fixedWidth
+            size="1x"
+          />
+        </div>
+        <div className="footer__item">
+          <FontAwesomeIcon
+            className="footer__link"
+            icon={["fab", "twitter"]}
+            fixedWidth
+            size="1x"
+          />
+        </div>
       </div>
-      <div className="footer__item">
-        <FontAwesomeIcon
-          className="footer__link"
-          icon={["fab", "instagram"]}
-          fixedWidth
-          size="1x"
-        />
-      </div>
-      <div className="footer__item">
-        <FontAwesomeIcon
-          className="footer__link"
-          icon={["fab", "twitter"]}
-          fixedWidth
-          size="1x"
-        />
-      </div>
+      <p className="footer__copy">
+        © Derechos reservados {new Date().getFullYear()} | Diseñado por:<a href="https://novanet.studio" target="_blank" rel="noreferrer">
+          <img
+            className="footer__logo-novanet"
+            src={Novanet}
+            alt="logo-novanet"
+          />
+        </a>
+      </p>
     </div>
-    <p className="footer__copy">
-      © Derechos reservados {new Date().getFullYear()} | Diseñado por:{" "}
-      <a href="https://novanet.studio" target="_blank" rel="noreferrer">
-        <img
-          className="footer__logo-novanet"
-          src={Novanet}
-          alt="logo-novanet"
-        />
-      </a>
-    </p>
   </footer>
 )
 
