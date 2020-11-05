@@ -3,7 +3,6 @@
 .especialidades {
   & > div {
     @include flex;
-    @include col-igual;
   }
   .gatsby-image-wrapper {
     img {
@@ -15,7 +14,25 @@
     @include col-igual;
   }
   &__contenido {
-     @include flex-column-center;
+    @include flex-column-center;
     padding-left: 2vh;
+  }
+}
+
+@include responsive-orientation(320px, portrait) {
+  .especialidades {    
+    .gatsby-image-wrapper {
+      img {
+        padding: 2vh;
+      }
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .especialidades {
+    & > div {
+      @include col-igual;
+    }
   }
 }

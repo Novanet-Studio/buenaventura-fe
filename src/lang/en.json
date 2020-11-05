@@ -1,6 +1,12 @@
 {
   "static": {
-    "lang": "en"
+    "lang": "en",
+    "nav": {
+      "botonA": "About us",
+      "botonB": "Our services",
+      "botonC": "Invoiced services",
+      "botonD": "Contact"
+    }
   },
   "principal": {
     "content": {

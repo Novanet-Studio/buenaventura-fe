@@ -7,23 +7,48 @@
   .gatsby-image-wrapper {
     width: 100%;
   }
-  .contenedor--izq {
-    @include col-1-4;
-  }
-  .contenedor--der {
-    @include col-3-4;
-  }
+
   &__formulario-grupo {
     @include flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 2vh;
-  }
-  input[type="text"],
-  input[type="email"] {
-    @include col-1-2;
   }
   input[type="textarea"] {
     width: 100%;
+  }
+}
+
+@include responsive-orientation(320px, portrait) {
+  .contacto {
+    .gatsby-image-wrapper {
+      width: 65%;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+    input[type="textarea"] {
+      height: 15vh;
+      position: relative;
+      &::placeholder {
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .contacto {
+    & > div {
+      .contenedor--izq,
+      .contenedor--der {
+      }
+    }
+    input[type="text"],
+    input[type="email"] {
+      @include col-1-2;
+    }
+    &__formulario-grupo {
+      padding-bottom: 2vh;
+    }
   }
 }

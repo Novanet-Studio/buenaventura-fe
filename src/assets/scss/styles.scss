@@ -15,15 +15,23 @@ body {
 }
 
 #___gatsby {
-   background-image: url(../images/bg-desk.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg-desk.jpg);
   background-position: center center;
 }
 
 .contenedor-principal {
+  @include flex;
   position: relative;
+  padding: 2vh;
   & > header,
   & > footer {
     @include flex;
+  }
+  & > section > .contenedor--der,
+  .contenedor--izq {
+    width: 100%;
   }
 }
 
@@ -84,9 +92,33 @@ button {
   animation-duration: 200ms;
 }
 
-@media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+@include responsive-orientation(320px, portrait) {
   .contenedor-principal {
-    @include flex;
+  }
+  .contenedor-layout {
+    & > section {
+      .contenedor--izq {
+        width: 100%;
+      }
+      .contenedor--der {
+        width: 100%;
+        @include flex;
+        .gatsby-image-wrapper {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  button {
+    .button__texto {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .contenedor-principal {
     max-width: 1280px;
     margin: 0 auto;
     /* padding: 0 1.5vw; */
@@ -94,14 +126,12 @@ button {
       padding-left: 20%;
     }
   }
-  .contenedor-layout {   
+  .contenedor-layout {
     height: 55vh;
-    overflow-y: hidden;    
+    overflow-y: hidden;
     & > section {
-      height: 55vh;
+      height: 100%;
       padding-left: 20%;
-      
-
     }
   }
 

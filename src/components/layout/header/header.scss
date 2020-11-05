@@ -1,19 +1,15 @@
 @import "../../../assets/scss/styles.scss";
 
 .header {
-  padding: 4vh;
   width: 100%;
+  box-sizing: border-box;
   .contenedor-principal {
     & > div,
     & > nav {
       @include flex;
     }
   }
-
   &__logo-contenedor {
-    width: 11vw;
-    height: 11vw;
-    padding: 4vh 3vh;
     background-color: $verde-a;
     a {
       cursor: pointer;
@@ -22,20 +18,14 @@
   &__logo {
     justify-content: flex-start;
     align-content: flex-end;
-    flex: 1 0 0;
   }
   &__menu {
-    flex: 4 0 0;
-    flex-direction: column;
-    justify-content: flex-end;
     ul {
       list-style-type: none;
       display: flex;
       justify-content: flex-start;
       li {
         width: fit-content;
-        flex: 1 1 1;
-        padding: 1.5vh 4vh;
         background-color: $verde-b;
         button {
           text-decoration: none;
@@ -52,8 +42,42 @@
   }
 }
 
-@media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+@include responsive-orientation(320px, portrait) {
+  .header {    
+    &__logo-contenedor {
+      width: 30vw;
+      height: 30vw;
+      padding: 4vh 3vh;
+    }
+    &__menu {
+      /* display: none !important; */
+    }
+  }
+}
+
+@include responsive(1280px) {
   .header {
     height: 30vh;
+    padding: 4vh;
+    &__logo-contenedor {
+      width: 11vw;
+      height: 11vw;
+      padding: 4vh 3vh;
+    }
+    &__logo {
+      flex: 1 0 0;
+      justify-content: center;
+    }
+    &__menu {
+      flex: 4 0 0;
+      flex-direction: column;
+      justify-content: flex-end;
+      ul {
+        li {
+          flex: 1 1 1;
+          padding: 1.5vh 4vh;
+        }
+      }
+    }
   }
 }

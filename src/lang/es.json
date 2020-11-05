@@ -1,6 +1,12 @@
 {
   "static": {
-    "lang": "es"
+    "lang": "es",
+    "nav": {
+      "botonA": "Nosotros",
+      "botonB": "Especialidades",
+      "botonC": "Servicios adicionales",
+      "botonD": "Contacto"
+    }
   },
   "principal": {
     "content": {

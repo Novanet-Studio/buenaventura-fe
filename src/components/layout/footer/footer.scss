@@ -1,8 +1,6 @@
 @import "../../../assets/scss/styles.scss";
 
 .footer {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
   width: 100%;
   & > div,
   & > p {
@@ -10,16 +8,11 @@
   }
   &__rsss {
     @include flex;
-    flex: 1 0 0;
-    justify-content: flex-start;
   }
   &__item {
     @include flex;
     justify-content: flex-start;
     align-content: center;
-    flex: 1 1 0;
-    width: 2vw;
-    height: 2vw;
     background-image: url(../../../assets/images/rrss-bg.svg);
     background-size: contain;
     background-position: left center;
@@ -27,25 +20,64 @@
     font-size: 0.8rem;
     svg {
       color: $verde-a;
-      margin-left: 1vh;
     }
   }
   &__logo-novanet {
-    width: 5vw;
     @include flex;
     align-content: center;
-    margin-left: 0.5vh;
   }
   &__copy {
     @include flex;
-    align-content: center;
-    flex: 5 0 0;
-    font-size: 0.9rem;
+    align-content: center;    
   }
 }
 
-@media only screen and (min-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+@include responsive-orientation(320px, portrait) {
   .footer {
-    height: 15vh;
+    &__item {
+      width: 7vw;
+      height: 7vw;
+      margin-right: 1.5vh;
+      svg {
+        margin-left: 0.75vh;
+      }
+    }
+    &__copy {
+      font-size: 0.75rem;
+    }
+    &__logo-novanet {
+      width: 18vw;
+      margin-left: 0.5vh;
+    }
+    &__rsss {
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .footer {
+    height: 11vh;
+    &__rsss {
+      @include flex;
+      flex: 1 0 0;
+      justify-content: flex-start;
+    }
+    &__item {
+      flex: 1 1 0;
+      width: 2vw;
+      height: 2vw;
+      svg {
+        margin-left: 1vh;
+      }
+    }
+    &__copy {
+      flex: 5 0 0;
+      font-size: 0.9rem;
+    }
+    &__logo-novanet {
+      width: 5vw;
+      margin-left: 0.5vh;
+    }
   }
 }

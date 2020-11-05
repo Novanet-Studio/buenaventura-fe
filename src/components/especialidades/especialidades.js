@@ -33,7 +33,7 @@ const Especialidades = () => {
       <p className="descripcion">{servicios.content.principal.descripcion}</p>
       {servicios.content.especialidades.map((especialidad, index) => (
         <div
-          className={`contenedor contenedor--${index > 0 ? "der" : "izq"}`}
+          className={`contenedor--${index > 0 ? "der" : "izq"}`}
           key={especialidad.id}
         >
           <Img

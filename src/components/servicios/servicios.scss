@@ -23,21 +23,20 @@
     padding: 0.5vh;
   }
   &__contenido {
-    @include col-3-3;
     ul {
-      list-style-type: none;  
+      list-style-type: none;
       margin-top: 2vh;
       & > li {
         font-size: 0.9rem;
         font-weight: 400;
-        padding: 2vh;
+        padding: 1vh;
         &:nth-child(odd) {
           @include servicios-lista-fondo(white);
         }
         &:nth-child(even) {
           @include servicios-lista-fondo($gris-b);
         }
-      }      
+      }
     }
     &:nth-child(1) {
       @include servicios-color($verde-b);
@@ -47,6 +46,26 @@
     }
     &:nth-child(3) {
       @include servicios-color($verde-d);
+    }
+  }
+}
+
+@include responsive-orientation(320px, portrait) {
+  .servicios {
+    &__contenido {
+      margin-bottom: 4vh;
+    }
+    &__icono {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .servicios {
+    &__contenido {
+      @include col-3-3;
     }
   }
 }
