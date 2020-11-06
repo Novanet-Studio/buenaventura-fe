@@ -38,6 +38,9 @@
 
 @include responsive(1280px) {
   .contacto {
+    .gatsby-image-wrapper {
+      width: 100%;
+    }
     .contenedor--izq {
       @include col-1-4;
     }
