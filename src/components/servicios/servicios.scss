@@ -67,5 +67,9 @@
     &__contenido {
       @include col-3-3;
     }
+    &__icono {
+      width: 2.5vw;
+      height: 2.5vw;
+    }
   }
 }

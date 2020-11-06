@@ -38,16 +38,20 @@
 
 @include responsive(1280px) {
   .contacto {
-    & > div {
-      .contenedor--izq,
-      .contenedor--der {
-      }
+    .contenedor--izq {
+      @include col-1-4;
+    }
+    .contenedor--der {
+      @include col-3-4;
     }
     input[type="text"],
     input[type="email"] {
       @include col-1-2;
+      margin-bottom: 0;
     }
     &__formulario-grupo {
+      flex-direction: row;
+      justify-content: space-between;
       padding-bottom: 2vh;
     }
   }

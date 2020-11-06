@@ -6,6 +6,23 @@
       "botonB": "Especialidades",
       "botonC": "Servicios adicionales",
       "botonD": "Contacto"
+    },
+    "footer": {
+      "legal": "© Derechos reservados",
+      "autor": " | Diseñado por:"
+    },
+    "boton": {
+      "texto": "Leer más"
+    },
+    "contacto": {
+      "boton": "Enviar mensaje",
+      "formulario": {
+        "nombrePlaceholder": "First name",
+        "apellidoPlaceholder": "Last name",
+        "telefonoPlaceholder": "Phone",
+        "correoPlaceholder": "email",
+        "mensajePlaceholder": "Message"
+      }
     }
   },
   "principal": {

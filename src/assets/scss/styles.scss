@@ -18,7 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(../images/bg-desk.jpg);
-  background-position: center center;
+  background-position: top right;
 }
 
 .contenedor-principal {
@@ -93,10 +93,15 @@ button {
 }
 
 @include responsive-orientation(320px, portrait) {
+  #___gatsby {
+    overflow-y: scroll;
+  }
+
   .contenedor-principal {
   }
   .contenedor-layout {
     & > section {
+      margin-bottom: 12vh;
       .contenedor--izq {
         width: 100%;
       }
@@ -130,6 +135,7 @@ button {
     height: 55vh;
     overflow-y: hidden;
     & > section {
+      margin-bottom: 0;
       height: 100%;
       padding-left: 20%;
     }

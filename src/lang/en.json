@@ -6,6 +6,23 @@
       "botonB": "Our services",
       "botonC": "Invoiced services",
       "botonD": "Contact"
+    },
+    "footer": {
+      "legal": "© All rights reserved ",
+      "autor": " | Designed by:"
+    },
+    "boton": {
+      "texto": "Learn more"
+    },
+    "contacto": {
+      "boton": "Send message",
+      "formulario": {
+        "nombrePlaceholder": "First name",
+        "apellidoPlaceholder": "Last name",
+        "telefonoPlaceholder": "Phone",
+        "correoPlaceholder": "Email",
+        "mensajePlaceholder": "Message"
+      }
     }
   },
   "principal": {

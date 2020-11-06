@@ -7,9 +7,7 @@ import "./especialidades.scss"
 
 const Especialidades = () => {
   const [target, setTarget] = useState("")
-  const {
-    messages: { servicio: servicios },
-  } = useIntl()
+  const intl = useIntl()
   const { strapiServicios } = useStaticQuery(
     graphql`
       query {
@@ -29,9 +27,9 @@ const Especialidades = () => {
   )
   return (
     <section id="Especialidades" className="especialidades">
-      <h2 className="titulo">{servicios.content.principal.titulo}</h2>
-      <p className="descripcion">{servicios.content.principal.descripcion}</p>
-      {servicios.content.especialidades.map((especialidad, index) => (
+      <h2 className="titulo">{intl.messages.servicio.content.principal.titulo}</h2>
+      <p className="descripcion">{intl.messages.servicio.content.principal.descripcion}</p>
+      {intl.messages.servicio.content.especialidades.map((especialidad, index) => (
         <div
           className={`contenedor--${index > 0 ? "der" : "izq"}`}
           key={especialidad.id}
@@ -47,13 +45,13 @@ const Especialidades = () => {
               className="button"
               onClick={() => setTarget(especialidad.id)}
             >
-              <p className="button__texto">Leer más</p>
+              <p className="button__texto">{intl.messages.static.boton.texto}{console.log(intl)}</p>
             </button>
           </div>
           <Modal
             id={target}
-            data={servicios.content.especialidades}
-            list={servicios.content.lista}
+            data={intl.messages.servicio.content.especialidades}
+            list={intl.messages.servicio.content.lista}
             onClose={() => setTarget("")}
           />
         </div>

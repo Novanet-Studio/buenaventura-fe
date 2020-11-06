@@ -5,9 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./servicios.scss"
 
 const Servicios = () => {
-  const {
-    messages: { serviciosAdicionale: adicionales },
-  } = useIntl()
+  const intl = useIntl()
   const { strapiServiciosAdicionales } = useStaticQuery(
     graphql`
       query ServiciosQuery {
@@ -22,10 +20,10 @@ const Servicios = () => {
 
   return (
     <section id="Servicios" className="servicios">
-      <h2 className="titulo">{adicionales.content.principal.titulo}</h2>
-      <p className="descripcion">{adicionales.content.principal.descripcion}</p>
+      <h2 className="titulo">{intl.messages.serviciosAdicionale.content.principal.titulo}</h2>
+      <p className="descripcion">{intl.messages.serviciosAdicionale.content.principal.descripcion}</p>
       <ul className="servicios__lista">
-        {adicionales.content.servicios.map((servicio, index) => (
+        {intl.messages.serviciosAdicionale.content.servicios.map((servicio, index) => (
           <li className="servicios__contenido" key={servicio.id}>
             <img
               className="servicios__icono"
