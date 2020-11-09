@@ -42,7 +42,8 @@ const Footer = () => {
           </div>
         </div>
         <p className="footer__copy">
-  {intl.messages.static.footer.legal} {new Date().getFullYear()} {intl.messages.static.footer.autor}
+          {intl.messages.static.footer.legal} {new Date().getFullYear()}{" "}
+          {intl.messages.static.footer.autor}
           <a href="https://novanet.studio" target="_blank" rel="noreferrer">
             <img
               className="footer__logo-novanet"

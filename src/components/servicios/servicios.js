@@ -20,20 +20,26 @@ const Servicios = () => {
 
   return (
     <section id="Servicios" className="servicios">
-      <h2 className="titulo">{intl.messages.serviciosAdicionale.content.principal.titulo}</h2>
-      <p className="descripcion">{intl.messages.serviciosAdicionale.content.principal.descripcion}</p>
+      <h2 className="titulo">
+        {intl.messages.serviciosAdicionale.content.principal.titulo}
+      </h2>
+      <p className="descripcion">
+        {intl.messages.serviciosAdicionale.content.principal.descripcion}
+      </p>
       <ul className="servicios__lista">
-        {intl.messages.serviciosAdicionale.content.servicios.map((servicio, index) => (
-          <li className="servicios__contenido" key={servicio.id}>
-            <img
-              className="servicios__icono"
-              src={strapiServiciosAdicionales.iconos[index].url}
-              alt="icono servicio"
-            />
-            <h3 className="servicios__contenido-titulo">{servicio.nombre}</h3>
-            <ReactMarkdown source={servicio.items} escapeHtml={false} />
-          </li>
-        ))}
+        {intl.messages.serviciosAdicionale.content.servicios.map(
+          (servicio, index) => (
+            <li className="servicios__contenido" key={servicio.id}>
+              <img
+                className="servicios__icono"
+                src={strapiServiciosAdicionales.iconos[index].url}
+                alt="icono servicio"
+              />
+              <h3 className="servicios__contenido-titulo">{servicio.nombre}</h3>
+              <ReactMarkdown source={servicio.items} escapeHtml={false} />
+            </li>
+          )
+        )}
       </ul>
     </section>
   )

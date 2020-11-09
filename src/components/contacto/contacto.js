@@ -43,30 +43,40 @@ const Contacto = () => {
           <div className="contacto__formulario-grupo">
             <input
               type="text"
-              placeholder={intl.messages.static.contacto.formulario.nombrePlaceholder}
+              placeholder={
+                intl.messages.static.contacto.formulario.nombrePlaceholder
+              }
               className="contacto__input"
             />
             <input
               type="text"
-              placeholder={intl.messages.static.contacto.formulario.apellidoPlaceholder}
+              placeholder={
+                intl.messages.static.contacto.formulario.apellidoPlaceholder
+              }
               className="contacto__input"
             />
           </div>
           <div className="contacto__formulario-grupo">
             <input
               type="text"
-              placeholder={intl.messages.static.contacto.formulario.telefonoPlaceholder}
+              placeholder={
+                intl.messages.static.contacto.formulario.telefonoPlaceholder
+              }
               className="contacto__input"
             />
             <input
               type="email"
-              placeholder={intl.messages.static.contacto.formulario.correoPlaceholder}
+              placeholder={
+                intl.messages.static.contacto.formulario.correoPlaceholder
+              }
               className="contacto__input"
             />
           </div>
           <input
             type="textarea"
-            placeholder={intl.messages.static.contacto.formulario.mensajePlaceholder}
+            placeholder={
+              intl.messages.static.contacto.formulario.mensajePlaceholder
+            }
             className="contacto__textarea"
           />
           <button className="button">

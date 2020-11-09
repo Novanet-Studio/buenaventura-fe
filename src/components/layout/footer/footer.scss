@@ -42,16 +42,16 @@
         margin-left: 0.75vh;
       }
     }
+    &__rsss {
+      margin-bottom: 2vh;      
+    }
     &__copy {
       font-size: 0.75rem;
     }
     &__logo-novanet {
       width: 18vw;
       margin-left: 0.5vh;
-    }
-    &__rsss {
-      margin-bottom: 2vh;
-    }
+    }    
   }
 }
 
@@ -72,7 +72,7 @@
       }
     }
     &__copy {
-      flex: 5 0 0;
+      flex: 4 0 0;
       font-size: 0.9rem;
     }
     &__logo-novanet {

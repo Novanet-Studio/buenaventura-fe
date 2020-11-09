@@ -74,7 +74,7 @@
 }
 
 @mixin responsive-orientation($min-device-width, $orientation) {
-  @media only screen and (min-device-width: $min-device-width) and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-device-width: $min-device-width) and (-webkit-min-device-pixel-ratio: 1) and (orientation: $orientation) {
     @content;
   }
 }

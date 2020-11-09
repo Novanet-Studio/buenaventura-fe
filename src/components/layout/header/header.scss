@@ -18,39 +18,76 @@
   &__logo {
     justify-content: flex-start;
     align-content: flex-end;
+    flex: 1 0 0;
   }
   &__menu {
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-start;
-      li {
-        width: fit-content;
-        background-color: $verde-b;
-        button {
-          text-decoration: none;
-          color: white;
-          font-size: 0.9rem;
-          font-weight: 400;
-          margin: 0;
-          padding: 0;
-          border-radius: 0;
-          background-color: transparent;
-        }
+    flex: 4 0 0;
+  }
+  &__lista {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__item {
+    justify-content: center;
+    align-content: center;
+
+    button {
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      background-color: $verde-b;
+      &:hover {
+        background-color: $verde-c;
+        transition: 0.5s;
+      }
+      &:focus {
+        background-color: $verde-c;
       }
     }
   }
 }
 
 @include responsive-orientation(320px, portrait) {
-  .header {    
+  .header {
+    z-index: 1;
+    position: fixed;
+    background-image: linear-gradient(180deg,rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,0));
     &__logo-contenedor {
-      width: 30vw;
-      height: 30vw;
-      padding: 4vh 3vh;
+      width: 27vw;
+      height: 27vw;
+      padding: 2vh 1.5vh;
+      box-sizing: border-box;
     }
-    &__menu {
-      /* display: none !important; */
+    &__lista {
+      @include flex;
+      align-content: flex-end;
+      margin-left: 1.5vh;
+    }
+    &__item {
+      button {
+        font-size: 0.8rem;
+        padding: 1vh;
+
+        background-color: transparent;
+        color: $gris-a;
+        font-weight: 500;
+        &:hover {
+          border-bottom: 1px solid $verde-c;
+          background-color: transparent;
+          transition: 0.5s;
+        }
+        &:focus {
+          border-bottom: 2px solid $verde-c;
+          background-color: transparent;
+          font-weight: 700;
+        }
+
+      }
     }
   }
 }
@@ -59,24 +96,28 @@
   .header {
     height: 30vh;
     padding: 4vh;
+    position: static;
     &__logo-contenedor {
       width: 11vw;
       height: 11vw;
       padding: 4vh 3vh;
     }
     &__logo {
-      flex: 1 0 0;
       justify-content: center;
     }
     &__menu {
-      flex: 4 0 0;
       flex-direction: column;
       justify-content: flex-end;
-      ul {
-        li {
-          flex: 1 1 1;
-          padding: 1.5vh 4vh;
-        }
+    }
+    &__item {
+      flex-direction: column;
+      justify-content: center;
+      flex: 1 1 1;
+      max-width: fit-content;
+      button {
+        font-size: 0.9rem;
+        padding: 2vh 4vh;
+        margin-right: 2vh;
       }
     }
   }

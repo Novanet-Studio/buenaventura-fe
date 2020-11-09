@@ -27,35 +27,46 @@ const Especialidades = () => {
   )
   return (
     <section id="Especialidades" className="especialidades">
-      <h2 className="titulo">{intl.messages.servicio.content.principal.titulo}</h2>
-      <p className="descripcion">{intl.messages.servicio.content.principal.descripcion}</p>
-      {intl.messages.servicio.content.especialidades.map((especialidad, index) => (
-        <div
-          className={`contenedor--${index > 0 ? "der" : "izq"}`}
-          key={especialidad.id}
-        >
-          <Img
-            fluid={
-              strapiServicios.imagenes[index].localFile.childImageSharp.fluid
-            }
-          />
-          <div className="especialidades__contenido">
-            <h3 className="especialidades__subtitulo">{especialidad.nombre}</h3>
-            <button
-              className="button"
-              onClick={() => setTarget(especialidad.id)}
-            >
-              <p className="button__texto">{intl.messages.static.boton.texto}{console.log(intl)}</p>
-            </button>
+      <h2 className="titulo">
+        {intl.messages.servicio.content.principal.titulo}
+      </h2>
+      <p className="descripcion">
+        {intl.messages.servicio.content.principal.descripcion}
+      </p>
+      {intl.messages.servicio.content.especialidades.map(
+        (especialidad, index) => (
+          <div
+            className={`contenedor--${index > 0 ? "der" : "izq"}`}
+            key={especialidad.id}
+          >
+            <Img
+              fluid={
+                strapiServicios.imagenes[index].localFile.childImageSharp.fluid
+              }
+            />
+            <div className="especialidades__contenido">
+              <h3 className="especialidades__subtitulo">
+                {especialidad.nombre}
+              </h3>
+              <button
+                className="button"
+                onClick={() => setTarget(especialidad.id)}
+              >
+                <p className="button__texto">
+                  {intl.messages.static.boton.texto}
+                  {console.log(intl)}
+                </p>
+              </button>
+            </div>
+            <Modal
+              id={target}
+              data={intl.messages.servicio.content.especialidades}
+              list={intl.messages.servicio.content.lista}
+              onClose={() => setTarget("")}
+            />
           </div>
-          <Modal
-            id={target}
-            data={intl.messages.servicio.content.especialidades}
-            list={intl.messages.servicio.content.lista}
-            onClose={() => setTarget("")}
-          />
-        </div>
-      ))}
+        )
+      )}
     </section>
   )
 }

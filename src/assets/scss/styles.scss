@@ -37,6 +37,7 @@ body {
 
 .contenedor-layout {
   @include flex;
+  padding-top: 0;
   & > section {
     @include flex;
     .contenedor--izq,
@@ -96,12 +97,9 @@ button {
   #___gatsby {
     overflow-y: scroll;
   }
-
-  .contenedor-principal {
-  }
-  .contenedor-layout {
+  .contenedor-layout {    
     & > section {
-      margin-bottom: 12vh;
+      padding-top: 20vh;
       .contenedor--izq {
         width: 100%;
       }

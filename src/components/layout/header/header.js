@@ -1,18 +1,11 @@
-import React, { useState } from "react"
+import React from "react"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import Logo from "../../../assets/images/buenaventura-tax-logo.svg"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
 
 const Header = () => {
-  let [linkPressed] = useState("")
-
   const intl = useIntl()
-
-  const toggleButton = e => {
-    /* linkPressed = document.querySelector(`#${e}`).parentElement
-    linkPressed.style.borderBottom = "3px solid #267a4f" */
-  }
 
   return (
     <header className="header">
@@ -30,13 +23,12 @@ const Header = () => {
           </div>
         </div>
         <nav className="header__menu">
-          <ul className="header__menu-lista">
+          <ul className="header__lista">
             <li className="header__item">
               <button
                 id="Nos"
                 onClick={e => {
                   scrollTo("#Nosotros")
-                  toggleButton(e.target.id)
                 }}
               >
                 {intl.messages.static.nav.botonA}
@@ -47,7 +39,6 @@ const Header = () => {
                 id="Esp"
                 onClick={e => {
                   scrollTo("#Especialidades")
-                  toggleButton(e.target.id)
                 }}
               >
                 {intl.messages.static.nav.botonB}
@@ -58,7 +49,6 @@ const Header = () => {
                 id="Ser"
                 onClick={e => {
                   scrollTo("#Servicios")
-                  toggleButton(e.target.id)
                 }}
               >
                 {intl.messages.static.nav.botonC}
@@ -69,7 +59,6 @@ const Header = () => {
                 id="Con"
                 onClick={e => {
                   scrollTo("#Contacto")
-                  toggleButton(e.target.id)
                 }}
               >
                 {intl.messages.static.nav.botonD}
