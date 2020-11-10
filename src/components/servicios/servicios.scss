@@ -1,12 +1,7 @@
 @import "../../assets/scss/styles.scss";
 
 .servicios {
-  & > div {
-    @include flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  h3 {
+  &__contenido-titulo {
     width: fit-content;
     padding-bottom: 1vh;
   }
@@ -23,11 +18,13 @@
     padding: 0.5vh;
   }
   &__contenido {
+    /* Este contenido está en el WYSYWYG de Strapi */
     ul {
       list-style-type: none;
       margin-top: 2vh;
       & > li {
         font-size: 0.9rem;
+        line-height: 1.15rem;
         font-weight: 400;
         padding: 1vh;
         &:nth-child(odd) {
@@ -58,6 +55,9 @@
     &__icono {
       width: 10vw;
       height: 10vw;
+    }
+    &__contenido-titulo {
+      line-height: 2rem;
     }
   }
 }

@@ -1,7 +1,8 @@
 @import "../../assets/scss/styles.scss";
 
 .nosotros {
-  & > div {
+  .contenedor--izq,
+  .contenedor--der  {
     @include flex;
   }
   .guia {
@@ -39,6 +40,9 @@
 
 @include responsive-orientation(320px, portrait) {
   .guia {
+    &__titulo {
+      margin-top: 3vh;
+    }
     &__icono {
       width: 7vw;
       height: 7vw;

@@ -1,37 +1,36 @@
 @import "../../assets/scss/styles.scss";
 
 .especialidades {
-  & > div {
+  .contenedor--izq,
+  .contenedor--der {
     @include flex;
   }
-  .gatsby-image-wrapper {
-    img {
-      height: auto !important;
-    }
-  }
-  .gatsby-image-wrapper,
-  &__contenido {
+  &__imagen {
     @include col-igual;
+    height: fit-content;
   }
   &__contenido {
     @include flex-column-center;
+    @include col-igual;
     padding-left: 2vh;
   }
 }
 
 @include responsive-orientation(320px, portrait) {
-  .especialidades {    
-    .gatsby-image-wrapper {
-      img {
-        padding: 2vh;
-      }
+  .especialidades {
+    &__subtitulo {
+      line-height: 1.2rem;
+    }
+    .descripcion {
+      margin-bottom: 3vh;
     }
   }
 }
 
 @include responsive(1280px) {
   .especialidades {
-    & > div {
+    .contenedor--izq,
+    .contenedor--der {
       @include col-igual;
     }
   }

@@ -30,8 +30,8 @@ const Inicio = () => {
       <div className="contenedor--izq">
         <h1 className="titulo">{principal.content.principal.titulo}</h1>
         <p className="descripcion">{principal.content.principal.descripcion}</p>
-        <button className="button">
-          <p className="button__texto">{principal.content.cta_titulo}</p>
+        <button className="boton">
+          <p className="boton__texto">{principal.content.cta_titulo}</p>
         </button>
       </div>
       <div className="contenedor--der">

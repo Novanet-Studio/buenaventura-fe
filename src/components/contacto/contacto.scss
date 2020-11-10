@@ -1,32 +1,42 @@
 @import "../../assets/scss/styles.scss";
 
 .contacto {
-  & > div {
+  .contenedor--izq,
+  .contenedor--der {
     @include flex-column-center;
   }
-  .gatsby-image-wrapper {
+  &__imagen {
     width: 100%;
   }
-
   &__formulario-grupo {
     @include flex;
   }
-  input[type="textarea"] {
+  &__input-text,
+  &__input-email {
+    font-size: 0.9rem;
+  }
+  &__textarea {
     width: 100%;
   }
 }
 
 @include responsive-orientation(320px, portrait) {
   .contacto {
-    .gatsby-image-wrapper {
+    &__imagen {
       width: 65%;
+      margin: 2vh 0 3vh 0;
     }
-    input[type="text"],
-    input[type="email"] {
+    &__input-text,
+    &__input-email,
+    &__textarea {
+      font-size: 0.8rem;
+    }
+    &__input-text,
+    &__input-email {
       width: 100%;
       margin-bottom: 2vh;
     }
-    input[type="textarea"] {
+    &__textarea {
       height: 15vh;
       position: relative;
       &::placeholder {
@@ -38,8 +48,8 @@
 
 @include responsive(1280px) {
   .contacto {
-    .gatsby-image-wrapper {
-      width: 100%;
+    &__imagen {
+      width: 92.5%;
     }
     .contenedor--izq {
       @include col-1-4;
@@ -47,8 +57,8 @@
     .contenedor--der {
       @include col-3-4;
     }
-    input[type="text"],
-    input[type="email"] {
+    &__input-text,
+    &__input-email {
       @include col-1-2;
       margin-bottom: 0;
     }

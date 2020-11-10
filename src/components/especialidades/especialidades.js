@@ -40,6 +40,7 @@ const Especialidades = () => {
             key={especialidad.id}
           >
             <Img
+              className="especialidades__imagen"
               fluid={
                 strapiServicios.imagenes[index].localFile.childImageSharp.fluid
               }
@@ -49,12 +50,11 @@ const Especialidades = () => {
                 {especialidad.nombre}
               </h3>
               <button
-                className="button"
+                className="boton"
                 onClick={() => setTarget(especialidad.id)}
               >
-                <p className="button__texto">
+                <p className="boton__texto">
                   {intl.messages.static.boton.texto}
-                  {console.log(intl)}
                 </p>
               </button>
             </div>
