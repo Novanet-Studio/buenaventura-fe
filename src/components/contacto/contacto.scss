@@ -12,7 +12,8 @@
     @include flex;
   }
   &__input-text,
-  &__input-email {
+  &__input-email,
+  &__textarea {
     font-size: 0.9rem;
   }
   &__textarea {
