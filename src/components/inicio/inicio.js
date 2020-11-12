@@ -36,6 +36,7 @@ const Inicio = () => {
       </div>
       <div className="contenedor--der">
         <Img
+          className="inicio__imagen"
           fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
           alt="dos personas sentadas conversando"
         />

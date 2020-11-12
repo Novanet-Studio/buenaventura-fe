@@ -47,26 +47,91 @@
   }
 }
 
-@include responsive(1280px) {
+@include responsive-orientation(568px, landscape) {
   .contacto {
-    &__imagen {
-      width: 92.5%;
-    }
     .contenedor--izq {
       @include col-1-4;
     }
     .contenedor--der {
       @include col-3-4;
     }
+    &__imagen {
+      width: 80%;
+      margin-left: 7vh;
+    }
     &__input-text,
     &__input-email {
       @include col-1-2;
       margin-bottom: 0;
     }
+    &__input-text,
+    &__input-email,
+    &__textarea {
+      font-size: 0.65rem;
+    }
     &__formulario-grupo {
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: 2vh;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .contacto {
+    margin-bottom: 20vh;
+    .contenedor--izq,
+    .contenedor--der {
+      @include col-igual;
+    }
+    &__imagen {
+      width: 80%;
+      margin: 0;
+    }
+    &__input-text,
+    &__input-email {
+      width: 100%;
+      margin-bottom: 1vh;
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .contacto {
+    .contenedor--izq,
+    .contenedor--der {
+      margin-top: 4vh;
+    }
+    align-content: flex-start;
+    &__imagen {
+      width: 90%;
+      margin: 0;
+
+    }
+    &__input-text,
+    &__input-email,
+    &__textarea {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .contacto {
+    .contenedor--izq {
+      @include col-1-4;
+    }
+    .contenedor--der {
+      @include col-3-4;
+    }
+    &__imagen {
+      width: 92.5%;
+      margin: 0;
+    }
+    &__input-text,
+    &__input-email,
+    &__textarea {
+      font-size: 0.9rem;
     }
   }
 }

@@ -24,6 +24,62 @@
     .descripcion {
       margin-bottom: 3vh;
     }
+    &__imagen {
+      width: 90%;
+      margin: 4vh auto;
+    }
+  }
+}
+
+@include responsive-orientation(568px, landscape) {
+  .especialidades {
+    .contenedor--izq,
+    .contenedor--der {
+      @include col-igual;
+      align-content: flex-start;
+    }
+    &__imagen {
+      margin: 2vh 8vh;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .especialidades {
+    & > div {
+      @include col-igual;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__imagen {
+      width: 30vw;
+      height: 30vw;
+      margin: 0 auto;
+    }
+    &__subtitulo {
+      text-align: center;
+      margin-top: 2vh;
+    }
+    &__boton {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .especialidades {
+    align-content: flex-start;
+    .contenedor--izq,
+    .contenedor--der {
+    margin-top: 4VH;
+      
+    }
+    &__imagen {
+      margin: 0.5vh 2vh;
+    }
+    &__subtitulo {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -32,6 +88,10 @@
     .contenedor--izq,
     .contenedor--der {
       @include col-igual;
+      align-content: flex-start;
+    }
+    &__imagen {
+      margin:  0;
     }
   }
 }

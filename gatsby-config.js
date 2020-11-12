@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-offline`,

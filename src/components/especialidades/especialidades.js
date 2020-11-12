@@ -50,7 +50,7 @@ const Especialidades = () => {
                 {especialidad.nombre}
               </h3>
               <button
-                className="boton"
+                className="boton especialidades__boton"
                 onClick={() => setTarget(especialidad.id)}
               >
                 <p className="boton__texto">
