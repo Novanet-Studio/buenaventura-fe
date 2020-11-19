@@ -7,8 +7,13 @@ const query = require("./queries")
 module.exports = {
   siteMetadata: {
     title: `Buenaventura Tax`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales.`,
+    type: "website",
+    author: `@novanetstudio`,
+    siteUrl: "https://btax.netlify.app",
+    image: `${process.env.SEO_IMAGE}`,
+    titleTemplate: " Buenaventura Tax",
+    twitterUsername: "@novanetstudio",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
