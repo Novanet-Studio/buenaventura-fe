@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-intl-graphql",
       options: {
-        url: process.env.API_URL,
+        url: process.env.API_URL || "http://localhost:1337",
         path: `${__dirname}/src/lang`,
         languages: ["en", "es"],
         defaultLanguage: "es",
@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL,
+        apiURL: process.env.API_URL || "http://locahost:1337",
         singleTypes: [
           "contacto",
           "nosotros",
