@@ -9,9 +9,9 @@ const query = `
       cta_titulo
       cta_vinculo
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -26,9 +26,9 @@ const query = `
       cta_titulo
       cta_vinculo
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -51,9 +51,9 @@ const query = `
       atributos_titulo
       atributos_descripcion
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -73,9 +73,9 @@ const query = `
       atributos_titulo
       atributos_descripcion
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -101,9 +101,9 @@ const query = `
         items
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -126,9 +126,9 @@ const query = `
         items
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -149,9 +149,9 @@ const query = `
         items
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -169,9 +169,9 @@ const query = `
         items
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -187,9 +187,9 @@ const query = `
         descripcion
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
@@ -202,9 +202,9 @@ const query = `
         descripcion
       }
       seo {
-        title
-        description
-        image
+        titulo
+        descripcion
+        imagen
       }
       seo_imagen {
         titulo
