@@ -8,6 +8,15 @@ const query = `
       }
       cta_titulo
       cta_vinculo
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
     content_en {
       principal {
@@ -16,6 +25,15 @@ const query = `
       }
       cta_titulo
       cta_vinculo
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
   }
 
@@ -32,6 +50,15 @@ const query = `
       }
       atributos_titulo
       atributos_descripcion
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
     content_en {
       principal {
@@ -45,6 +72,15 @@ const query = `
       }
       atributos_titulo
       atributos_descripcion
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
   }
   
@@ -64,6 +100,15 @@ const query = `
         titulo
         items
       }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
     content_en {
       principal {
@@ -80,6 +125,15 @@ const query = `
         titulo
         items
       }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
   }
 
@@ -94,6 +148,15 @@ const query = `
         nombre
         items
       }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
     content_en {
       principal {
@@ -105,6 +168,15 @@ const query = `
         nombre
         items
       }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
   }
 
@@ -114,11 +186,29 @@ const query = `
         titulo
         descripcion
       }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
+      }
     }
     content_en {
       principal {
         titulo
         descripcion
+      }
+      seo {
+        title
+        description
+        image
+      }
+      seo_imagen {
+        titulo
+        alt
       }
     }
   }
