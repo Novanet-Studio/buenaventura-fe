@@ -32,7 +32,16 @@
         "descripcion": "Somos un equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales. Ten al día  tus tributos sin preocuparte de los trámites que de eso nos encargamos nosotros"
       },
       "cta_titulo": "Conócenos",
-      "cta_vinculo": "Vínculo"
+      "cta_vinculo": "Vínculo",
+      "seo": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur.",
+        "imagen": "Lorem ipsum dolor sit amet consectetur."
+      },
+      "seo_imagen": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "alt": "Lorem ipsum dolor sit amet consectetur."
+      }
     }
   },
   "nosotro": {
@@ -69,7 +78,34 @@
         }
       ],
       "atributos_titulo": "¿Qué nos guía o nos caracteriza?",
-      "atributos_descripcion": "Principalmente, queremos destacar:"
+      "atributos_descripcion": "Principalmente, queremos destacar:",
+      "seo": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur.",
+        "imagen": "Lorem ipsum dolor sit amet consectetur."
+      },
+      "seo_imagen": [
+        {
+          "titulo": "me gusta",
+          "alt": "icono de me gusta"
+        },
+        {
+          "titulo": "corazon",
+          "alt": "icono de un corazon"
+        },
+        {
+          "titulo": "estrella",
+          "alt": "icono de estrella"
+        },
+        {
+          "titulo": "reloj",
+          "alt": "icono de reloj"
+        },
+        {
+          "titulo": "servicio",
+          "alt": "icono de servicio"
+        }
+      ]
     }
   },
   "servicio": {
@@ -113,6 +149,21 @@
           "titulo": "Servicios anuales",
           "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
         }
+      ],
+      "seo": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur.",
+        "imagen": "Lorem ipsum dolor sit amet consectetur."
+      },
+      "seo_imagen": [
+        {
+          "titulo": "Persona sosteniendo lapicero",
+          "alt": "Persona sosteniendo lapicero, calculadora en la mesa"
+        },
+        {
+          "titulo": "Personas en una reunion",
+          "alt": "Personas en una reunion"
+        }
       ]
     }
   },
@@ -138,6 +189,25 @@
           "nombre": "Licencias",
           "items": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial."
         }
+      ],
+      "seo": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur.",
+        "imagen": "Lorem ipsum dolor sit amet consectetur."
+      },
+      "seo_imagen": [
+        {
+          "titulo": "calculadora",
+          "alt": "icono de calculadora"
+        },
+        {
+          "titulo": "listo",
+          "alt": "icono de listo"
+        },
+        {
+          "titulo": "lista",
+          "alt": "icono de lista"
+        }
       ]
     }
   },
@@ -146,6 +216,15 @@
       "principal": {
         "titulo": "Contacto",
         "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles."
+      },
+      "seo": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur.",
+        "imagen": "Lorem ipsum dolor sit amet consectetur."
+      },
+      "seo_imagen": {
+        "titulo": "Lorem ipsum dolor sit amet consectetur.",
+        "alt": "Lorem ipsum dolor sit amet consectetur."
       }
     }
   }
