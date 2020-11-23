@@ -1,5 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
+import SEO from "../seo"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
 import "./inicio.scss"
@@ -26,21 +27,31 @@ const Inicio = () => {
     `
   )
   return (
-    <section id="Inicio" className="inicio">
-      <div className="contenedor--izq">
-        <h1 className="titulo">{principal.content.principal.titulo}</h1>
-        <p className="descripcion">{principal.content.principal.descripcion}</p>
-        <button className="button">
-          <p className="button__texto">{principal.content.cta_titulo}</p>
-        </button>
-      </div>
-      <div className="contenedor--der">
-        <Img
-          fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
-          alt="dos personas sentadas conversando"
-        />
-      </div>
-    </section>
+    <>
+      <SEO
+        title={principal.content.seo.titulo}
+        description={principal.content.seo.descripcion}
+        image={principal.content.seo.imagen}
+      />
+      <section id="Inicio" className="inicio">
+        <div className="contenedor--izq">
+          <h1 className="titulo">{principal.content.principal.titulo}</h1>
+          <p className="descripcion">
+            {principal.content.principal.descripcion}
+          </p>
+          <button className="button">
+            <p className="button__texto">{principal.content.cta_titulo}</p>
+          </button>
+        </div>
+        <div className="contenedor--der">
+          <Img
+            fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
+            title={principal.content.seo_imagen.titulo}
+            alt={principal.content.seo_imagen.alt}
+          />
+        </div>
+      </section>
+    </>
   )
 }
 
