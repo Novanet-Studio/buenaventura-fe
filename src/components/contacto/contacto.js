@@ -14,7 +14,7 @@ const Contacto = () => {
           imagen {
             localFile {
               childImageSharp {
-                fluid(maxWidth: 490) {
+                fluid(maxWidth: 225) {
                   ...GatsbyImageSharpFluid
                 }
               }

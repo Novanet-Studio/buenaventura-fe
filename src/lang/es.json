@@ -17,11 +17,11 @@
     "contacto": {
       "boton": "Enviar mensaje",
       "formulario": {
-        "nombrePlaceholder": "First name",
-        "apellidoPlaceholder": "Last name",
-        "telefonoPlaceholder": "Phone",
-        "correoPlaceholder": "email",
-        "mensajePlaceholder": "Message"
+        "nombrePlaceholder": "Nombre",
+        "apellidoPlaceholder": "Apellido",
+        "telefonoPlaceholder": "Teléfono",
+        "correoPlaceholder": "Email",
+        "mensajePlaceholder": "Mensaje"
       }
     }
   },

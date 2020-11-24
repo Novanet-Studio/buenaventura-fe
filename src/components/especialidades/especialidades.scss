@@ -1,38 +1,97 @@
 @import "../../assets/scss/styles.scss";
 
 .especialidades {
-  & > div {
+  .contenedor--izq,
+  .contenedor--der {
     @include flex;
   }
-  .gatsby-image-wrapper {
-    img {
-      height: auto !important;
-    }
-  }
-  .gatsby-image-wrapper,
-  &__contenido {
+  &__imagen {
     @include col-igual;
+    height: fit-content;
   }
   &__contenido {
     @include flex-column-center;
+    @include col-igual;
     padding-left: 2vh;
   }
 }
 
 @include responsive-orientation(320px, portrait) {
-  .especialidades {    
-    .gatsby-image-wrapper {
-      img {
-        padding: 2vh;
-      }
+  .especialidades {
+    &__subtitulo {
+      line-height: 1.2rem;
+    }
+    .descripcion {
+      margin-bottom: 3vh;
+    }
+    &__imagen {
+      width: 90%;
+      margin: 4vh auto;
+    }
+  }
+}
+
+@include responsive-orientation(568px, landscape) {
+  .especialidades {
+    .contenedor--izq,
+    .contenedor--der {
+      @include col-igual;
+      align-content: flex-start;
+    }
+    &__imagen {
+      margin: 2vh 8vh;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .especialidades {
+    & > div {
+      @include col-igual;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__imagen {
+      width: 30vw;
+      height: 30vw;
+      margin: 0 auto;
+    }
+    &__subtitulo {
+      text-align: center;
+      margin-top: 2vh;
+    }
+    &__boton {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .especialidades {
+    align-content: flex-start;
+    .contenedor--izq,
+    .contenedor--der {
+    margin-top: 4VH;
+      
+    }
+    &__imagen {
+      margin: 0.5vh 2vh;
+    }
+    &__subtitulo {
+      font-size: 1rem;
     }
   }
 }
 
 @include responsive(1280px) {
   .especialidades {
-    & > div {
+    .contenedor--izq,
+    .contenedor--der {
       @include col-igual;
+      align-content: flex-start;
+    }
+    &__imagen {
+      margin:  0;
     }
   }
 }

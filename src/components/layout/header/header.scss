@@ -19,9 +19,7 @@
     justify-content: flex-start;
     align-content: flex-end;
     flex: 1 0 0;
-  }
-  &__menu {
-    flex: 4 0 0;
+
   }
   &__lista {
     list-style-type: none;
@@ -31,23 +29,23 @@
   &__item {
     justify-content: center;
     align-content: center;
-
-    button {
-      text-decoration: none;
-      color: white;
-      font-size: 0.9rem;
-      font-weight: 400;
-      padding: 0;
-      margin: 0;
-      border-radius: 0;
-      background-color: $verde-b;
-      &:hover {
-        background-color: $verde-c;
-        transition: 0.5s;
-      }
-      &:focus {
-        background-color: $verde-c;
-      }
+  }
+  &__boton {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: $verde-b;
+    &:hover {
+      background-color: $verde-c;
+      transition: 0.5s;
+    }
+    &:focus {
+      background-color: $verde-c;
     }
   }
 }
@@ -56,69 +54,119 @@
   .header {
     z-index: 1;
     position: fixed;
-    background-image: linear-gradient(180deg,rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1),rgba(255,255,255,0));
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
     &__logo-contenedor {
       width: 27vw;
       height: 27vw;
       padding: 2vh 1.5vh;
       box-sizing: border-box;
+    }    
+    &__menu {
+      flex: 4 0 0;
     }
     &__lista {
       @include flex;
       align-content: flex-end;
       margin-left: 1.5vh;
     }
-    &__item {
-      button {
-        font-size: 0.8rem;
-        padding: 1vh;
-
+    &__boton {
+      font-size: 0.7rem;
+      padding: 1vh;
+      background-color: transparent;
+      color: $gris-a;
+      font-weight: 500;
+      &:hover {
+        border-bottom: 1px solid $verde-c;
         background-color: transparent;
-        color: $gris-a;
-        font-weight: 500;
-        &:hover {
-          border-bottom: 1px solid $verde-c;
-          background-color: transparent;
-          transition: 0.5s;
-        }
-        &:focus {
-          border-bottom: 2px solid $verde-c;
-          background-color: transparent;
-          font-weight: 700;
-        }
-
+        transition: 0.5s;
+      }
+      &:focus {
+        border-bottom: 2px solid $verde-c;
+        background-color: transparent;
+        font-weight: 700;
       }
     }
   }
 }
 
-@include responsive(1280px) {
+@include responsive-orientation(568px, landscape) {
   .header {
     height: 30vh;
-    padding: 4vh;
     position: static;
     &__logo-contenedor {
-      width: 11vw;
-      height: 11vw;
+      width: 14vw;
+      height: 14vw;
       padding: 4vh 3vh;
     }
     &__logo {
-      justify-content: center;
+      justify-content: left;
     }
     &__menu {
       flex-direction: column;
       justify-content: flex-end;
+      flex: 5 0 0;
     }
     &__item {
       flex-direction: column;
       justify-content: center;
       flex: 1 1 1;
       max-width: fit-content;
-      button {
-        font-size: 0.9rem;
-        padding: 2vh 4vh;
-        margin-right: 2vh;
+    }
+    &__boton {
+      font-size: 0.75rem;
+      padding: 2vh 4vh;
+      margin-right: 2vh;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .header {
+    &__logo-contenedor {
+      width:16vw;
+      height:16vw;
+    }  
+    &__boton {
+      font-size: 0.8rem;
+      color: white;
+      background-color: $verde-b;
+      margin-right: 2vh;
+      padding: 1vh 2vh;
+      &:hover {
+        background-color: $verde-c;
+        transition: 0.5s;
       }
+      &:focus {
+        background-color: $verde-c;
+        font-weight: 400;
+      }
+    }
+  }  
+}
+
+@include responsive(1280px) {
+  .header {
+    padding: 4vh;
+    &__logo-contenedor {
+      width: 11vw;
+      height: 11vw;
+    }
+    &__logo {
+      justify-content: center;
+    }
+    &__menu {
+      flex: 4 0 0;
+    }
+    &__boton {
+      font-size: 0.9rem;
+      padding: 1.5vh 3vh;
     }
   }
 }

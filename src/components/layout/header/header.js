@@ -26,6 +26,7 @@ const Header = () => {
           <ul className="header__lista">
             <li className="header__item">
               <button
+                className="header__boton"
                 id="Nos"
                 onClick={e => {
                   scrollTo("#Nosotros")
@@ -36,6 +37,7 @@ const Header = () => {
             </li>
             <li className="header__item">
               <button
+                className="header__boton"
                 id="Esp"
                 onClick={e => {
                   scrollTo("#Especialidades")
@@ -46,6 +48,7 @@ const Header = () => {
             </li>
             <li className="header__item">
               <button
+                className="header__boton"
                 id="Ser"
                 onClick={e => {
                   scrollTo("#Servicios")
@@ -56,6 +59,7 @@ const Header = () => {
             </li>
             <li className="header__item">
               <button
+                className="header__boton"
                 id="Con"
                 onClick={e => {
                   scrollTo("#Contacto")

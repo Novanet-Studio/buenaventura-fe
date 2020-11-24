@@ -25,10 +25,11 @@
   &__logo-novanet {
     @include flex;
     align-content: center;
+    margin-left: 0.5vh;
   }
   &__copy {
     @include flex;
-    align-content: center;    
+    align-content: center;
   }
 }
 
@@ -42,22 +43,18 @@
         margin-left: 0.75vh;
       }
     }
-    &__rsss {
-      margin-bottom: 2vh;      
-    }
     &__copy {
       font-size: 0.75rem;
     }
     &__logo-novanet {
       width: 18vw;
-      margin-left: 0.5vh;
-    }    
+    }
   }
 }
 
-@include responsive(1280px) {
+@include responsive-orientation(568px, landscape) {
   .footer {
-    height: 11vh;
+    height: 10vh;
     &__rsss {
       @include flex;
       flex: 1 0 0;
@@ -65,8 +62,65 @@
     }
     &__item {
       flex: 1 1 0;
-      width: 2vw;
-      height: 2vw;
+      width: 3vw;
+      height: 3vw;
+      svg {
+        margin-left: 0.6vh;
+      }
+    }
+    &__copy {
+      flex: 5 0 0;
+      font-size: 0.7rem;
+    }
+    &__logo-novanet {
+      width: 8vw;
+    }
+    &__rsss {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .footer {
+    &__item {
+      width: 4vw;
+      height: 4vw;
+      margin-right: 1.5vh;
+      svg {
+        margin-left: 0.75vh;
+      }
+    }
+    &__logo-novanet {
+      width: 10vw;
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .footer {
+    &__item {
+      width: 2.7vw;
+      height: 2.7vw;
+      svg {
+        margin-left: 0.6vh;
+      }
+    }
+    &__copy {
+      font-size: 0.8rem;
+    }
+    &__logo-novanet {
+      width: 7vw;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .footer {
+    height: 11vh;
+    &__item {
+      width: 1.8vw;
+      height: 1.8vw;
       svg {
         margin-left: 1vh;
       }
@@ -77,10 +131,9 @@
     }
     &__logo-novanet {
       width: 5vw;
-      margin-left: 0.5vh;
     }
-    &__rsss {
-      margin-bottom: 0;
+    &__rrss {
+      margin-bottom: 2vh;
     }
   }
 }

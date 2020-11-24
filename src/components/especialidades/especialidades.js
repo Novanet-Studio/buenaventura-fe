@@ -16,7 +16,7 @@ const Especialidades = () => {
           imagenes {
             localFile {
               childImageSharp {
-                fluid(maxWidth: 490) {
+                fluid(maxWidth: 235) {
                   ...GatsbyImageSharpFluid
                 }
               }

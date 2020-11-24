@@ -16,7 +16,7 @@ const Inicio = () => {
           imagen {
             localFile {
               childImageSharp {
-                fluid(maxWidth: 490) {
+                fluid(maxWidth: 390) {
                   ...GatsbyImageSharpFluid
                 }
               }

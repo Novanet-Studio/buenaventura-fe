@@ -1,12 +1,7 @@
 @import "../../assets/scss/styles.scss";
 
 .servicios {
-  & > div {
-    @include flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  h3 {
+  &__contenido-titulo {
     width: fit-content;
     padding-bottom: 1vh;
   }
@@ -14,7 +9,6 @@
     width: 100%;
     @include flex;
     list-style: none;
-    margin-top: 4vh;
     justify-content: space-between;
   }
   &__icono {
@@ -23,11 +17,11 @@
     padding: 0.5vh;
   }
   &__contenido {
+    /* Este contenido está en el WYSYWYG de Strapi */
     ul {
       list-style-type: none;
       margin-top: 2vh;
       & > li {
-        font-size: 0.9rem;
         font-weight: 400;
         padding: 1vh;
         &:nth-child(odd) {
@@ -54,18 +48,101 @@
   .servicios {
     &__contenido {
       margin-bottom: 4vh;
+      ul {
+        & > li {
+          font-size: 0.8rem;
+          line-height: 1rem;
+        }
+      }
     }
     &__icono {
       width: 10vw;
       height: 10vw;
+    }
+    &__contenido-titulo {
+      line-height: 2rem;
+    }
+  }
+}
+
+@include responsive-orientation(568px, landscape) {
+  .servicios {
+    &__lista {
+      margin-top: 1vh;
+    }
+    &__contenido {
+      @include col-3-3;
+      /* Este contenido está en el WYSYWYG de Strapi */
+      ul {
+        & > li {
+          font-size: 0.6rem;
+          line-height: 0.8rem;
+        }
+      }
+    }
+    &__icono {
+      width: 3.25vw;
+      height: 3.25vw;
+    }
+    &__contenido-titulo {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .servicios {
+    &__lista {
+      margin-top: 1vh;
+    }
+    &__contenido {
+      @include col-3-3;
+      /* Este contenido está en el WYSYWYG de Strapi */
+      ul {
+        & > li {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }        
+      }
+    }
+    &__icono {
+      width:5.5vw;
+      height:5.5vw;
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .servicios {
+    align-content: flex-start;
+    &__contenido {
+      /* Este contenido está en el WYSYWYG de Strapi */
+      ul {
+        & > li {
+          font-size: 0.75rem;
+          line-height: 1.1rem;
+        }        
+      }
+    }
+    &__icono {
+      width:3.5vw;
+      height:3.5vw;
     }
   }
 }
 
 @include responsive(1280px) {
   .servicios {
+    &__lista {
+      margin-top: 4vh;
+    }
     &__contenido {
-      @include col-3-3;
+      ul {
+        & > li {
+          font-size: 0.9rem;
+          line-height: 1.15rem;
+        }
+      }
     }
     &__icono {
       width: 2.5vw;

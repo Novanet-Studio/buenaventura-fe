@@ -4,20 +4,18 @@
   & > div {
     @include flex-column-center;
   }
-  .gatsby-image-wrapper {
-    width: 100%;
-  }
 }
 
 @include responsive-orientation(320px, portrait) {
-  .inicio {    
-    .gatsby-image-wrapper {
-      width: 100%;
-    }    
+  .inicio {
+    &__imagen {
+      width: 80%;
+      margin: 4vh auto;
+    }
   }
 }
 
-@include responsive(1280px) {
+@include responsive-orientation(568px, landscape) {
   .inicio {
     .contenedor--izq {
       @include col-3-5;
@@ -25,5 +23,28 @@
     .contenedor--der {
       @include col-2-5;
     }
+    &__imagen {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .inicio {
+    .contenedor--izq {
+      @include col-3-5;
+    }
+    .contenedor--der {
+      @include col-2-5;
+    }
+    &__imagen {
+      width: 90%;
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .inicio {
   }
 }
