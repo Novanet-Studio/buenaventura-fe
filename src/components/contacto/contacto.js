@@ -40,7 +40,7 @@ const Contacto = () => {
         </p>
         <div className="contenedor--izq">
           <Img
-            className="imagen"
+            className="contacto__imagen"
             fluid={strapiContacto.imagen.localFile.childImageSharp.fluid}
             title={intl.messages.contacto.content.seo_imagen.titulo}
             alt={intl.messages.contacto.content.seo_imagen.alt}
@@ -54,14 +54,14 @@ const Contacto = () => {
                 placeholder={
                   intl.messages.static.contacto.formulario.nombrePlaceholder
                 }
-                className="contacto__input"
+                className="contacto__input-text"
               />
               <input
                 type="text"
                 placeholder={
                   intl.messages.static.contacto.formulario.apellidoPlaceholder
                 }
-                className="contacto__input"
+                className="contacto__input-text"
               />
             </div>
             <div className="contacto__formulario-grupo">
@@ -70,14 +70,14 @@ const Contacto = () => {
                 placeholder={
                   intl.messages.static.contacto.formulario.telefonoPlaceholder
                 }
-                className="contacto__input"
+                className="contacto__input-text"
               />
               <input
                 type="email"
                 placeholder={
                   intl.messages.static.contacto.formulario.correoPlaceholder
                 }
-                className="contacto__input"
+                className="contacto__input-email"
               />
             </div>
             <input
@@ -87,8 +87,8 @@ const Contacto = () => {
               }
               className="contacto__textarea"
             />
-            <button className="button">
-              <p className="button__texto">
+            <button className="boton">
+              <p className="boton__texto">
                 {intl.messages.static.contacto.boton}
               </p>
             </button>
