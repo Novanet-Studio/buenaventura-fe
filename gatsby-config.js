@@ -7,8 +7,13 @@ const query = require("./queries")
 module.exports = {
   siteMetadata: {
     title: `Buenaventura Tax`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales.`,
+    type: "website",
+    author: `@novanetstudio`,
+    siteUrl: "https://btax.netlify.app",
+    image: `${process.env.SEO_IMAGE}`,
+    titleTemplate: " Buenaventura Tax",
+    twitterUsername: "@novanetstudio",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -61,7 +66,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-intl-graphql",
       options: {
-        url: process.env.API_URL,
+        url: process.env.API_URL || "http://localhost:1337",
         path: `${__dirname}/src/lang`,
         languages: ["en", "es"],
         defaultLanguage: "es",
@@ -72,7 +77,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL,
+        apiURL: process.env.API_URL || "http://localhost:1337",
         singleTypes: [
           "contacto",
           "nosotros",
