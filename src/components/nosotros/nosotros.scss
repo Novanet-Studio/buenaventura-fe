@@ -1,7 +1,8 @@
 @import "../../assets/scss/styles.scss";
 
 .nosotros {
-  & > div {
+  .contenedor--izq,
+  .contenedor--der {
     @include flex;
   }
   .guia {
@@ -39,6 +40,9 @@
 
 @include responsive-orientation(320px, portrait) {
   .guia {
+    &__titulo {
+      margin-top: 3vh;
+    }
     &__icono {
       width: 7vw;
       height: 7vw;
@@ -46,7 +50,7 @@
   }
 }
 
-@include responsive(1280px) {
+@include responsive-orientation(568px, landscape) {
   .nosotros {
     & > div {
       margin-top: 5vh;
@@ -64,9 +68,62 @@
         flex: 0 0 49%;
       }
       &__icono {
-        width: 2vw;
-        height: 2vw;
+        width: 2.75vw;
+        height: 2.75vw;
+      }
+      &__subtitulo {
+        font-size: 0.67rem;
       }
     }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .nosotros {
+    & > div {
+      @include col-igual;
+      flex-direction: column;
+      justify-content: flex-start;
+    }  
+    .guia {
+      &__titulo {
+        margin-top: 0;
+      }
+      &__icono {
+        width: 4vw;
+        height: 4vw;
+      }
+      &__subtitulo {
+        font-size: 0.9rem;
+      }
+    } 
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .nosotros {    
+    .guia {     
+      &__icono {
+        width: 2.5vw;
+        height: 2.5vw;
+      }
+      &__subtitulo {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@include responsive(1280px) {
+  .nosotros {
+    .guia {
+      &__subtitulo {
+          font-size: 1rem;
+      }
+      &__icono {
+        width: 2vw;
+        height: 2vw;
+      }   
+    }     
   }
 }

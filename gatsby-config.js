@@ -18,7 +18,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-offline`,
@@ -87,6 +86,12 @@ module.exports = {
           "servicios-adicionales",
         ],
         queryLimit: 1000,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 100,
       },
     },
   ],

@@ -16,7 +16,7 @@ const Inicio = () => {
           imagen {
             localFile {
               childImageSharp {
-                fluid(maxWidth: 490) {
+                fluid(maxWidth: 390) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -39,12 +39,14 @@ const Inicio = () => {
           <p className="descripcion">
             {principal.content.principal.descripcion}
           </p>
-          <button className="button">
-            <p className="button__texto">{principal.content.cta_titulo}</p>
+          <button className="boton">
+            <p className="boton__texto">{principal.content.cta_titulo}</p>
+
           </button>
         </div>
         <div className="contenedor--der">
           <Img
+            className="inicio__imagen"
             fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}
             title={principal.content.seo_imagen.titulo}
             alt={principal.content.seo_imagen.alt}
