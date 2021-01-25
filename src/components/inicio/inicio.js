@@ -41,6 +41,7 @@ const Inicio = () => {
           </p>
           <button className="boton">
             <p className="boton__texto">{principal.content.cta_titulo}</p>
+
           </button>
         </div>
         <div className="contenedor--der">
