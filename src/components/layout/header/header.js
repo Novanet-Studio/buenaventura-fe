@@ -1,6 +1,6 @@
 import React from "react"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-import Logo from "../../../assets/images/buenaventura-tax-logo.svg"
+import Logo from "../../../assets/images/btax-logo.svg"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
 
@@ -11,16 +11,14 @@ const Header = () => {
     <header className="header">
       <div className="contenedor-principal">
         <div className="header__logo">
-          <div className="header__logo-contenedor">
-            {/* eslint-disable */}
-            <a onClick={() => scrollTo("#Inicio")} href="#">
-              <img
-                className="header__logo"
-                src={Logo}
-                alt="Buenaventura tax logo"
-              />
-            </a>
-          </div>
+          {/* eslint-disable */}
+          <a onClick={() => scrollTo("#Inicio")} href="#">
+            <img
+              className="header__logo-img"
+              src={Logo}
+              alt="Buenaventura tax logo"
+            />
+          </a>
         </div>
         <nav className="header__menu">
           <ul className="header__lista">

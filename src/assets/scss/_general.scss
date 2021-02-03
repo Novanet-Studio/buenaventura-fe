@@ -15,7 +15,6 @@ body {
 .contenedor-principal {
   @include flex;
   position: relative;
-  padding: 2vh;
   & > header,
   & > footer {
     @include flex;
@@ -216,7 +215,7 @@ body {
     background-position: top right;
   }
   .contenedor-principal {
-    max-width: 1280px;
+    max-width: 88.9vw;
     margin: 0 auto;
     /* padding: 0 1.5vw; */
     & > footer {
