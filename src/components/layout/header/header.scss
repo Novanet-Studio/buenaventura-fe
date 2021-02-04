@@ -97,9 +97,7 @@
     position: static;
     padding: 3vh 0 4vh;
     .contenedor-principal {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      align-items: flex-end;
     }
     &__logo {
       flex: 0 30%;
@@ -123,8 +121,8 @@
       font-size: 0.75rem;
       padding: 2vh 2.5vh;
       margin-right: 2vh;
-      background-color: transparent;
-      color: $gris-a;
+      color: white;
+      background-color: $verde-e;
     }
   }
 }
@@ -140,7 +138,7 @@
     &__boton {
       font-size: 0.8rem;
       color: white;
-      background-color: $verde-b;
+      background-color: $verde-e;
       margin-right: 1vh;
       padding: 1vh 1.2vh;
       &:hover {
@@ -168,8 +166,6 @@
       font-size: 0.9rem;
       padding: 1.5vh 3vh;
       margin-right: 4vh;
-      color: white;
-      background-color: $verde-b;
     }
   }
 }

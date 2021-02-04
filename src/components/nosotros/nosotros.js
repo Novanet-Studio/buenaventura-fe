@@ -27,13 +27,11 @@ const Nosotros = () => {
         image={nosotros.content.seo.imagen}
       />
       <section id="Nosotros" className="nosotros">
-        <div className="contenedor--izq">
+        <div className="contenedor-principal">
           <h2 className="titulo">{nosotros.content.principal.titulo}</h2>
           <p className="descripcion">
             {nosotros.content.principal.descripcion}
           </p>
-        </div>
-        <div className="contenedor--der">
           <div className="guia">
             <h3 className="guia__titulo">
               {nosotros.content.atributos_titulo}

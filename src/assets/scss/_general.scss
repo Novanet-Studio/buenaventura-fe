@@ -15,6 +15,8 @@ body {
 .contenedor-principal {
   @include flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
   & > header,
   & > footer {
     @include flex;
@@ -42,11 +44,13 @@ body {
 .titulo {
   height: fit-content;
   padding-bottom: 1.5vh;
+  text-align: center;
   border-bottom: 5px solid $verde-c;
 }
 .descripcion {
-  margin-top: 2vh;
+  margin-top: 1.5vh;
   font-weight: 500;
+  text-align:center;
 }
 .boton {
   cursor: pointer;
@@ -94,8 +98,8 @@ body {
     }
   }
   .descripcion {
-    font-size: 0.9rem;
-    line-height: 1.4rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
   .boton {
     &__texto {
@@ -135,8 +139,8 @@ body {
     margin: 0 auto;
   }
   .descripcion {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
   .boton {
     &__texto {
@@ -160,10 +164,21 @@ body {
 }
 
 @include responsive-orientation(768px, portrait) {
+  .contenedor-layout {
+    & > section {
+      min-height: 90vh;
+    }
+  }
+
   .boton {
     &__texto {
       font-size: 1rem;
     }
+  }
+
+  .descripcion {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 
     /* Tipografía
@@ -171,18 +186,27 @@ body {
   h1 {
       font-size: 2rem;
   }
+
+  h2 {font-size:1.8rem;}
+
+  h3 {
+    font-size: 1.6rem;
+  }
 }
 
 @include responsive-orientation(1024px, landscape) {
   .contenedor-layout {
+    height: 85vh;
     & > section {
       padding:0;
     }
   }
+
   .descripcion {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.45rem;
+    line-height: 2.1rem;
   }
+  
   .boton {
     &__texto {
       font-size: 1rem;
@@ -194,26 +218,18 @@ body {
   h1 {
     font-size: 2rem;
   }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
 }
 
 @include responsive(1280px) {
   .contenedor-principal {
     max-width: 89vw;
-  }
-
-  .descripcion {
-    font-size: 1.4rem;
-    line-height: 2.1rem;
-  }
-
-  /* Tipografía
-        ========================================================================== */
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
   }
 }
