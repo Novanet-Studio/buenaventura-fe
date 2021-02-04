@@ -34,17 +34,16 @@ const Inicio = () => {
         image={principal.content.seo.imagen}
       />
       <section id="Inicio" className="inicio">
-        <div className="contenedor--izq">
-          <h1 className="titulo">{principal.content.principal.titulo}</h1>
-          <p className="descripcion">
-            {principal.content.principal.descripcion}
-          </p>
-          <button className="boton">
-            <p className="boton__texto">{principal.content.cta_titulo}</p>
-
-          </button>
-        </div>
-        <div className="contenedor--der">
+        <div className="contenedor-principal">
+          <div className="inicio__info">
+            <h1 className="titulo">{principal.content.principal.titulo}</h1>
+            <p className="descripcion">
+              {principal.content.principal.descripcion}
+            </p>
+            <button className="boton">
+              <p className="boton__texto">{principal.content.cta_titulo}</p>
+            </button>
+          </div>
           <Img
             className="inicio__imagen"
             fluid={strapiPrincipal.imagen.localFile.childImageSharp.fluid}

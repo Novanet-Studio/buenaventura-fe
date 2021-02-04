@@ -1,6 +1,18 @@
 @import "../../assets/scss/styles.scss";
 
 .inicio {
+  background-size: cover;
+  .contenedor-principal {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  &__imagen {
+    display: none !important;
+  }
   & > div {
     @include flex-column-center;
   }
@@ -8,43 +20,63 @@
 
 @include responsive-orientation(320px, portrait) {
   .inicio {
-    &__imagen {
-      width: 80%;
-      margin: 4vh auto;
+    background-image: url(../../assets/images/btax-ini-bg-mob.jpg);
+    background-position: center;
+    &__info {
+      padding: 3vh;
     }
-  }
-}
-
-@include responsive-orientation(568px, landscape) {
-  .inicio {
-    .contenedor--izq {
-      @include col-3-5;
-    }
-    .contenedor--der {
-      @include col-2-5;
-    }
-    &__imagen {
-      width: 75%;
-      margin: 0 auto;
+    .descripcion {
+      font-size: 1rem;
+      line-height: 1.5rem;  
     }
   }
 }
 
 @include responsive-orientation(768px, portrait) {
   .inicio {
-    .contenedor--izq {
-      @include col-3-5;
+    background-image: url(../../assets/images/btax-ini-bg-tab.jpg);
+    .descripcion {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
     }
-    .contenedor--der {
-      @include col-2-5;
+  }
+}
+
+@include responsive-orientation(568px, landscape) {
+  .inicio {
+    background-image: url(../../assets/images/btax-ini-bg-mob-land.jpg);
+    background-position: top center;
+    &__info {
+      width: 85vw;
+      margin-top: 10vh;
+      padding: 5vh;
     }
-    &__imagen {
-      width: 90%;
+    .descripcion {
+      font-size: 1rem;
+      line-height: 1.5rem;  
+    }
+  }
+}
+
+@include responsive-orientation(1024px, landscape) {
+  .inicio {
+    background-image: url(../../assets/images/btax-ini-bg-tab-land.jpg);
+    &__info {
+      width: 70vw;
+    }
+    .descripcion {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
     }
   }
 }
 
 @include responsive(1280px) {
   .inicio {
+    background-image: url(../../assets/images/btax-ini-bg-desk.jpg);
+    background-position: bottom;
+    &__info {
+      width: 60vw;
+    }
   }
 }

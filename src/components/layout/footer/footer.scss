@@ -44,7 +44,7 @@
 
 @include responsive-orientation(320px, portrait) {
   .footer {
-    padding: 3vh 2vh;
+    padding:2.5vh 2vh;
     &__item {
       width: 7vw;
       height: 7vw;
@@ -55,8 +55,8 @@
       font-size: 0.7rem;
     }
     &__logo-novanet {
-      width: 20vw;
-      margin-top: -0.3vh;
+      width: 18vw;
+      margin-top: -0.1vh;
     }
   }
 }
@@ -64,10 +64,6 @@
 @include responsive-orientation(568px, landscape) {
   .footer {
     padding:5vh 3vh;
-    &__rsss {
-      @include flex;
-      justify-content: flex-start;
-    }
     &__item {
       flex: 1 1 0;
       width: 4vw;
@@ -79,6 +75,7 @@
     }
     &__logo-novanet {
       width: 10vw;
+      margin-top: -0.1vh;
     }
   }
 }

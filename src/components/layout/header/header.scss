@@ -18,6 +18,9 @@
   &__logo {
     justify-content: flex-start;
     align-content: flex-end;
+    &-img {
+      width: 95%;
+    }
   }
   &__lista {
     list-style-type: none;
@@ -35,7 +38,6 @@
   }
   &__boton {
     text-decoration: none;
-    color: white;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 400;
@@ -43,7 +45,6 @@
     margin: 0;
     border-radius: 0;
     border: 0;
-    background-color: $verde-b;
     &:hover {
       background-color: $verde-c;
       transition: 0.5s;
@@ -60,32 +61,23 @@
     position: fixed;
     padding: 2vh 2vh 2.5vh;
     .contenedor-principal {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
     }
     &__logo {
       flex: 0 60%;
       justify-content: center;
       text-align: center;
-      &-img {
-        width: 90%;
-      }
     }
     &__menu {
       flex: 0 100%;
       justify-content: center;
       align-items: center;
     }
-    &__lista {
-      @include flex;
-    }
     &__boton {
-      font-size: 0.72rem;
-      padding: 1vh 0.5vh;
+      font-size: 0.7rem;
+      padding: 1.2vh 0.6vh;
       background-color: transparent;
       color: $gris-a;
-      font-weight: 500;
       &:hover {
         border-bottom: 1px solid $verde-c;
         background-color: transparent;
@@ -113,12 +105,11 @@
       flex: 0 30%;
       margin-right: 3vh;
       &-img {
-        width: 100%;
         margin-bottom: 0.8vh;
       }
     }
     &__menu {
-      flex: 0 60%;
+      flex: 0 65%;
       flex-direction: column;
       justify-content: flex-end;
     }
@@ -130,22 +121,21 @@
     }
     &__boton {
       font-size: 0.75rem;
-      padding: 2vh 4vh;
+      padding: 2vh 2.5vh;
       margin-right: 2vh;
+      background-color: transparent;
+      color: $gris-a;
     }
   }
 }
 
 @include responsive-orientation(768px, portrait) {
   .header {
-    padding: 2vh 2vh 2.5vh 1.5vh;
     &__logo {
       flex: 0 33%;
     }
     &__menu {
       flex: 0 67%;
-      justify-content: center;
-      align-items: center;
     }
     &__boton {
       font-size: 0.8rem;
@@ -178,18 +168,14 @@
       font-size: 0.9rem;
       padding: 1.5vh 3vh;
       margin-right: 4vh;
+      color: white;
+      background-color: $verde-b;
     }
   }
 }
 
 @include responsive(1280px) {
   .header {
-    padding: 3vh 4vh 4vh;
-    &__logo {
-      &-img {
-        margin-bottom: 0.3vh;
-      }
-    }
     &__menu {
       flex: 0 53%;
     }

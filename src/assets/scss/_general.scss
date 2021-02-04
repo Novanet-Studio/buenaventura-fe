@@ -30,6 +30,8 @@ body {
   padding-top: 0;
   & > section {
     @include flex;
+    width: 100%;
+    height: 100%;
     .contenedor--izq,
     .contenedor--der {
       @include flex;
@@ -39,11 +41,12 @@ body {
 
 .titulo {
   height: fit-content;
-  padding-bottom: 1vh;
-  border-bottom: 3px solid $verde-c;
+  padding-bottom: 1.5vh;
+  border-bottom: 5px solid $verde-c;
 }
 .descripcion {
   margin-top: 2vh;
+  font-weight: 500;
 }
 .boton {
   cursor: pointer;
@@ -82,18 +85,12 @@ body {
 @include responsive-orientation(320px, portrait) {
   #___gatsby {
     overflow-y: scroll;
-    background-image: url(../images/bg-mobile-portrait.jpg);
     background-position: center center;
   }
   .contenedor-layout {
     & > section {
-      padding-top: 20vh;
-      .contenedor--izq {
-        width: 100%;
-      }
-      .contenedor--der {
-        width: 100%;
-      }
+      min-height: 100vh;
+      padding: 20vh 3vh 0;
     }
   }
   .descripcion {
@@ -105,6 +102,8 @@ body {
       font-size: 0.8rem;
     }
   }
+
+
   /* Tipografía ========================================================================== */
 
   h1 {
@@ -123,18 +122,17 @@ body {
 @include responsive-orientation(568px, landscape) {
   #___gatsby {
     overflow-y: scroll;
-    background-image: url(../images/bg-mobile-landscape.jpg);
     background-position: center center;
   }
   .contenedor-layout {
-    height: 55vh;
-    & > section {
-      height: 55vh;
-    }
-    .contenedor--der {
-      padding-left: 4vh;
-    }
+    height: 90vh;
     overflow-y: hidden;
+    & > section {
+    padding: 0 4vh}
+  }
+
+  .contenedor-principal {
+    margin: 0 auto;
   }
   .descripcion {
     font-size: 0.8rem;
@@ -142,13 +140,14 @@ body {
   }
   .boton {
     &__texto {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
+
   /* Tipografía ========================================================================== */
 
   h1 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
   }
 
   h2 {
@@ -161,41 +160,23 @@ body {
 }
 
 @include responsive-orientation(768px, portrait) {
-  #___gatsby {
-    background-image: url(../images/bg-tablet-portrait.jpg);
-
-  }
-  .contenedor-layout {
-    & > section {
-      padding-top: 20vh;
-      .contenedor--der {
-        padding-left: 2vh;
-      }
+  .boton {
+    &__texto {
+      font-size: 1rem;
     }
+  }
+
+    /* Tipografía
+        ========================================================================== */
+  h1 {
+      font-size: 2rem;
   }
 }
 
 @include responsive-orientation(1024px, landscape) {
-  #___gatsby {
-    background-image: url(../images/bg-tablet-landscape.jpg);
-
-  }
-  .contenedor-principal {
-    /* padding: 0 1.5vw; */
-    & > footer {
-      padding-left: 20%;
-    }
-  }
   .contenedor-layout {
-    height: 55vh;
-    overflow-y: hidden;
     & > section {
-      margin-bottom: 0;
-      height: 100%;
-      padding-left: 17.5%;
-      .contenedor--der {
-        padding-left: 2vh;
-      }
+      padding:0;
     }
   }
   .descripcion {
@@ -204,52 +185,29 @@ body {
   }
   .boton {
     &__texto {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
+  }
+
+    /* Tipografía
+        ========================================================================== */
+  h1 {
+    font-size: 2rem;
   }
 }
 
 @include responsive(1280px) {
-  #___gatsby {
-    background-image: url(../images/bg-desk.jpg);
-    background-position: top right;
-  }
   .contenedor-principal {
-    max-width: 88.9vw;
-    margin: 0 auto;
-    /* padding: 0 1.5vw; */
-    & > footer {
-      padding-left: 20%;
-    }
+    max-width: 89vw;
   }
-  .contenedor-layout {
-    height: 55vh;
-    overflow-y: hidden;
-    & > section {
-      margin-bottom: 0;
-      height: 100%;
-      padding-left: 20%;
-      .contenedor--der {
-        padding-left: 2vh;
-      }
-    }
-  }
+
   .descripcion {
-    font-size: 1.2rem;
-    line-height: 1.9rem;
-  }
-  .boton {
-    &__texto {
-      font-size: 0.9rem;
-    }
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
 
   /* Tipografía
         ========================================================================== */
-
-  h1 {
-    font-size: 1.8rem;
-  }
 
   h2 {
     font-size: 1.6rem;
