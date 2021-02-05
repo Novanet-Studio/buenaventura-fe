@@ -79,3 +79,9 @@
     }
   }
 }
+
+@include responsive(1660px) {
+  .inicio {
+    background-image: url(../../assets/images/btax-ini-bg-desk-xl.jpg);
+  }
+}

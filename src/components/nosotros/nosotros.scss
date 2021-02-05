@@ -5,10 +5,6 @@
     flex-direction: column;
     justify-content: flex-start;
   }
-  .contenedor--izq,
-  .contenedor--der {
-    @include flex;
-  }
   .guia {
     width: 100%;
     text-align: center;

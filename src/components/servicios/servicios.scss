@@ -1,9 +1,9 @@
 @import "../../assets/scss/styles.scss";
 
 .servicios {
-  &__contenido-titulo {
-    width: fit-content;
-    padding-bottom: 1vh;
+  & > div {
+    flex-direction: column;
+    justify-content: flex-start;
   }
   &__lista {
     width: 100%;
@@ -11,53 +11,52 @@
     list-style: none;
     justify-content: space-between;
   }
-  &__icono {
-    width: 2.5vw;
-    height: 2.5vw;
-    padding: 0.5vh;
-  }
   &__contenido {
     /* Este contenido está en el WYSYWYG de Strapi */
     ul {
       list-style-type: none;
-      margin-top: 2vh;
       & > li {
         font-weight: 400;
-        padding: 1vh;
         &:nth-child(odd) {
-          @include servicios-lista-fondo(white);
+          @include servicios-lista-fondo($gris-b);
         }
         &:nth-child(even) {
-          @include servicios-lista-fondo($gris-b);
+          @include servicios-lista-fondo(white);
         }
       }
     }
     &:nth-child(1) {
-      @include servicios-color($verde-b);
+      @include servicios-color($verde-e);
     }
     &:nth-child(2) {
-      @include servicios-color($verde-c);
+      @include servicios-color($verde-d);
     }
     &:nth-child(3) {
-      @include servicios-color($verde-d);
+      @include servicios-color($verde-a);
     }
   }
 }
 
+
 @include responsive-orientation(320px, portrait) {
   .servicios {
+    &__lista {
+      margin-top:3vh;
+    }
     &__contenido {
       margin-bottom: 4vh;
       ul {
         & > li {
-          font-size: 0.8rem;
-          line-height: 1rem;
+          padding:1.2vh;
+          font-size: 0.9rem;
+          line-height: 1.4rem;
         }
       }
     }
     &__icono {
       width: 10vw;
       height: 10vw;
+      padding: 0.6vh;
     }
     &__contenido-titulo {
       line-height: 2rem;
@@ -65,43 +64,45 @@
   }
 }
 
+
 @include responsive-orientation(568px, landscape) {
   .servicios {
     &__lista {
-      margin-top: 1vh;
+      margin-top: 4vh;
     }
     &__contenido {
-      @include col-3-3;
-      /* Este contenido está en el WYSYWYG de Strapi */
+      @include col-1-2;
+      /* Este contenido está en el WYSYWYG de Strapi*/ 
       ul {
         & > li {
-          font-size: 0.6rem;
-          line-height: 0.8rem;
+          padding: 1.6vh;
+          font-size: 0.8rem;
+          line-height: 1.1rem;
         }
       }
     }
     &__icono {
-      width: 3.25vw;
-      height: 3.25vw;
+      width: 5vw;
+      height: 5vw;
+      padding: 1vh;
     }
     &__contenido-titulo {
       font-size: 0.9rem;
+      padding: 1.5vh 0;
     }
   }
 }
 
+
 @include responsive-orientation(768px, portrait) {
   .servicios {
-    &__lista {
-      margin-top: 1vh;
-    }
     &__contenido {
-      @include col-3-3;
+      @include col-1-2;
       /* Este contenido está en el WYSYWYG de Strapi */
       ul {
         & > li {
-          font-size: 0.75rem;
-          line-height: 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
         }        
       }
     }
@@ -112,41 +113,39 @@
   }
 }
 
+
 @include responsive-orientation(1024px, landscape) {
   .servicios {
-    align-content: flex-start;
+    & > div {
+      justify-content: center;
+    }
+    &__lista {
+      margin-top: 6vh;
+    }
     &__contenido {
-      /* Este contenido está en el WYSYWYG de Strapi */
+      @include col-3-3;
+      &-titulo {
+        padding: 1vh 0;
+      }
       ul {
         & > li {
-          font-size: 0.75rem;
-          line-height: 1.1rem;
-        }        
+          padding: 1.2vh;
+          font-size: 1rem;
+          line-height: 1.4rem;
+        }
       }
     }
-    &__icono {
-      width:3.5vw;
-      height:3.5vw;
-    }
+    &__contenido-titulo {
+    font-size: 1.4rem;
+     }
   }
 }
 
 @include responsive(1280px) {
   .servicios {
-    &__lista {
-      margin-top: 4vh;
-    }
-    &__contenido {
-      ul {
-        & > li {
-          font-size: 0.9rem;
-          line-height: 1.15rem;
-        }
-      }
-    }
     &__icono {
-      width: 2.5vw;
-      height: 2.5vw;
+      width: 4vw;
+      height: 4vw;
     }
   }
 }

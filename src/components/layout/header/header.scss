@@ -59,7 +59,7 @@
   .header {
     z-index: 1;
     position: fixed;
-    padding: 2vh 2vh 2.5vh;
+    padding: 2vh 0vh 2.5vh;
     .contenedor-principal {
       justify-content: center;
     }
@@ -75,7 +75,7 @@
     }
     &__boton {
       font-size: 0.7rem;
-      padding: 1.2vh 0.6vh;
+      padding: 1.2vh 0.8vh;
       background-color: transparent;
       color: $gris-a;
       &:hover {
@@ -164,7 +164,7 @@
     }
     &__boton {
       font-size: 0.9rem;
-      padding: 1.5vh 3vh;
+      padding: 1.5vh 2.4vh;
       margin-right: 4vh;
     }
   }
