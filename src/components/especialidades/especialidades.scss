@@ -18,6 +18,7 @@
 
 @include responsive-orientation(320px, portrait) {
   .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-mob.jpg);
     &__subtitulo {
       line-height: 1.2rem;
     }
@@ -33,6 +34,7 @@
 
 @include responsive-orientation(568px, landscape) {
   .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-mob-land.jpg);
     .contenedor--izq,
     .contenedor--der {
       @include col-igual;
@@ -46,6 +48,7 @@
 
 @include responsive-orientation(768px, portrait) {
   .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-tab.jpg);
     & > div {
       @include col-igual;
       flex-direction: column;
@@ -68,6 +71,7 @@
 
 @include responsive-orientation(1024px, landscape) {
   .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-tab-land.jpg);
     align-content: flex-start;
     .contenedor--izq,
     .contenedor--der {
@@ -85,6 +89,7 @@
 
 @include responsive(1280px) {
   .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-desk.jpg);
     .contenedor--izq,
     .contenedor--der {
       @include col-igual;
@@ -93,5 +98,12 @@
     &__imagen {
       margin:  0;
     }
+  }
+}
+
+
+@include responsive(1600px) {
+  .especialidades {
+    background-image: url(../../assets/images/btax-esp-bg-desk-xl.jpg);
   }
 }

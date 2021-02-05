@@ -128,10 +128,8 @@ body {
     background-position: center center;
   }
   .contenedor-layout {
-    height: 90vh;
-    overflow-y: hidden;
     & > section {
-      padding: 0 4vh;
+      padding: 25vh 4vh;
     }
   }
 
@@ -199,9 +197,9 @@ body {
 
 @include responsive-orientation(1024px, landscape) {
   .contenedor-layout {
-    height: 85vh;
     & > section {
-      padding: 0;
+      min-height: 90vh;
+      padding: 15vh 3vh;
     }
   }
 
@@ -235,5 +233,11 @@ body {
   .contenedor-principal {
     max-width: 89vw;
     padding: 0;
+  }
+  .contenedor-layout {
+    & > section {
+      min-height: 97vh;
+      padding: 15vh 3vh;
+    }
   }
 }

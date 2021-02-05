@@ -31,16 +31,6 @@
   }
 }
 
-@include responsive-orientation(768px, portrait) {
-  .inicio {
-    background-image: url(../../assets/images/btax-ini-bg-tab.jpg);
-    .descripcion {
-      font-size: 1.4rem;
-      line-height: 2.1rem;
-    }
-  }
-}
-
 @include responsive-orientation(568px, landscape) {
   .inicio {
     background-image: url(../../assets/images/btax-ini-bg-mob-land.jpg);
@@ -48,11 +38,22 @@
     &__info {
       width: 85vw;
       margin-top: 10vh;
+      margin-bottom: 10vh;
       padding: 5vh;
     }
     .descripcion {
       font-size: 1rem;
       line-height: 1.5rem;  
+    }
+  }
+}
+
+@include responsive-orientation(768px, portrait) {
+  .inicio {
+    background-image: url(../../assets/images/btax-ini-bg-tab.jpg);
+    .descripcion {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
     }
   }
 }
@@ -80,7 +81,7 @@
   }
 }
 
-@include responsive(1660px) {
+@include responsive(1600px) {
   .inicio {
     background-image: url(../../assets/images/btax-ini-bg-desk-xl.jpg);
   }

@@ -73,8 +73,8 @@
     background-image: url(../../assets/images/btax-con-bg-mob-land.jpg);
     background-position: top;
     .descripcion {
-      margin-right: 12vw;
-      margin-left: 12vw;
+      margin-right: 10vw;
+      margin-left: 10vw;
     }
     .contenedor--izq {
       @include col-igual;
@@ -188,7 +188,7 @@
   }
 }
 
-@include responsive(1660px) {
+@include responsive(1600px) {
   .contacto {
     background-image: url(../../assets/images/btax-con-bg-desk-xl.jpg);
   }
