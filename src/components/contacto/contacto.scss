@@ -1,6 +1,14 @@
 @import "../../assets/scss/styles.scss";
 
 .contacto {
+  & > div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  background-size: cover;
+  &__contenido {
+    @include flex;
+  }
   .contenedor--izq,
   .contenedor--der {
     @include flex-column-center;
@@ -8,23 +16,33 @@
   &__imagen {
     width: 100%;
   }
-  &__formulario-grupo {
+  &__formulario {
     @include flex;
   }
   &__input-text,
   &__input-email,
   &__textarea {
-    font-size: 0.9rem;
-  }
-  &__textarea {
-    width: 100%;
+    border: #e5e7e6 3px solid;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 
 @include responsive-orientation(320px, portrait) {
   .contacto {
+    background-image: url(../../assets/images/btax-con-bg-mob.jpg);
+    &__contenido {
+      margin-top: 7vh;
+      margin-bottom: 7vh;
+      align-items: flex-start;
+    }
+    .contenedor--izq {
+      order: 1;
+    }
+    .contenedor--der {
+      align-items: center;
+    }
     &__imagen {
-      width: 65%;
+      width: 50%;
       margin: 2vh 0 3vh 0;
     }
     &__input-text,
@@ -33,9 +51,12 @@
       font-size: 0.8rem;
     }
     &__input-text,
-    &__input-email {
-      width: 100%;
-      margin-bottom: 2vh;
+    &__input-email,
+    &__textarea {
+      flex: 0 0 100%;
+      font-size: 0.75rem;
+      padding: 1.5vh;
+      margin: 0 0 2vh 0;
     }
     &__textarea {
       height: 15vh;
@@ -49,15 +70,24 @@
 
 @include responsive-orientation(568px, landscape) {
   .contacto {
+    background-image: url(../../assets/images/btax-con-bg-mob-land.jpg);
+    background-position: top;
+    .descripcion {
+      margin-right: 12vw;
+      margin-left: 12vw;
+    }
     .contenedor--izq {
-      @include col-1-4;
+      @include col-igual;
     }
     .contenedor--der {
-      @include col-3-4;
+      @include col-igual;
+    }
+    &__contenido {
+      margin-top: 7vh;
+      align-items: flex-start;
     }
     &__imagen {
-      width: 80%;
-      margin-left: 7vh;
+      width: 100%;
     }
     &__input-text,
     &__input-email {
@@ -67,71 +97,99 @@
     &__input-text,
     &__input-email,
     &__textarea {
-      font-size: 0.65rem;
-    }
-    &__formulario-grupo {
-      flex-direction: row;
-      justify-content: space-between;
-      padding-bottom: 2vh;
+      font-size: 0.75rem;
+      padding: 2vh;
+      margin: 0 4vh 4vh 0;
+      flex: 0 0 95%;
     }
   }
 }
 
 @include responsive-orientation(768px, portrait) {
   .contacto {
-    margin-bottom: 20vh;
+    &__contenido {
+      margin-top: 4vh;}
     .contenedor--izq,
     .contenedor--der {
       @include col-igual;
     }
+    .contenedor--der {
+      order: 2;
+      align-items: flex-end;
+    }
+    &__formulario {
+      .boton {
+        margin:0;
+      }
+    }
     &__imagen {
-      width: 80%;
-      margin: 0;
+      width: 90%;
+      margin-top: 0;
     }
     &__input-text,
-    &__input-email {
-      width: 100%;
-      margin-bottom: 1vh;
+    &__input-email, 
+    &__textarea {
+      font-size: 0.9rem;
+      padding: 1vh;
+      margin: 0 1.7vh 2vh 0;
     }
   }
 }
 
 @include responsive-orientation(1024px, landscape) {
   .contacto {
-    .contenedor--izq,
-    .contenedor--der {
-      margin-top: 4vh;
+    & > div {
+      justify-content: center;
     }
-    align-content: flex-start;
-    &__imagen {
-      width: 90%;
-      margin: 0;
-
+    background-image: url(../../assets/images/btax-con-bg-tab-land.jpg);
+    &__formulario {
+      justify-content: flex-end;
+      .boton {
+        margin: 0 1.7vh 0 0;
+      }
+    }
+    &__contenido {
+      align-items: center;
+    }
+    .contenedor--izq {
+      @include col-1-4;
+    }
+    .contenedor--der {
+      @include col-3-4;
+      align-items: flex-end;
     }
     &__input-text,
     &__input-email,
     &__textarea {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
+      padding: 1.5vh;
+      margin: 0 1.7vh 2vh 0;
+    }
+    &__input-text,
+    &__input-email {
+      @include col-1-2;
+    }
+    &__textarea {
+      flex: 0 0 97.6%;
     }
   }
 }
 
 @include responsive(1280px) {
   .contacto {
-    .contenedor--izq {
-      @include col-1-4;
-    }
-    .contenedor--der {
-      @include col-3-4;
+    background-image: url(../../assets/images/btax-con-bg-desk.jpg);
+    .descripcion {
+      margin-right: 15vw;
+      margin-left: 15vw;
     }
     &__imagen {
-      width: 92.5%;
-      margin: 0;
+      width: 97%;
     }
-    &__input-text,
-    &__input-email,
-    &__textarea {
-      font-size: 0.9rem;
-    }
+  }
+}
+
+@include responsive(1660px) {
+  .contacto {
+    background-image: url(../../assets/images/btax-con-bg-desk-xl.jpg);
   }
 }
