@@ -39,7 +39,7 @@ const Contacto = () => {
           <p className="descripcion">
             {intl.messages.contacto.content.principal.descripcion}
           </p>
-          <div className="contacto__contenido">
+          <div className="contacto__columnas">
             <div className="contenedor--izq">
               <form className="contacto__formulario">
                 <input

@@ -41,42 +41,77 @@ const Especialidades = () => {
           <p className="descripcion">
             {intl.messages.servicio.content.principal.descripcion}
           </p>
+
           {intl.messages.servicio.content.especialidades.map(
             (especialidad, index) => (
-              <div
-                className={`contenedor--${index > 0 ? "der" : "izq"}`}
-                key={especialidad.id}
-              >
-                <Img
-                  className="especialidades__imagen"
-                  fluid={
-                    strapiServicios.imagenes[index].localFile.childImageSharp
-                      .fluid
-                  }
-                  title={
-                    intl.messages.servicio.content.seo_imagen[index].titulo
-                  }
-                  alt={intl.messages.servicio.content.seo_imagen[index].alt}
-                />
-                <div className="especialidades__contenido">
-                  <h3 className="especialidades__subtitulo">
-                    {especialidad.nombre}
-                  </h3>
-                  <button
-                    className="boton"
-                    onClick={() => setTarget(especialidad.id)}
-                  >
-                    <p className="boton__texto">
-                      {intl.messages.static.boton.texto}
-                    </p>
-                  </button>
+              <div className="especialidades__columnas" key={especialidad.id}>
+                <div className="contenedor--izq">
+                  <Img
+                    className="especialidades__imagen"
+                    fluid={
+                      strapiServicios.imagenes[index].localFile.childImageSharp
+                        .fluid
+                    }
+                    title={
+                      intl.messages.servicio.content.seo_imagen[index].titulo
+                    }
+                    alt={intl.messages.servicio.content.seo_imagen[index].alt}
+                  />
                 </div>
-                <Modal
-                  id={target}
-                  data={intl.messages.servicio.content.especialidades}
-                  list={intl.messages.servicio.content.lista}
-                  onClose={() => setTarget("")}
-                />
+                <div className="contenedor--der">
+                  <div className="especialidades__contenido">
+                    <h3 className="especialidades__subtitulo">
+                      {especialidad.nombre}
+                    </h3>
+                    <div className="especialidades__contenido-tablas">
+                      <ul className="especialidades__tabla">
+                        <h4 className="especialidades__tabla-titulo">
+                          Monthly services
+                        </h4>
+                        <li>Sales Taxes & Liquor Taxes</li>
+                        <li>Monthly Accounting</li>
+                        <li>Payroll & Payroll Taxes</li>
+                      </ul>
+                      <ul className="especialidades__tabla">
+                        <h4 className="especialidades__tabla-titulo">
+                          Quarterly Services
+                        </h4>
+                        <li>Quarterly Tax Returns</li>
+                        <li>Profit and Loss Reports</li>
+                        <li>Estimated Taxes</li>
+                      </ul>
+                      <ul className="especialidades__tabla">
+                        <h4 className="especialidades__tabla-titulo">
+                          Annual Services
+                        </h4>
+                        <li>Payroll Year End Reports and compliance</li>
+                        <li>W-2’s for Employees</li>
+                        <li>Financial Statements (P&L/Balance Sheet)</li>
+                        <li>Property Tax</li>
+                        <li>Corporate License Renewal</li>
+                        <li>
+                          Audits for Workers Compensation and General Liability
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="especialidades__boton">
+                      <button
+                        className="boton"
+                        onClick={() => setTarget(especialidad.id)}
+                      >
+                        <p className="boton__texto">
+                          {intl.messages.static.boton.texto}
+                        </p>
+                      </button>
+                    </div>
+                  </div>
+                  <Modal
+                    id={target}
+                    data={intl.messages.servicio.content.especialidades}
+                    list={intl.messages.servicio.content.lista}
+                    onClose={() => setTarget("")}
+                  />
+                </div>
               </div>
             )
           )}
