@@ -2,9 +2,6 @@
 
 .inicio {
   background-size: cover;
-  .contenedor-principal {
-    justify-content: flex-start;
-  }
   &__info {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.75);
@@ -37,8 +34,6 @@
     background-position: top center;
     &__info {
       width: 85vw;
-      margin-top: 10vh;
-      margin-bottom: 10vh;
       padding: 5vh;
     }
     .descripcion {
@@ -62,7 +57,7 @@
   .inicio {
     background-image: url(../../assets/images/btax-ini-bg-tab-land.jpg);
     &__info {
-      width: 70vw;
+      width: 65vw;
     }
     .descripcion {
       font-size: 1.4rem;
@@ -75,9 +70,6 @@
   .inicio {
     background-image: url(../../assets/images/btax-ini-bg-desk.jpg);
     background-position: bottom;
-    &__info {
-      width: 60vw;
-    }
   }
 }
 

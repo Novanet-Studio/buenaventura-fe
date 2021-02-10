@@ -94,32 +94,31 @@
 
 @include responsive-orientation(568px, landscape) {
   .header {
-    padding: 3vh 0 4vh;
+    padding: 3vh 4vh;
     .contenedor-principal {
       align-items: flex-end;
+    justify-content: start;
+    padding:0;
     }
     &__logo {
-      flex: 0 30%;
-      margin-right: 3vh;
+      flex: 0 35%;
+      padding-right: 3vh;
       &-img {
-        margin-bottom: 0.8vh;
+        margin-bottom: 1.2vh;
       }
     }
     &__menu {
       flex: 0 65%;
       flex-direction: column;
-      justify-content: flex-end;
     }
     &__item {
       flex-direction: column;
-      justify-content: center;
-      flex: 1 1 1;
       max-width: fit-content;
     }
     &__boton {
-      font-size: 0.75rem;
-      padding: 2vh 1.8vh;
-      margin-right: 2vh;
+      font-size: 0.73rem;
+      padding: 2vh;
+      margin-right: 2.5vh;
       color: white;
       background-color: $verde-e;
     }
@@ -128,6 +127,7 @@
 
 @include responsive-orientation(768px, portrait) {
   .header {
+      padding: 2vh;
     &__logo {
       flex: 0 33%;
     }
@@ -138,8 +138,8 @@
       font-size: 0.8rem;
       color: white;
       background-color: $verde-e;
-      margin-right: 1vh;
-      padding: 1vh 1.2vh;
+      margin-right: 1.5vh;
+      padding: 1vh;
       &:hover {
         background-color: $verde-c;
         transition: 0.5s;
@@ -156,10 +156,7 @@
   .header {
     padding: 3vh 4vh;
     &__logo {
-      flex: 0 25%;
-    }
-    &__menu {
-      flex: 0 70%;
+      &-img {margin-bottom: 0.5vh;}
     }
     &__boton {
       font-size: 0.9rem;
@@ -171,8 +168,14 @@
 
 @include responsive(1280px) {
   .header {
+    &__logo {
+      flex: 0 0 30%;
+    }
     &__menu {
-      flex: 0 53%;
+      flex: 0 70%;
+    }
+    &__boton {
+      margin-right: 6vh;
     }
   }
 }

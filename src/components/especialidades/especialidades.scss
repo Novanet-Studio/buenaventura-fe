@@ -21,9 +21,6 @@
     width: 100%;
     height: fit-content;
   }
-  &__contenido {
-    @include flex;
-  }
   &__tabla {
     list-style: none;
     &-titulo {
@@ -73,6 +70,7 @@
       > li {
         padding: 1.2vh;
         font-size: 0.9rem;
+        line-height: 1.4rem;
       }
     }
     &__imagen {
@@ -92,13 +90,11 @@
     }
     .contenedor--der {
       @include col-1-4;
+      padding-left: 5vh;
     }
     &__contenido {
-      padding-left: 5vh;
-      &-tablas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-      }
     }
     &__subtitulo {
       padding-top: 2vh;
@@ -122,8 +118,9 @@
         padding: 2vh 1.5vh;
       }
       > li {
-        padding: 1.5vh;
+        padding: 1.6vh;
         font-size: 0.8rem;
+        line-height: 1.1rem;
       }
     }
   }
@@ -145,11 +142,9 @@
       width: 90%;
     }
     &__tabla {
-      &-titulo {
-        padding: 1vh;
-      }
       > li {
-        padding: 1vh;
+        font-size: 1rem;
+        line-height: 1.5rem;
       }
     }
   }
@@ -164,7 +159,8 @@
       }
       > li {
         padding: 1.2vh;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
       }
     }
   }

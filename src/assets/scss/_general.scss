@@ -139,7 +139,6 @@ body {
 
   .contenedor-principal {
     margin: 0 auto;
-    padding: 0 4vh;
   }
   .descripcion {
     font-size: 0.9rem;
@@ -166,7 +165,7 @@ body {
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -212,7 +211,7 @@ body {
   .contenedor-layout {
     & > section {
       min-height: 90vh;
-      padding: 15vh 3vh;
+      padding: 16vh 3vh;
     }
   }
 
@@ -248,13 +247,12 @@ body {
 
 @include responsive(1280px) {
   .contenedor-principal {
-    max-width: 89vw;
+   width: 76vw;
     padding: 0;
   }
   .contenedor-layout {
     & > section {
       min-height: 97vh;
-      padding: 15vh 3vh;
     }
   }
 }
