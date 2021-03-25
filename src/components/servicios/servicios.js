@@ -1,33 +1,19 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
-import SEO from "../seo"
 import { useIntl } from "gatsby-plugin-intl-graphql"
 import { useStaticQuery, graphql } from "gatsby"
 import "./servicios.scss"
 
 const Servicios = () => {
-  const intl = useIntl()
-  const { strapiServiciosAdicionales } = useStaticQuery(
-    graphql`
-      query ServiciosQuery {
-        strapiServiciosAdicionales {
-          iconos {
-            url
-          }
-        }
-      }
-    `
-  )
+  const {
+    messages: { servicio },
+  } = useIntl()
 
   return (
     <>
-      <SEO
-        title={intl.messages.serviciosAdicionale.content.seo.titulo}
-        description={intl.messages.serviciosAdicionale.content.seo.descripcion}
-        image={intl.messages.serviciosAdicionale.content.seo.imagen}
-      />
       <section id="Servicios" className="servicios">
-        <div className="contenedor-principal">
+        {console.log(servicio)}
+        {/* <div className="contenedor-principal">
           <h2 className="titulo">
             {intl.messages.serviciosAdicionale.content.principal.titulo}
           </h2>
@@ -60,7 +46,7 @@ const Servicios = () => {
               )
             )}
           </ul>
-        </div>
+        </div> */}
       </section>
     </>
   )

@@ -7,9 +7,8 @@ import Modal from "../modal"
 import "./especialidades.scss"
 
 const Especialidades = () => {
-  const [target, setTarget] = useState("")
-  const intl = useIntl()
-  const { strapiServicios } = useStaticQuery(
+
+  /* const { strapiServicios } = useStaticQuery(
     graphql`
       query {
         strapiServicios {
@@ -25,24 +24,20 @@ const Especialidades = () => {
         }
       }
     `
-  )
+  ) */
   return (
     <>
-      <SEO
-        title={intl.messages.servicio.content.seo.titulo}
-        description={intl.messages.servicio.content.seo.descripcion}
-        image={intl.messages.servicio.content.seo.imagen}
-      />
+    
       <section id="Especialidades" className="especialidades">
         <div className="contenedor-principal">
-          <h2 className="titulo">
+          {/* <h2 className="titulo">
             {intl.messages.servicio.content.principal.titulo}
           </h2>
           <p className="descripcion">
             {intl.messages.servicio.content.principal.descripcion}
-          </p>
+          </p> */}
 
-          {intl.messages.servicio.content.especialidades.map(
+          {/* {intl.messages.servicio.content.especialidades.map(
             (especialidad, index) => (
               <div className="especialidades__columnas" key={especialidad.id}>
                 <div className="contenedor--izq">
@@ -112,7 +107,7 @@ const Especialidades = () => {
                 />
               </div>
             )
-          )}
+          )} */}
         </div>
       </section>
     </>

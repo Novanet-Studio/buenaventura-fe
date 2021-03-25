@@ -42,22 +42,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/assets/images/icon.png",
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-sass`,
       options: {
         useResolveUrlLoader: true,
@@ -78,12 +62,9 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL || "http://localhost:1337",
-        singleTypes: [
-          "contacto",
+        singleTypes: [       
           "nosotros",
-          "principal",
-          "servicios",
-          "servicios-adicionales",
+          "principal",  
         ],
         queryLimit: 1000,
       },

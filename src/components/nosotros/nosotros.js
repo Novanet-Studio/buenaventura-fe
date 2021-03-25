@@ -1,54 +1,35 @@
 import React from "react"
-import SEO from "../seo"
 import { useIntl } from "gatsby-plugin-intl-graphql"
-import { useStaticQuery, graphql } from "gatsby"
 import "./nosotros.scss"
 
 const Nosotros = () => {
   const {
-    messages: { nosotro: nosotros },
+    messages: { nosotro },
   } = useIntl()
-  const { strapiNosotros } = useStaticQuery(
-    graphql`
-      query NosotrosQuery {
-        strapiNosotros {
-          iconos {
-            url
-          }
-        }
-      }
-    `
-  )
+
   return (
     <>
-      <SEO
-        title={nosotros.content.seo.titulo}
-        description={nosotros.content.seo.descripcion}
-        image={nosotros.content.seo.imagen}
-      />
+
       <section id="Nosotros" className="nosotros">
         <div className="contenedor-principal">
-          <h2 className="titulo">{nosotros.content.principal.titulo}</h2>
-          <p className="descripcion">
-            {nosotros.content.principal.descripcion}
-          </p>
+          <h2 className="titulo">{nosotro.content.titulo}</h2>
+          <p className="descripcion">{nosotro.content.descripcion}</p>
           <div className="guia">
-            <h3 className="guia__titulo">
-              {nosotros.content.atributos_titulo}
-            </h3>
+            <h3 className="guia__titulo">{nosotro.content.subitulo}</h3>
             <p className="descripcion">
-              {nosotros.content.atributos_descripcion}
+              {nosotro.content.subtitulo_descripcion}
             </p>
             <ul className="guia__lista">
-              {nosotros.content.atributos_lista.map((item, index) => (
+              {nosotro.content.atributo.map(item => (
                 <li className="guia__item" key={item.id}>
                   <img
                     className="guia__icono"
-                    src={strapiNosotros.iconos[index].url}
-                    alt={nosotros.content.seo_imagen[index].alt}
-                    title={nosotros.content.seo_imagen[index].titulo}
+                    src={item.foto.url}
+                    alt={item.foto.alt}
+                    title={item.foto.titulo}
                   />
                   <h4 className="guia__subtitulo">{item.titulo}</h4>
+                  <p>{item.descripcion}</p>
                 </li>
               ))}
             </ul>

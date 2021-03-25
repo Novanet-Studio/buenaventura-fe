@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./contacto.scss"
 
 const Contacto = () => {
-  const intl = useIntl()
+  /* const intl = useIntl()
   const { strapiContacto } = useStaticQuery(
     graphql`
       query {
@@ -96,7 +96,7 @@ const Contacto = () => {
         </div>
       </section>
     </>
-  )
+  ) */
 }
 
 export default Contacto
