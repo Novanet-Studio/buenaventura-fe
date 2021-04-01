@@ -34,8 +34,8 @@
         "link": "#"
       },
       "seo": {
-        "titulo": "Título SEO",
-        "descripcion": "Descripción SEO",
+        "titulo": "All your taxes and tax compliance up to date!",
+        "descripcion": "We are a professional team dedicated to calculating taxes and tax compliance. Keep all of your taxes updated without worrying about any procedures, we will take care of it.",
         "imagen": "URL de la imagen"
       }
     }
@@ -102,6 +102,116 @@
         "titulo": "Título SEO",
         "descripcion": "Descripción SEO",
         "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "especifico": {
+    "content": {
+      "titulo": "Invoiced Services",
+      "descripcion": "Besides the recurrent services we offer, we can help you with the following services:",
+      "item_especifico": [
+        {
+          "id": "605b695b058a855201e0d087",
+          "titulo": "Tax Resolutions",
+          "contenido": "- Corporate Tax Returns.\n- Tax Resolutions.\n- IRS or State Audits.",
+          "foto": {
+            "titulo": "Buenaventura tax invoice services tax resolution",
+            "alt": "Calculator icon",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524898/btax/uploads/buenaventura_tax_servicios_adicionales_resoluciones_fiscales_icono_c16dd71ef0.svg"
+          }
+        },
+        {
+          "id": "605b695b058a855201e0d088",
+          "titulo": "Compliance",
+          "contenido": "- Labor Department and EEOC.\n- Meetings with Lawyers.\n- Support with Investigations, Mediations and Dispute Audits.",
+          "foto": {
+            "titulo": "Buenaventura tax invoiced services Complaince",
+            "alt": "Check icon",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524895/btax/uploads/buenaventura_tax_servicios_adicionales_cumplimiento_icono_df568abfdc.svg"
+          }
+        },
+        {
+          "id": "605b695b058a855201e0d089",
+          "titulo": "Licensing",
+          "contenido": "- New License / Permit Applications / Renewals.\n- Incorporations.\n- Projections for Commercial Real Estate.\n- Trademark.",
+          "foto": {
+            "titulo": "Buenaventura tax invoiced services licensing",
+            "alt": "List icon",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524898/btax/uploads/buenaventura_tax_servicios_adicionales_licencias_icono_07dc6350e1.svg"
+          }
+        }
+      ],
+      "seo": {
+        "titulo": "Título SEO",
+        "descripcion": "Descripción SEO",
+        "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "servicio": {
+    "content": {
+      "id": "605b64c29374f62bd5123aaf",
+      "titulo": " Our Services",
+      "descripcion": "We're dedicated to accounting which includes taxes and payroll, and some other services related with human resources.",
+      "lista": [
+        {
+          "id": "605b64c29374f62bd5123ab0",
+          "titulo": "Accounting and taxes",
+          "lista": [
+            {
+              "id": "605b64c39374f62bd5123ab2",
+              "titulo": "Monthly services",
+              "contenido": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
+            },
+            {
+              "id": "605b64c39374f62bd5123ab3",
+              "titulo": "Quarterly services",
+              "contenido": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
+            },
+            {
+              "id": "605b64c39374f62bd5123ab4",
+              "titulo": "Annual services",
+              "contenido": "- Payroll Year End Reports and compliance.\n- W-2’s for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
+            }
+          ],
+          "foto": {
+            "titulo": "Accounting and taxes",
+            "alt": "Hands callculating accounts",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616601525/btax/uploads/buenaventura_tax_servicios_contabilidad_6b7741ff61.png"
+          }
+        },
+        {
+          "id": "605b64c29374f62bd5123ab1",
+          "titulo": "Human resources",
+          "lista": [
+            {
+              "id": "605b64c39374f62bd5123ab5",
+              "titulo": "Annual services",
+              "contenido": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
+            }
+          ],
+          "foto": {
+            "titulo": "Buenaventura tax human resources services",
+            "alt": "People closing a deal",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616601525/btax/uploads/buenaventura_tax_servicios_recursos_humanos_3f416cc0cf.png"
+          }
+        }
+      ],
+      "seo": {
+        "titulo": "Título SEO",
+        "descripcion": "Descripción SEO",
+        "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "contactano": {
+    "content": {
+      "titulo": "Contact us",
+      "descripcion": "You are one step ahead of forgetting about fines and sanctions. \nSend us a message and we will get in contact with you for more details.",
+      "foto": {
+        "titulo": "Buenaventura tac contact us",
+        "alt": "Hando with pen signing docuement",
+        "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616604761/btax/uploads/buenaventura_tax_contacto_765f2ad526.png"
       }
     }
   }

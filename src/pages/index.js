@@ -10,11 +10,9 @@ const IndexPage = () => (
   <Layout>
     <Inicio />
     <Nosotros />
-    {/* 
-    
     <Especialidades />
-    <Servicios />
-    <Contacto /> */}
+    <Servicios />    
+    <Contacto /> 
   </Layout>
 )
 

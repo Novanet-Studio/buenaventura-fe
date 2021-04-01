@@ -34,8 +34,8 @@
         "link": "#"
       },
       "seo": {
-        "titulo": "Título SEO",
-        "descripcion": "Descripción SEO",
+        "titulo": "Tenga sus impuestos y obligaciones tributarias al día",
+        "descripcion": "Somos un equipo de profesionales dedicados al cálculo de impuestos y al cumplimiento de obligaciones fiscales. Ten al día  tus tributos sin preocuparte de los trámites que de eso nos encargamos nosotros",
         "imagen": "URL de la imagen"
       }
     }
@@ -90,7 +90,7 @@
         {
           "id": "605b1dc5f8d6dd14a030cfc3",
           "titulo": "Responsabilidad",
-          "descripcion": null,
+          "descripcion": " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos.",
           "foto": {
             "titulo": "Icono responsabilidad",
             "alt": "Reloj",
@@ -102,6 +102,116 @@
         "titulo": "Título SEO",
         "descripcion": "Descripción SEO",
         "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "especifico": {
+    "content": {
+      "titulo": "Servicios específicos",
+      "descripcion": "Además de los servicios recurrentes que ofrecemos, podemos asistirte en los siguientes servicios:",
+      "item_especifico": [
+        {
+          "id": "605b67e3058a855201e0d06f",
+          "titulo": "Resoluciones fiscales",
+          "contenido": "- Declaración de impuestos corporativos.\n- IRS o auditorías estatales.\n- Resoluciones fiscales en general.",
+          "foto": {
+            "titulo": "Buena ventura tax servicios específicos resoluciones físcales",
+            "alt": "Icono calculadora",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524898/btax/uploads/buenaventura_tax_servicios_adicionales_resoluciones_fiscales_icono_c16dd71ef0.svg"
+          }
+        },
+        {
+          "id": "605b67e3058a855201e0d070",
+          "titulo": "Cumplimiento",
+          "contenido": "- Departamento laboral y EEOC.\n- Reuniones con abogados.\n- Apoyo con investigaciones, mediaciones y disputas en auditorías.",
+          "foto": {
+            "titulo": "Buena ventura tax servicios específicos cumplimiento",
+            "alt": "Icono ok",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524895/btax/uploads/buenaventura_tax_servicios_adicionales_cumplimiento_icono_df568abfdc.svg"
+          }
+        },
+        {
+          "id": "605b67e3058a855201e0d071",
+          "titulo": "Licencias",
+          "contenido": "- Adquisición de licencias.\n- Solicitud de permisos.\n- Renovaciones.\n- Incorporaciones.\n- Proyecciones de bienes raíces comerciales.\n- Marca comercial.",
+          "foto": {
+            "titulo": "Buenaventura tax servicios específicos licencias",
+            "alt": "Icono lista",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616524898/btax/uploads/buenaventura_tax_servicios_adicionales_licencias_icono_07dc6350e1.svg"
+          }
+        }
+      ],
+      "seo": {
+        "titulo": "Título SEO",
+        "descripcion": "Descripción SEO",
+        "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "servicio": {
+    "content": {
+      "id": "605b62a69374f62bd5123a88",
+      "titulo": " Nuestros servicios",
+      "descripcion": "Nos dedicamos a la contabilidad, incluidos los impuestos y la nómina, y algunos servicios relacionados con recursos humanos.",
+      "lista": [
+        {
+          "id": "605b62a69374f62bd5123a89",
+          "titulo": "Contabilidad e impuestos",
+          "lista": [
+            {
+              "id": "605b62a69374f62bd5123a8c",
+              "titulo": "Servicios mensuales",
+              "contenido": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados.\n"
+            },
+            {
+              "id": "605b62a69374f62bd5123a8d",
+              "titulo": "Servicios trimestrales",
+              "contenido": "Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
+            },
+            {
+              "id": "605b62a69374f62bd5123a8e",
+              "titulo": "Servicios anuales",
+              "contenido": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
+            }
+          ],
+          "foto": {
+            "titulo": "Buenaventura tax servicios contabilidad e impuestos",
+            "alt": "Mujer y honbre cerrando un trato",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616601525/btax/uploads/buenaventura_tax_servicios_contabilidad_6b7741ff61.png"
+          }
+        },
+        {
+          "id": "605b62a69374f62bd5123a8a",
+          "titulo": "Recursos humanos",
+          "lista": [
+            {
+              "id": "605b62a69374f62bd5123a8b",
+              "titulo": "Servicios anuales",
+              "contenido": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
+            }
+          ],
+          "foto": {
+            "titulo": "buenaventura tax servicios recursos humanos",
+            "alt": "Manos de persona sacando cuentas",
+            "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616601525/btax/uploads/buenaventura_tax_servicios_recursos_humanos_3f416cc0cf.png"
+          }
+        }
+      ],
+      "seo": {
+        "titulo": "Título SEO",
+        "descripcion": "Descripción SEO",
+        "imagen": "URL de la imagen"
+      }
+    }
+  },
+  "contactano": {
+    "content": {
+      "titulo": "Contacto",
+      "descripcion": "Estás a un paso de olvidarte de las multas y cierres. \nEscríbenos y nos pondremos en contacto para más detalles.",
+      "foto": {
+        "titulo": "Buenaventura tax contacto",
+        "alt": "Mano con bolígrafo firmado docuemento",
+        "url": "https://res.cloudinary.com/novanet-studio/image/upload/v1616604761/btax/uploads/buenaventura_tax_contacto_765f2ad526.png"
       }
     }
   }
