@@ -9,7 +9,6 @@ const Nosotros = () => {
 
   return (
     <>
-
       <section id="Nosotros" className="nosotros">
         <div className="contenedor-principal">
           <h2 className="titulo">{nosotro.content.titulo}</h2>
@@ -29,7 +28,7 @@ const Nosotros = () => {
                     title={item.foto.titulo}
                   />
                   <h4 className="guia__subtitulo">{item.titulo}</h4>
-                  <p>{item.descripcion}</p>
+                  <p className="guia__texto">{item.descripcion}</p>
                 </li>
               ))}
             </ul>

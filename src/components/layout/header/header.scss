@@ -59,7 +59,7 @@
 
 @include responsive-orientation(320px, portrait) {
   .header {
-    padding: 2vh 0vh 2.5vh;
+    padding: 2vh 0vh 1vh;
     .contenedor-principal {
       justify-content: center;
     }
@@ -74,7 +74,7 @@
       align-items: center;
     }
     &__boton {
-      font-size: 0.7rem;
+      font-size: 0.85rem;
       padding: 1.2vh 0.8vh;
       background-color: transparent;
       color: $gris-a;

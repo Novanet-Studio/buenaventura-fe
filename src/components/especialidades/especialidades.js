@@ -24,8 +24,8 @@ const Especialidades = () => {
                   alt={item.foto.alt}
                 />
               </div>
-              <h3 className="especialidades__subtitulo">{item.titulo}</h3>
               <div className="contenedor--der">
+                <h3 className="especialidades__subtitulo">{item.titulo}</h3>
                 <div className="especialidades__contenido">
                   {item.lista.map(listItem => (
                     <div className="especialidades__tabla" key={listItem.id}>

@@ -32,10 +32,10 @@
       list-style: none;
       font-weight: 400;
       &:nth-child(odd) {
-        @include servicios-lista-fondo(white);
+        @include servicios-lista-fondo($gris-b);
       }
       &:nth-child(even) {
-        @include servicios-lista-fondo($gris-b);
+        @include servicios-lista-fondo(white);
       }
     }
   }
