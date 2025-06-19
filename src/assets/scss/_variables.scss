@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $spacing-unit: 0.5rem;
 $breakpoints: (
   mobile: 320px,
@@ -27,15 +29,6 @@ $breakpoints: (
 }
 
 @mixin custom-respond-to($breakpoint) {
-  @if type-of($breakpoint) !=
-    "number" or not
-    unitless($breakpoint) or
-    $breakpoint <
-    0
-  {
-    @warn "invalid breakpoint";
-  }
-
   @media (min-width: #{$breakpoint}px) {
     @content;
   }

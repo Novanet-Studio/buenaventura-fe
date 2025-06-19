@@ -1,0 +1,152 @@
+@use "../../../assets/scss/variables" as *;
+
+.footer {
+  width: 100%;
+  & > div,
+  & > p {
+    display: flex;
+  }
+  &__rsss {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    background-image: url(../../../assets/images/rrss-bg.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 0.8rem;
+    svg {
+      color: var(--green-a);
+    }
+  }
+  &__logo-novanet {
+    display: flex;
+    align-content: center;
+    margin-left: 0.5vh;
+  }
+  &__copy {
+    display: flex;
+    align-content: center;
+  }
+}
+
+/* Mobile Portrait (320px) */
+@include custom-respond-to(320) {
+  @media (orientation: portrait) {
+    .footer {
+      &__item {
+        width: 7vw;
+        height: 7vw;
+        margin-right: 1.5vh;
+        svg {
+          margin-left: 0.75vh;
+        }
+      }
+      &__copy {
+        font-size: 0.75rem;
+      }
+      &__logo-novanet {
+        width: 18vw;
+      }
+    }
+  }
+}
+
+/* Mobile Landscape (568px) */
+@include custom-respond-to(568) {
+  @media (orientation: landscape) {
+    .footer {
+      height: 10vh;
+      &__rsss {
+        display: flex;
+        flex: 1 0 0;
+        justify-content: flex-start;
+      }
+      &__item {
+        flex: 1 1 0;
+        width: 3vw;
+        height: 3vw;
+        svg {
+          margin-left: 0.6vh;
+        }
+      }
+      &__copy {
+        flex: 5 0 0;
+        font-size: 0.7rem;
+      }
+      &__logo-novanet {
+        width: 8vw;
+      }
+      &__rsss {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Tablet Portrait (768px) */
+@include custom-respond-to(768) {
+  @media (orientation: portrait) {
+    .footer {
+      &__item {
+        width: 4vw;
+        height: 4vw;
+        margin-right: 1.5vh;
+        svg {
+          margin-left: 0.75vh;
+        }
+      }
+      &__logo-novanet {
+        width: 10vw;
+      }
+    }
+  }
+}
+
+/* Tablet Landscape (1024px) */
+@include custom-respond-to(1024) {
+  @media (orientation: landscape) {
+    .footer {
+      &__item {
+        width: 2.7vw;
+        height: 2.7vw;
+        svg {
+          margin-left: 0.6vh;
+        }
+      }
+      &__copy {
+        font-size: 0.8rem;
+      }
+      &__logo-novanet {
+        width: 7vw;
+      }
+    }
+  }
+}
+
+/* Desktop (1280px) */
+@include custom-respond-to(1280) {
+  .footer {
+    height: 11vh;
+    &__item {
+      width: 1.8vw;
+      height: 1.8vw;
+      svg {
+        margin-left: 1vh;
+      }
+    }
+    &__copy {
+      flex: 4 0 0;
+      font-size: 0.9rem;
+    }
+    &__logo-novanet {
+      width: 5vw;
+    }
+    &__rsss {
+      margin-bottom: 2vh;
+    }
+  }
+}

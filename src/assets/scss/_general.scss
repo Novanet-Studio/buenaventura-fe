@@ -1,6 +1,8 @@
+@use "sass:color";
+@use "../../assets/scss/variables" as *;
+
 html,
 body,
-#gatsby-root,
 #___gatsby {
   min-height: 100vh;
 }
@@ -14,6 +16,9 @@ body {
 #___gatsby {
   width: 100vw;
   min-height: 100vh;
+  background-image: url(../images/bg-mobile-portrait.jpg);
+  background-position: center center;
+  background-size: cover;
   overflow-y: auto;
 }
 
@@ -41,11 +46,15 @@ body {
   padding-top: 0;
 
   & > section {
+    padding-top: 20vh;
+
     display: flex;
     flex-wrap: wrap;
 
     .container--left,
     .container--right {
+      width: 100%;
+
       display: flex;
       flex-wrap: wrap;
     }
@@ -103,24 +112,6 @@ body {
   }
   100% {
     opacity: 1;
-  }
-}
-
-#___gatsby {
-  background-image: url(../images/bg-mobile-portrait.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
-.container-layout > section {
-  padding-top: 20vh;
-
-  .container--left {
-    width: 100%;
-  }
-
-  .container--rgh {
-    width: 100%;
   }
 }
 
