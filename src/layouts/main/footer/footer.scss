@@ -1,12 +1,9 @@
 @use "../../../assets/scss/variables" as *;
 
 .footer {
-  position: fixed;
-  bottom: 0;
-
   height: 11vh;
 
-  width: 100%;
+  width: 100vw;
   background-color: var(--green-a);
 
   display: flex;

@@ -7,9 +7,7 @@ import Footer from "./footer";
 const Main = ({ children }: { children: React.ReactNode }) => (
   <>
     <Header />
-    <div className="container-main">
-      <main className="container-layout">{children}</main>
-    </div>
+    <main className="container-layout">{children}</main>
     <Footer />
   </>
 );

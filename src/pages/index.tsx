@@ -1,10 +1,14 @@
 import React from "react";
 
+//? layouts
 import Main from "@layouts/main";
+
+//? sections
+import Welcome from "@components/sections/welcome";
 
 const IndexPage = () => (
   <Main>
-    <div>Hello world</div>
+    <Welcome />
   </Main>
 );
 export default IndexPage;
