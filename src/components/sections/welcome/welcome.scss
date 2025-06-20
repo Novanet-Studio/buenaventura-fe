@@ -4,6 +4,7 @@
 .welcome {
   width: 100%;
   min-height: 100vh !important;
+  box-sizing: border-box;
 
   background: url("../../../assets/images/bg-welcome.jpg") center/cover fixed;
 
@@ -29,6 +30,7 @@
       border-bottom: 3px solid var(--green-c);
     }
 
+    .title,
     .description {
       text-align: center;
     }
