@@ -13,13 +13,13 @@ const Footer = () => {
       <div className="container-main">
         <div className="footer__rsss">
           <div className="footer__item">
-            <FaLinkedin className="footer__link" />
+            <FaLinkedin className="footer__item__link" />
           </div>
           <div className="footer__item">
-            <FaInstagram className="footer__link" />
+            <FaInstagram className="footer__item__link" />
           </div>
           <div className="footer__item">
-            <FaXTwitter className="footer__link" />
+            <FaXTwitter className="footer__item__link" />
           </div>
         </div>
         <p className="footer__copy">
