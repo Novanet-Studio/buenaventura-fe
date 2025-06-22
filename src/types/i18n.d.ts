@@ -59,15 +59,14 @@ export interface TranslationData {
       info: {
         title: string;
         description: string;
-        
       };
       specialties: {
         name: string;
-      }[];
-      list: {
-        specialty: string;
-        title: string;
-        items: string;
+        list: {
+          specialty: string;
+          title: string;
+          items: string;
+        }[];
       }[];
     };
   };

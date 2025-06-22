@@ -53,17 +53,17 @@ const About = () => {
           <div className="guia">
             <p className="description">{t("aboutUs.content.info.subtitle")}</p>
             <ul className="guia__list">
-              {items.map((item, index) => (
+              {items.map((i, index) => (
                 <li className="guia__item" key={index}>
                   <span className="guia__item__icon">
                     <img
-                      src={item.icon}
+                      src={i.icon}
                       alt={`icon_${index}`}
                       title={`icon_${index}`}
                     />
                   </span>
-                  <h4 className="guia__item__subtitle">{item.title}</h4>
-                  <p className="guia__item__desc">{item.description}</p>
+                  <h4 className="guia__item__subtitle">{i.title}</h4>
+                  <p className="guia__item__desc">{i.description}</p>
                 </li>
               ))}
             </ul>

@@ -75,32 +75,34 @@
       },
       "specialties": [
         {
-          "name": "Contabilidad e impuestos"
+          "name": "Contabilidad e impuestos",
+          "list": [
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios mensuales",
+              "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
+            },
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios trimestrales",
+              "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
+            },
+            {
+              "specialty": "contabilidad",
+              "title": "Servicios anuales",
+              "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
+            }
+          ]
         },
         {
-          "name": "Recursos humanos"
-        }
-      ],
-      "list": [
-        {
-          "specialty": "contabilidad",
-          "title": "Servicios mensuales",
-          "items": "- Impuestos a las ventas y licores.\n- Contabilidad mensual.\n- Nómina e impuestos asociados."
-        },
-        {
-          "specialty": "contabilidad",
-          "title": "Servicios trimestrales",
-          "items": "- Declaraciones trimestrales de impuestos.\n- Informes de ganancias y pérdidas.\n- Impuestos estimados."
-        },
-        {
-          "specialty": "contabilidad",
-          "title": "Servicios anuales",
-          "items": "- Informes anuales de nómina y deberes formales.\n- Formulario W-2 para empleados.\n- Estados financieros.\n- Impuestos a la propiedad.\n- Renovación de licencia corporativa.\n- Auditorías sobre la compensación para trabajadores y responsabilidad general."
-        },
-        {
-          "specialty": "hr",
-          "title": "Servicios anuales",
-          "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
+          "name": "Recursos humanos",
+          "list": [
+            {
+              "specialty": "hr",
+              "title": "Servicios anuales",
+              "items": "- Revisión del manual para empleados.\n- Cumplimiento de disposiciones salariales según el Departamento de Trabajo.\n- Políticas de no agresión."
+            }
+          ]
         }
       ]
     }

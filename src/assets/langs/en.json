@@ -75,32 +75,34 @@
       },
       "specialties": [
         {
-          "name": "Accounting and taxes"
+          "name": "Accounting and taxes",
+          "list": [
+            {
+              "specialty": "accounting",
+              "title": "Monthly services",
+              "items": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
+            },
+            {
+              "specialty": "accounting",
+              "title": "Quarterly Services",
+              "items": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
+            },
+            {
+              "specialty": "accounting",
+              "title": "Annual Services",
+              "items": "- Payroll Year End Reports and compliance.\n- W-2's for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
+            }
+          ]
         },
         {
-          "name": "Human resources"
-        }
-      ],
-      "list": [
-        {
-          "specialty": "accounting",
-          "title": "Monthly services",
-          "items": "- Sales Taxes & Liquor Taxes.\n- Monthly Accounting.\n- Payroll & Payroll Taxes."
-        },
-        {
-          "specialty": "accounting",
-          "title": "Quarterly Services",
-          "items": "- Quarterly Tax Returns.\n- Profit and Loss Reports.\n- Estimated Taxes."
-        },
-        {
-          "specialty": "accounting",
-          "title": "Annual Services",
-          "items": "- Payroll Year End Reports and compliance.\n- W-2's for Employees.\n- Financial Statements (P&L/Balance Sheet).\n- Property Tax.\n- Corporate License Renewal.\n- Audits for Workers Compensation and General Liability."
-        },
-        {
-          "specialty": "hr",
-          "title": "Annual Services",
-          "items": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
+          "name": "Human resources",
+          "list": [
+            {
+              "specialty": "hr",
+              "title": "Annual Services",
+              "items": "- Employee Manuals Review.\n- Wage Compliance in Accordance with the Department of Labor.\n- No Aggression Policy."
+            }
+          ]
         }
       ]
     }

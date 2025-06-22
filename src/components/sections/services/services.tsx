@@ -1,19 +1,83 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactMarkdown from "react-markdown";
+
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
+import { LanguageContext } from "@context/LanguageContext";
+
+//? images & styles
+
+import services1 from "@images/services/services-1.png";
+import services2 from "@images/services/services-2.png";
+
+const assets = [
+  {
+    src: services1,
+    title: "image service 1",
+    alt: "image service 1",
+  },
+  {
+    src: services2,
+    title: "image service 2",
+    alt: "image service 2",
+  },
+];
 
 import "./services.scss";
 
+const ServiceDetail = ({
+  source,
+}: {
+  source: {
+    specialty: String;
+    title: String;
+    items: string;
+  };
+}) => {
+  return (
+    <div className="detail">
+      <h4 className="detail__title">{source.title}</h4>
+      <ReactMarkdown children={source.items} />
+    </div>
+  );
+};
+
 const Services = () => {
+  const t = useTranslation();
+  const { translations } = useContext(LanguageContext);
+
+  const services = translations.services.content.specialties || [];
+
+  console.log(services);
+
   return (
     <>
       <section id="sec-services" className="services">
-        <h2 className="titulo">Nuestros servicios</h2>
-        <p className="description">
-          Nos dedicamos a la contabilidad, incluidos los impuestos y la nómina,
-          y algunos servicios relacionados con recursos humanos.
-        </p>
-        {/* <ul className="services__list">
-          {intl.messages.servicesAdicionale.content.services.map(
+        <div className="container-main">
+          <h2 className="title">{t("services.content.info.title")}</h2>
+          <p className="description">
+            {t("services.content.info.description")}
+          </p>
+          <ul className="list">
+            {services.map((s, index) => (
+              <li className="list__item" key={`services_${index}`}>
+                <img
+                  className="list__image"
+                  src={assets[index].src}
+                  title={assets[index].title}
+                  alt={assets[index].alt}
+                />
+
+                <div className="list__info">
+                  <h3 className="list__info__title">{s.name}</h3>
+                  <div className="list__info__content">
+                    {s.list.map((detail) => ServiceDetail({ source: detail }))}
+                  </div>
+                </div>
+              </li>
+            ))}
+
+            {/* t({services.messages.servicesAdicionale.content.services.map(
             (servicio, index) => (
               <li className="services__content" key={servicio.id}>
                 <img
@@ -21,7 +85,7 @@ const Services = () => {
                   src={strapiservicesAdicionales.iconos[index].url}
                   title={
                     intl.messages.servicesAdicionale.content.seo_imagen[index]
-                      .titulo
+                      .title
                   }
                   alt={
                     intl.messages.servicesAdicionale.content.seo_imagen[index]
@@ -29,11 +93,12 @@ const Services = () => {
                   }
                 />
                 <h3 className="services__content-title">{servicio.nombre}</h3>
-                <ReactMarkdown source={servicio.items} escapeHtml={false} />
+                <ReactMarkdown children={servicio.items} />
               </li>
             )
-          )}
-        </ul> */}
+          )}) */}
+          </ul>
+        </div>
       </section>
     </>
   );

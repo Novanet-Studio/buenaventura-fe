@@ -10,9 +10,9 @@ import Services from "@components/sections/services";
 
 const IndexPage = () => (
   <Main>
-    <Services />
     <Welcome />
     <About />
+    <Services />
   </Main>
 );
 export default IndexPage;
