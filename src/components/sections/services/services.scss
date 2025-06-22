@@ -1,0 +1,231 @@
+@use "../../../assets/scss/variables" as *;
+
+
+.services {
+  // Cambiado de .servicios a .services
+  &__title-container {
+    // Cambiado de __contenido-titulo
+    width: fit-content;
+    padding-bottom: 1vh;
+  }
+
+  &__list {
+    // Cambiado de __lista
+    width: 100%;
+    display: flex; // Reemplazo de mixin flex
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 0.5vh;
+    transition: transform 0.3s ease; // Animación suave
+
+    &:hover {
+      transform: scale(1.1); // Efecto al pasar mouse
+    }
+  }
+
+  &__content {
+    // Cambiado de __contenido
+    /* Este contenido está en el WYSYWYG de Strapi */
+    ul {
+      list-style-type: none;
+      margin-top: 2vh;
+
+      & > li {
+        font-weight: 400;
+        padding: 1vh;
+        transition: background-color 0.3s ease; // Transición suave
+
+        &:nth-child(odd) {
+          background-color: white; // Reemplazo de mixin
+        }
+
+        &:nth-child(even) {
+          background-color: var(--gray-b); // Variable CSS
+        }
+      }
+    }
+
+    // Reemplazo de mixin servicios-color
+    &:nth-child(1) {
+      h3 {
+        border-bottom: 2px solid var(--green-b); // Variable CSS
+      }
+      .services__icon {
+        background-color: rgba(var(--green-b), 0.9); // 10% transparencia
+      }
+      ul > li::before {
+        content: "▪";
+        color: var(--green-b);
+        display: inline-block;
+        padding-right: 0.75vh;
+      }
+    }
+
+    &:nth-child(2) {
+      h3 {
+        border-bottom: 2px solid var(--green-c);
+      }
+      .services__icon {
+        background-color: rgba(var(--green-c), 0.9);
+      }
+      ul > li::before {
+        content: "▪";
+        color: var(--green-c);
+        display: inline-block;
+        padding-right: 0.75vh;
+      }
+    }
+
+    &:nth-child(3) {
+      h3 {
+        border-bottom: 2px solid var(--green-d);
+      }
+      .services__icon {
+        background-color: rgba(var(--green-d), 0.9);
+      }
+      ul > li::before {
+        content: "▪";
+        color: var(--green-d);
+        display: inline-block;
+        padding-right: 0.75vh;
+      }
+    }
+  }
+}
+
+/* Mobile Portrait (320px) */
+@include custom-respond-to(320) {
+  @media (orientation: portrait) {
+    .services {
+      &__content {
+        margin-bottom: 4vh;
+
+        ul {
+          & > li {
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      &__icon {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      &__title-container {
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+/* Mobile Landscape (568px) */
+@include custom-respond-to(568) {
+  @media (orientation: landscape) {
+    .services {
+      &__list {
+        margin-top: 1vh;
+      }
+
+      &__content {
+        flex: 0 0 31.5%; // Reemplazo de col-3-3
+
+        ul {
+          & > li {
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+          }
+        }
+      }
+
+      &__icon {
+        width: 3.25vw;
+        height: 3.25vw;
+      }
+
+      &__title-container {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* Tablet Portrait (768px) */
+@include custom-respond-to(768) {
+  @media (orientation: portrait) {
+    .services {
+      &__list {
+        margin-top: 1vh;
+      }
+
+      &__content {
+        flex: 0 0 31.5%; // Reemplazo de col-3-3
+
+        ul {
+          & > li {
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      &__icon {
+        width: 5.5vw;
+        height: 5.5vw;
+      }
+    }
+  }
+}
+
+/* Tablet Landscape (1024px) */
+@include custom-respond-to(1024) {
+  @media (orientation: landscape) {
+    .services {
+      align-content: flex-start;
+
+      &__content {
+        ul {
+          & > li {
+            font-size: 0.75rem;
+            line-height: 1.1rem;
+          }
+        }
+      }
+
+      &__icon {
+        width: 3.5vw;
+        height: 3.5vw;
+      }
+    }
+  }
+}
+
+/* Desktop (1280px) */
+@include custom-respond-to(1280) {
+  .services {
+    &__list {
+      margin-top: 4vh;
+    }
+
+    &__content {
+      ul {
+        & > li {
+          font-size: 0.9rem;
+          line-height: 1.15rem;
+        }
+      }
+    }
+
+    &__icon {
+      width: 2.5vw;
+      height: 2.5vw;
+    }
+  }
+}

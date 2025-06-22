@@ -1,5 +1,8 @@
 import React from "react";
 
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
+
 //? images & styles
 import Novanet from "@images/logo-nn.svg";
 import "./footer.scss";
@@ -8,6 +11,8 @@ import "./footer.scss";
 import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const t = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container-main">
@@ -23,7 +28,8 @@ const Footer = () => {
           </div>
         </div>
         <p className="footer__copy">
-          © Derechos reservados {new Date().getFullYear()} | Diseñado por:
+          {t("static.footer.legal")} {new Date().getFullYear()}{" "}
+          {t("static.footer.author")}
           <a href="https://novanet.studio" target="_blank" rel="noreferrer">
             <img
               className="footer__logo-novanet"

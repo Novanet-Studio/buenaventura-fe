@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
 
 //? images & styles
 import Logo from "@images/buenaventura-tax-logo.svg";
@@ -6,6 +9,8 @@ import Logo from "@images/buenaventura-tax-logo.svg";
 import "./header.scss";
 
 const Header = () => {
+  const t = useTranslation();
+
   const scrollTo = () => {
     console.log("Scroll function called");
   };
@@ -15,7 +20,7 @@ const Header = () => {
       <div className="container-main">
         <div className="header__logo">
           <a onClick={() => scrollTo()} href="/">
-            <img src={Logo} alt="Buenaventura tax logo" />
+            <img src={Logo} alt="Buenaventura.tax logo" />
           </a>
         </div>
         <nav className="header__menu">
@@ -28,7 +33,7 @@ const Header = () => {
                   scrollTo();
                 }}
               >
-                Nosotros
+                {t("static.nav.buttonA")}
               </button>
             </li>
             <li className="header__item">
@@ -39,7 +44,7 @@ const Header = () => {
                   scrollTo();
                 }}
               >
-                Especialidades
+                {t("static.nav.buttonB")}
               </button>
             </li>
             <li className="header__item">
@@ -50,7 +55,7 @@ const Header = () => {
                   scrollTo();
                 }}
               >
-                Servicios
+                {t("static.nav.buttonC")}
               </button>
             </li>
             <li className="header__item">
@@ -61,7 +66,7 @@ const Header = () => {
                   scrollTo();
                 }}
               >
-                Contacto
+                {t("static.nav.buttonD")}
               </button>
             </li>
           </ul>

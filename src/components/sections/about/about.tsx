@@ -1,60 +1,57 @@
 import React from "react";
 
-import "./about.scss";
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
 
+//? images & styles
 import icon1 from "@images/icons/icon-1.svg";
 import icon2 from "@images/icons/icon-2.svg";
 import icon3 from "@images/icons/icon-3.svg";
 import icon4 from "@images/icons/icon-4.svg";
 import icon5 from "@images/icons/icon-5.svg";
 
-const items = [
-  {
-    icon: icon1,
-    title: "Compromiso",
-    description:
-      "Estamos comprometidos contigo y tus procesos fiscales y contables. Nuestro objetivo es eliminar las multas por completo.",
-  },
-  {
-    icon: icon2,
-    title: "Calidad",
-    description:
-      " Comprendemos la importancia y la sensibilidad de los procesos fiscales y contables.",
-  },
-  {
-    icon: icon3,
-    title: "Vocación de servicio",
-    description:
-      "Nos gusta lo que hacemos. Un servicio bien entregado redunda en ventajas para ambos.",
-  },
-  {
-    icon: icon4,
-    title: "Confianza",
-    description:
-      "Queremos transmitir la tranquilidad de que tus impuestos y contabilidad están en buenas manos.",
-  },
-
-  {
-    icon: icon5,
-    title: "Responsabilidad ",
-    description:
-      " Actuamos de la manera más expedita posible para cumplir nuestros acuerdos.",
-  },
-];
+import "./about.scss";
 
 const About = () => {
+  const t = useTranslation();
+
+  const items = [
+    {
+      icon: icon1,
+      title: t("aboutUs.content.attributesList.0.label"),
+      description: t("aboutUs.content.attributesList.0.desc"),
+    },
+    {
+      icon: icon2,
+      title: t("aboutUs.content.attributesList.1.label"),
+      description: t("aboutUs.content.attributesList.1.desc"),
+    },
+    {
+      icon: icon3,
+      title: t("aboutUs.content.attributesList.2.label"),
+      description: t("aboutUs.content.attributesList.2.desc"),
+    },
+    {
+      icon: icon4,
+      title: t("aboutUs.content.attributesList.3.label"),
+      description: t("aboutUs.content.attributesList.3.desc"),
+    },
+
+    {
+      icon: icon5,
+      title: t("aboutUs.content.attributesList.4.label"),
+      description: t("aboutUs.content.attributesList.4.desc"),
+    },
+  ];
+
   return (
     <>
       <section id="sec-about" className="about">
         <div className="container-main">
-          <h2 className="title">Queremos convertirnos en tus aliados</h2>
-          <p className="description">
-            Nuestro objetivo es apoyarte en todo lo relacionado con impuestos y
-            contabilidad al punto de ser considerados como un departamento más
-            dentro de tu organización empresarial.
-          </p>
+          <h2 className="title">{t("aboutUs.content.info.title")}</h2>
+          <p className="description">{t("aboutUs.content.info.description")}</p>
           <div className="guia">
-            <p className="description">Principalmente, queremos destacar:</p>
+            <p className="description">{t("aboutUs.content.info.subtitle")}</p>
             <ul className="guia__list">
               {items.map((item, index) => (
                 <li className="guia__item" key={index}>

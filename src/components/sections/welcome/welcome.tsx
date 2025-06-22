@@ -1,22 +1,21 @@
 import React from "react";
 
+//? translations
+import { useTranslation } from "@hooks/useTranslation";
+
+//? images & styles
 import "./welcome.scss";
 
 const Welcome = () => {
+  const t = useTranslation();
   return (
     <>
       <section id="sec-welcome" className="welcome">
         <div className="container-main">
-          <h1 className="title">
-            Tenga sus impuestos y obligaciones tributarias al día
-          </h1>
-          <p className="description">
-            Somos un equipo de profesionales dedicados al cálculo de impuestos y
-            al cumplimiento de obligaciones fiscales. Ten al día tus tributos
-            sin preocuparte de los trámites que de eso nos encargamos nosotros
-          </p>
+          <h1 className="title">{t("welcome.content.info.title")}</h1>
+          <p className="description">{t("welcome.content.info.description")}</p>
           <button className="button">
-            <p className="button__text">Conócenos</p>
+            <p className="button__text">{t("welcome.content.ctaTitle")}</p>
           </button>
         </div>
       </section>
