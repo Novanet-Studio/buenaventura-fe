@@ -6,10 +6,12 @@ import { useTranslation } from "@hooks/useTranslation";
 import { LanguageContext } from "@context/LanguageContext";
 
 //? images & styles
-
 import services1 from "@images/services/services-1.png";
 import services2 from "@images/services/services-2.png";
 
+import "./services.scss";
+
+//? const
 const assets = [
   {
     src: services1,
@@ -22,8 +24,6 @@ const assets = [
     alt: "image service 2",
   },
 ];
-
-import "./services.scss";
 
 const ServiceDetail = ({
   source,
@@ -46,8 +46,7 @@ const Services = () => {
   const t = useTranslation();
   const { translations } = useContext(LanguageContext);
 
-  const services = translations.services.content.specialties ?? [];
-
+  const services = translations?.services?.content?.specialties ?? [];
 
   return (
     <>

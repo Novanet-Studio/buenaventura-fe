@@ -37,7 +37,7 @@ const Additionals = () => {
 
   console.log(translations);
 
-  const additionals = translations.additionals.content.list ?? [];
+  const additionals = translations?.additionals?.content?.list ?? [];
 
   return (
     <>
