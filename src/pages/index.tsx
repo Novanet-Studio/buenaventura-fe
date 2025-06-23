@@ -19,4 +19,11 @@ const IndexPage = () => (
     <Contact />
   </Main>
 );
+
 export default IndexPage;
+
+export const Head = () => (
+  <>
+    <title>Buenaventura.tax</title>
+  </>
+);
