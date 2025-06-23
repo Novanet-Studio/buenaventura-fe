@@ -70,13 +70,13 @@ export interface TranslationData {
       }[];
     };
   };
-  additionalServices: {
+  additionals: {
     content: {
       info: {
         title: string;
         description: string;
       };
-      services: {
+      list: {
         name: string;
         items: string;
       }[];

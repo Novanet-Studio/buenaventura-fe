@@ -107,13 +107,13 @@
       ]
     }
   },
-  "additionalServices": {
+  "additionals": {
     "content": {
       "info": {
         "title": "Servicios adicionales",
         "description": "Además de los servicios recurrentes que ofrecemos, podemos asistirte en los siguientes servicios:"
       },
-      "services": [
+      "list": [
         {
           "name": "Resoluciones fiscales",
           "items": "- Declaración de impuestos corporativos.\n- IRS o auditorías estatales.\n- Resoluciones fiscales en general."

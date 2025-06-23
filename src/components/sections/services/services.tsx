@@ -46,9 +46,8 @@ const Services = () => {
   const t = useTranslation();
   const { translations } = useContext(LanguageContext);
 
-  const services = translations.services.content.specialties || [];
+  const services = translations.services.content.specialties ?? [];
 
-  console.log(services);
 
   return (
     <>

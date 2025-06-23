@@ -107,13 +107,13 @@
       ]
     }
   },
-  "additionalServices": {
+  "additionals": {
     "content": {
       "info": {
         "title": "Invoiced Services",
         "description": "Besides the recurrent services we offer, we can help you with the following services:"
       },
-      "services": [
+      "list": [
         {
           "name": "Tax Resolutions",
           "items": "- Corporate Tax Returns.\n- Tax Resolutions.\n- IRS or State Audits."

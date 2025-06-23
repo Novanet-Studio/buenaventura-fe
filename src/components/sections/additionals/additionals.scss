@@ -1,6 +1,6 @@
 @use "../../../assets/scss/variables" as *;
 
-.services {
+.additionals {
   width: 100%;
   min-height: 100dvh !important;
   padding: 10dvh 0;
@@ -37,29 +37,28 @@
 
       margin-top: 10vh;
 
-      list-style: none;
-
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-
+      justify-content: space-evenly;
+      flex-wrap: wrap;
       gap: 4vh 0;
 
       &__item {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0 2vw;
+        max-width: calc((100% / 3) - 2vw);
+        min-width: 250px;
 
-        @include custom-respond-to(768) {
-          flex-direction: row;
-        }
+        list-style: none;
       }
 
       &__image {
-        max-width: 250px;
-        height: fit-content;
-        margin-bottom: 3vh;
+        width: 60px;
+        height: 60px;
+        padding: 0.5rem;
+        margin-bottom: 2vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
       }
 
       &__info {
@@ -70,47 +69,44 @@
         }
 
         &__content {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          gap: 1rem;
+          background-color: var(--gray-e);
+          border: 1px solid var(--gray-b);
+          border-top: 3px solid var(--green-d);
 
-          @include custom-respond-to(1024) {
-            grid-template-columns: repeat(2, 1fr);
-          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
 
-          .detail {
-            background-color: var(--gray-e);
-            border: 1px solid var(--gray-b);
-            border-top: 3px solid var(--green-d);
+            li {
+              padding: 0.5rem;
+              list-style: none;
 
-            &__title {
-              padding: 0.5rem 0;
-              margin-left: 0.5rem;
-            }
+              &::before {
+                content: "\25AA";
+                padding-right: 0.75vh;
+                font-size: 1.3rem;
+              }
 
-            ul {
-              display: flex;
-              flex-direction: column;
-              gap: 1vh;
-
-              li {
-                padding: 0.5rem;
-                list-style: none;
-
-                &::before {
-                  content: "\25AA";
-                  padding-right: 0.75vh;
-                  font-size: 1.3rem;
-                }
-
-                &:nth-child(even) {
-                  background-color: var(--gray-b);
-                }
+              &:nth-child(odd) {
+                background-color: var(--gray-b);
               }
             }
           }
         }
       }
     }
+  }
+}
+
+.list {
+  > .list__item:nth-child(1) .list__image {
+    background-color: var(--green-a);
+  }
+  > .list__item:nth-child(2) .list__image {
+    background-color: var(--green-c);
+  }
+  > .list__item:nth-child(3) .list__image {
+    background-color: var(--green-e);
   }
 }

@@ -6,72 +6,62 @@ import { useTranslation } from "@hooks/useTranslation";
 import { LanguageContext } from "@context/LanguageContext";
 
 //? images & styles
+import additionals1 from "@images/icons/icon-6.svg";
+import additionals2 from "@images/icons/icon-7.svg";
+import additionals3 from "@images/icons/icon-8.svg";
 
-import services1 from "@images/services/services-1.png";
-import services2 from "@images/services/services-2.png";
+import "./additionals.scss";
 
+//? const
 const assets = [
   {
-    src: services1,
-    title: "image service 1",
-    alt: "image service 1",
+    src: additionals1,
+    title: "image additional 1",
+    alt: "image additional 1",
   },
   {
-    src: services2,
-    title: "image service 2",
-    alt: "image service 2",
+    src: additionals2,
+    title: "image additional 2",
+    alt: "image additional 2",
+  },
+  {
+    src: additionals3,
+    title: "image additional 3",
+    alt: "image additional 3",
   },
 ];
 
-import "./services.scss";
-
-const ServiceDetail = ({
-  source,
-}: {
-  source: {
-    specialty: String;
-    title: String;
-    items: string;
-  };
-}) => {
-  return (
-    <div className="detail">
-      <h4 className="detail__title">{source.title}</h4>
-      <ReactMarkdown children={source.items} />
-    </div>
-  );
-};
-
-const Services = () => {
+const Additionals = () => {
   const t = useTranslation();
   const { translations } = useContext(LanguageContext);
 
-  const services = translations.services.content.specialties || [];
+  console.log(translations);
 
-  console.log(services);
+  const additionals = translations.additionals.content.list ?? [];
 
   return (
     <>
-      <section id="sec-services" className="services">
+      <section id="sec-additionals" className="additionals">
         <div className="container-main">
-          <h2 className="title">{t("services.content.info.title")}</h2>
+          <h2 className="title">{t("additionals.content.info.title")}</h2>
           <p className="description">
-            {t("services.content.info.description")}
+            {t("additionals.content.info.description")}
           </p>
           <ul className="list">
-            {services.map((s, index) => (
-              <li className="list__item" key={`services_${index}`}>
-                <img
-                  className="list__image"
-                  src={assets[index].src}
-                  title={assets[index].title}
-                  alt={assets[index].alt}
-                />
-
+            {additionals.map((a, index) => (
+              <li className="list__item" key={`additionals_${index}`}>
                 <div className="list__info">
-                  <h3 className="list__info__title">{s.name}</h3>
+                  <img
+                    className="list__image"
+                    src={assets[index].src}
+                    title={assets[index].title}
+                    alt={assets[index].alt}
+                  />
+
+                  <h3 className="list__info__title">{a.name}</h3>
+
                   <div className="list__info__content">
-                    {s.list.map((detail) => ServiceDetail({ source: detail }))}
+                    <ReactMarkdown children={a.items} />
                   </div>
                 </div>
               </li>
@@ -83,4 +73,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Additionals;
